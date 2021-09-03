@@ -32,10 +32,8 @@ The only characters that SHALL be used in official property namespaces and names
 ### Examples
 
 ```
-local:classification:CLASSIFIED
-local:classification:UNCLASSIFIED
-local:maintained_by:team a
-local:maintained_by:team b
+local:information_security_classification
+local:team_responsible
 ```
 
 ### ABNF for Official CycloneDX Property Names
