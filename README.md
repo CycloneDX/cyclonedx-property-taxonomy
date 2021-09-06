@@ -27,7 +27,9 @@ Namespaces are hierarchical and delimeted with a `:`.
 
 As such, `:` MUST NOT be used in property namespaces and names except as a delimeter.
 
-The only characters that SHALL be used in official property namespaces and names are alpanumerical characters, "-", "_" and " ".
+The only characters that SHALL be used in official property namespaces and names are alpanumerical characters, "-", "_" and " " from the US ASCII character set.
+
+Namespaces SHOULD be lower case. Base property names MAY use upper case.
 
 ### Examples
 
