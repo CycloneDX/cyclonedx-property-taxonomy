@@ -3,7 +3,6 @@
 | Namespace | Description | Administered By | Taxonomy |
 | --- | --- | --- | --- |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | CycloneDX Go Maintainers | [cdx:gomod taxonomy](cdx/gomod.md) |
-| `cdx:nuget` | Namespace for properties specific to the NuGet ecosystem. | CycloneDX .NET Maintainers | [cdx:nuget taxonomy](cdx/nuget.md) |
 
 ## Registering `cdx` Namespaces and Properties
 
