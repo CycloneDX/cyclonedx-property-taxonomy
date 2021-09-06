@@ -39,16 +39,16 @@ local:team_responsible
 ### ABNF for Official CycloneDX Property Names
 
 ```
-property-name  = namespace ":" name
+property-name = 1*(namespace ":") name
 
-namespace      = namespace-part | namespace-part ":" namespace
+namespace     = 1*namechar
 
-namespace-part = *pchar
+name          = 1*namechar
 
-name           = *pchar
-
-pchar          = ALPHA / DIGIT / "-" / "_" / " "
+namechar      = ALPHA / DIGIT / "-" / "_" / " "
 ```
+
+ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](https://datatracker.ietf.org/doc/html/rfc5234).
 
 ## Registered Top Level Namespaces
 
