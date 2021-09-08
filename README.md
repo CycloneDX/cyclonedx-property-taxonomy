@@ -58,6 +58,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | --- | --- | --- | --- |
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial namespaces and properties MUST NOT be used under the `cdx` namespace. | CycloneDX Core Working Group | [cdx taxonomy](cdx.md) |
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in the local namespace. | CycloneDX Core Working Group | N/A |
+| `tern` | Namespace for use by the Tern project. | Tern Maintainers | [Tern Project](https://github.com/tern-tools/tern) |
 
 ## Registering New Top Level Namespaces
 
