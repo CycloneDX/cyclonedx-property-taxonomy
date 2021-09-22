@@ -58,6 +58,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | --- | --- | --- | --- |
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial namespaces and properties MUST NOT be used under the `cdx` namespace. | CycloneDX Core Working Group | [cdx taxonomy](cdx.md) |
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in the local namespace. | CycloneDX Core Working Group | N/A |
+| `dependency-track` | Namespace for use by the Dependency-Track project. | Dependency-Track Maintainers | `RESERVED` |
 | `tern` | Namespace for use by the Tern project. | Tern Maintainers | [Tern Project](https://github.com/tern-tools/tern) |
 
 ## Registering New Top Level Namespaces
@@ -68,7 +69,10 @@ namespace SHOULD register a new top level namespace.
 The process for registering a new top level namespace is to
 [create a new issue requesting it](https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/new/choose).
 
-Before requesting a new top level namespace registration you should have
-publicly available documentation for the taxonomy of the namespace.
+Namespaces are initialling registered as `RESERVED`.
+
+Before using your `RESERVED` namespace, documentation for the taxonomy of the
+namespace SHOULD be publicly available. Failure to do so MAY result in the
+namespace reservation being revoked.
 
 An example is the [cdx taxonomy](cdx.md).
