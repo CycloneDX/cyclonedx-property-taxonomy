@@ -2,8 +2,16 @@
 
 | Namespace             | Description                                                       |
 | --------------------- | ----------------------------------------------------------------- |
+| `cdx:gomod:binary`    | Namespace for metadata of analyzed binaries.                      |
 | `cdx:gomod:build`     | Namespace for build related information.                          |
 | `cdx:gomod:build:env` | Namespace for build constraints passed via environment variables. |
+
+## `cdx:gomod:binary` Namespace Taxonomy
+
+| Property                            | Description                  |
+| ----------------------------------- | ---------------------------- |
+| `cdx:gomod:binary:name`             | Name of the analyzed binary. |
+| `cdx:gomod:binary:hash:<ALGORITHM>` | Hash of the analyzed binary. |
 
 ## `cdx:gomod:build` Namespace Taxonomy
 
