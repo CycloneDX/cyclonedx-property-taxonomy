@@ -1,10 +1,17 @@
 ## `cdx:gomod` Namespace Taxonomy
 
-| Namespace             | Description                                                       |
-| --------------------- | ----------------------------------------------------------------- |
-| `cdx:gomod:binary`    | Namespace for metadata of analyzed binaries.                      |
-| `cdx:gomod:build`     | Namespace for build related information.                          |
-| `cdx:gomod:build:env` | Namespace for build constraints passed via environment variables. |
+| Namespace               | Description                                                       |
+| ----------------------- | ----------------------------------------------------------------- |
+| `cdx:gomod:application` | Namespace for application metadata.                               |
+| `cdx:gomod:binary`      | Namespace for metadata of analyzed binaries.                      |
+| `cdx:gomod:build`       | Namespace for build related information.                          |
+| `cdx:gomod:build:env`   | Namespace for build constraints passed via environment variables. |
+
+## `cdx:gomod:application` Namespace Taxonomy
+
+| Property                     | Description                                              |
+| ---------------------------- | -------------------------------------------------------- |
+| `cdx:gomod:application:name` | Name of the application that the SBOM was generated for. |
 
 ## `cdx:gomod:binary` Namespace Taxonomy
 
