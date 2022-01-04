@@ -23,9 +23,9 @@
 
 | Property                            | Description                  |
 | ----------------------------------- | ---------------------------- |
-| `cdx:deviceInfo:certifications:authority`  | A certifying authority (e.g. FCC). |
-| `cdx:deviceInfo:certifications:id` | Identifier for radio components. |
-| `cdx:deviceInfo:certifications:url` | URL to certification details. |
+| `cdx:deviceInfo:certifications:<AUTHORITY>`  | A certifying authority (e.g. FCC). |
+| `cdx:deviceInfo:certifications:<AUTHORITY>:id` | Identifier for radio components. |
+| `cdx:deviceInfo:certifications:<AUTHORITY>:url` | URL to certification details. |
 
 ## `cdx:deviceInfo:gs1` Namespace Taxonomy
 
