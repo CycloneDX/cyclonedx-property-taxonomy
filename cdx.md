@@ -2,7 +2,7 @@
 
 | Namespace | Description | Administered By | Taxonomy |
 | --- | --- | --- | --- |
-| `cdx:deviceInfo` | Namespace for properties specific hardware devices. | CycloneDX Core Working Group | [cdx:deviceInfo taxonomy](cdx/deviceInfo.md) |
+| `cdx:deviceInfo` | Namespace for properties specific to hardware devices. | CycloneDX Core Working Group | [cdx:deviceInfo taxonomy](cdx/deviceInfo.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | CycloneDX Go Maintainers | [cdx:gomod taxonomy](cdx/gomod.md) |
 
 ## Registering `cdx` Namespaces and Properties
