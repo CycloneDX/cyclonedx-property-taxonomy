@@ -23,9 +23,10 @@
 
 | Property                            | Description                  |
 | ----------------------------------- | ---------------------------- |
-| `cdx:device:certifications:<AUTHORITY>`  | A certifying authority (e.g. FCC). |
-| `cdx:device:certifications:<AUTHORITY>:id` | Identifier for radio components. |
-| `cdx:device:certifications:<AUTHORITY>:url` | URL to certification details. |
+| `cdx:device:certifications:<ISO-3166-1>`  | ISO-3166-1 alpha-2 country code of a certifying authority |
+| `cdx:device:certifications:<ISO-3166-1>:<AUTHORITY>`  | Abbreviation of the certifying authority (e.g. FCC, UL, and CE) |
+| `cdx:device:certifications:<ISO-3166-1>:<AUTHORITY>:id` | Identifier for radio components. |
+| `cdx:device:certifications:<ISO-3166-1>:<AUTHORITY>:url` | URL to certification details. |
 
 ## `cdx:device:gs1` Namespace Taxonomy
 
