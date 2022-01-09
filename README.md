@@ -34,8 +34,8 @@ Namespaces SHOULD be lower case. Base property names MAY use upper case.
 ### Examples
 
 ```
-local:information_security_classification
-local:team_responsible
+internal:information_security_classification
+internal:team_responsible
 ```
 
 ### ABNF for Official CycloneDX Property Names
