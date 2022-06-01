@@ -60,6 +60,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in the local namespace. | CycloneDX Core Working Group | N/A |
 | `aquasecurity` | Namespace for use by Aqua Security. | Aqua Security | `RESERVED` |
 | `dependency-track` | Namespace for use by the Dependency-Track project. | Dependency-Track Maintainers | `RESERVED` |
+| `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [hoppr taxonomy](https://gitlab.com/lmco/hoppr/hoppr/-/blob/main/docs/architecture/cdx_taxonomy.md) |
 | `sonatype` | Namespace for use by Sonatype | Sonatype | `RESERVED` |
 | `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
