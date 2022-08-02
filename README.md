@@ -64,7 +64,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `gitlab` | Namespace for use by GitLab. | GitLab | [GitLab taxonomy](https://gitlab.com/gitlab-org/security-products/gitlab-cyclonedx-property-taxonomy) |
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
 | `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [hoppr taxonomy](https://hoppr.dev/architecture/cdx_taxonomy/) |
-| `sonatype` | Namespace for use by Sonatype | Sonatype | [Sonatype Taxonomy Documentation]() |
+| `sonatype` | Namespace for use by Sonatype | Sonatype | [Sonatype Taxonomy Documentation](https://help.sonatype.com/lift/open-source-vulnerability-analysis/dependency-view/cyclonedx-sonatype-namespace-taxonomy) |
 | `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
 | `tern` | Namespace for use by the Tern project. | Tern Maintainers | [Tern Project](https://github.com/tern-tools/tern) |
