@@ -4,6 +4,7 @@
 | --- | --- | --- | --- |
 | `cdx:device` | Namespace for properties specific to hardware devices. | CycloneDX Core Working Group | [cdx:device taxonomy](cdx/device.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | CycloneDX Go Maintainers | [cdx:gomod taxonomy](cdx/gomod.md) |
+| `cdx:npm` | Namespace for properties specific to the Node NPM ecosystem. | CycloneDX JavaScript Maintainers | [cdx:npm taxonomy](cdx/npm.md) |
 
 ## Registering `cdx` Namespaces and Properties
 
