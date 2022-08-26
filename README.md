@@ -69,6 +69,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
 | `tern` | Namespace for use by the Tern project. | Tern Maintainers | [Tern Project](https://github.com/tern-tools/tern) |
+| `veracode` | Namespace for use by Veracode. | Veracode | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy) |
 
 ## Registering New Top Level Namespaces
 
