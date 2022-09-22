@@ -65,6 +65,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
 | `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/architecture/cdx_taxonomy.html) |
 | `siemens` | Namespace for use by Siemens. | Siemens | `RESERVED` |
+| `snyk` | Namespace for use by Snyk. | Snyk | `RESERVED` |
 | `sonatype` | Namespace for use by Sonatype | Sonatype | [Sonatype Taxonomy Documentation](https://help.sonatype.com/lift/open-source-vulnerability-analysis/dependency-view/cyclonedx-sonatype-namespace-taxonomy) |
 | `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
