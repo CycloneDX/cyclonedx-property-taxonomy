@@ -4,10 +4,8 @@
 | --------- | ----------- |
 | `cdx:poetry:package` | Namespace for package specific properties. |
 
-
 ## `cdx:poetry:package` Namespace Taxonomy
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:poetry:package:category` | The group of dependencies to which the package belongs, as described in https://python-poetry.org/docs/managing-dependencies/#dependency-groups. |
-
+| `cdx:poetry:package:group` | Name of a [dependency group](https://python-poetry.org/docs/managing-dependencies/#dependency-groups) the component belongs to. Well-known groups are: "main", "dev". May appear multiple times with different values. |
