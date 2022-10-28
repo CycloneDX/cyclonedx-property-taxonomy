@@ -62,6 +62,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `dependency-track` | Namespace for use by the Dependency-Track project. | Dependency-Track Maintainers | `RESERVED` |
 | `expliot` | Namespace for use by EXPLIoT. | EXPLIoT | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
 | `finitestate` | Namespace for the use by Finite State. | Finite State | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy) |
+| `fortify` | Namespace for use by Fortify. | Micro Focus | `RESERVED` |
 | `gitlab` | Namespace for use by GitLab. | GitLab | [GitLab taxonomy](https://gitlab.com/gitlab-org/security-products/gitlab-cyclonedx-property-taxonomy) |
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
 | `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/architecture/cdx_taxonomy.html) |
