@@ -66,6 +66,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `gitlab` | Namespace for use by GitLab. | GitLab | [GitLab taxonomy](https://gitlab.com/gitlab-org/security-products/gitlab-cyclonedx-property-taxonomy) |
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
 | `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/architecture/cdx_taxonomy.html) |
+| `ibm` | Namespace for use by IBM. | IBM | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | ServiceNow | `RESERVED` |
 | `siemens` | Namespace for use by Siemens. | Siemens | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy) |
 | `snyk` | Namespace for use by Snyk. | Snyk | `RESERVED` |
