@@ -7,6 +7,7 @@
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | CycloneDX Go Maintainers | [cdx:gomod taxonomy](cdx/gomod.md) |
 | `cdx:npm` | Namespace for properties specific to the Node NPM ecosystem. | CycloneDX JavaScript Maintainers | [cdx:npm taxonomy](cdx/npm.md) |
 | `cdx:poetry` | Namespace for properties specific to the Python Poetry ecosystem. | CycloneDX Python Maintainers | [cdx:poetry taxonomy](cdx/poetry.md) |
+| `cdx:pipenv` | Namespace for properties specific to the Python Pipenv ecosystem. | CycloneDX Python Maintainers | [cdx:pipenv taxonomy](cdx/pipenv.md) |
 
 ## Registering `cdx` Namespaces and Properties
 
