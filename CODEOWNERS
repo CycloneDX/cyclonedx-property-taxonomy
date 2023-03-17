@@ -1,0 +1,18 @@
+# see https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
+
+# see the teams: https://github.com/orgs/CycloneDX/teams
+
+## default
+*	@CycloneDX/core-team
+
+## CDX maintained: dedicated maintainer teams are the subject-matter experts.
+## But @core-team is additional owner, as they are the only ones that can trigger a merge.
+### Go
+/cdx/gomod.md  @CycloneDX/go-maintainers @CycloneDX/core-team
+### JS & Node
+/cdx/npm.md  @CycloneDX/javascript-maintainers @CycloneDX/core-team
+### PHP
+/cdx/composer.md  @CycloneDX/php-maintainers @CycloneDX/core-team
+### Pythpn
+/cdx/pipenv.md  @CycloneDX/python-maintainers @CycloneDX/core-team
+/cdx/poetry.md  @CycloneDX/python-maintainers @CycloneDX/core-team
