@@ -74,7 +74,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `recon` | Namespace for use by the Recon Project. | Recon Project | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | ServiceNow | `RESERVED` |
 | `siemens` | Namespace for use by Siemens. | Siemens | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy) |
-| `snyk` | Namespace for use by Snyk. | Snyk | `RESERVED` |
+| `snyk` | Namespace for use by Snyk. | Snyk | [Snyk Taxonomy Documentation](https://docs.snyk.io/snyk-api-info/get-a-projects-sbom-document-endpoint#custom-cyclonedx-properties) |
 | `sonatype` | Namespace for use by Sonatype | Sonatype | [Sonatype Taxonomy Documentation](https://help.sonatype.com/lift/open-source-vulnerability-analysis/dependency-view/cyclonedx-sonatype-namespace-taxonomy) |
 | `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
