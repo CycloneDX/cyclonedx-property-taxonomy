@@ -59,27 +59,27 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial namespaces and properties MUST NOT be used under the `cdx` namespace. | CycloneDX Core Working Group | [cdx taxonomy](cdx.md) |
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in the local namespace. | CycloneDX Core Working Group | N/A |
 | `urn` | Namespace blocked to prevent confusions with [Uniform Resource Name](https://www.rfc-editor.org/rfc/rfc2141) | N/A | N/A |
-| `aboutcode` | Namespace for use by AboutCode projects. | nexB | [AboutCode taxonomy](https://github.com/nexB/aboutcode-cyclonedx-taxonomy) |
-| `appknox` | Namespace for use by Appknox Platform. | Appknox | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy) |
+| `aboutcode` | Namespace for use by AboutCode projects. | nexB | [AboutCode taxonomy](https://github.com/nexB/aboutcode-cyclonedx-taxonomy#readme) |
+| `appknox` | Namespace for use by Appknox Platform. | Appknox | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | Aqua Security | `RESERVED` |
 | `dependency-track` | Namespace for use by the Dependency-Track project. | Dependency-Track Maintainers | `RESERVED` |
 | `expliot` | Namespace for use by EXPLIoT. | EXPLIoT | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
-| `finitestate` | Namespace for the use by Finite State. | Finite State | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy) |
+| `finitestate` | Namespace for the use by Finite State. | Finite State | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy#readme) |
 | `fortify` | Namespace for use by Fortify. | Micro Focus | `RESERVED` |
 | `gitlab` | Namespace for use by GitLab. | GitLab | [GitLab taxonomy](https://gitlab.com/gitlab-org/security-products/gitlab-cyclonedx-property-taxonomy) |
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
-| `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/architecture/cdx_taxonomy.html) |
+| `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/docs/architecture/cdx-taxonomy/) |
 | `ibm` | Namespace for use by IBM. | IBM | `RESERVED` |
 | `medical-aegis` | Namespace for use by Medical Aegis. | Medical Aegis | `RESERVED` |
 | `recon` | Namespace for use by the Recon Project. | Recon Project | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | ServiceNow | `RESERVED` |
-| `siemens` | Namespace for use by Siemens. | Siemens | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy) |
+| `siemens` | Namespace for use by Siemens. | Siemens | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy#readme) |
 | `snyk` | Namespace for use by Snyk. | Snyk | [Snyk Taxonomy Documentation](https://docs.snyk.io/snyk-api-info/get-a-projects-sbom-document-endpoint#custom-cyclonedx-properties) |
 | `sonatype` | Namespace for use by Sonatype | Sonatype | [Sonatype Taxonomy Documentation](https://help.sonatype.com/lift/open-source-vulnerability-analysis/dependency-view/cyclonedx-sonatype-namespace-taxonomy) |
-| `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom) |
+| `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom#readme) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
 | `tern` | Namespace for use by the Tern project. | Tern Maintainers | [Tern Project](https://github.com/tern-tools/tern) |
-| `veracode` | Namespace for use by Veracode. | Veracode | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy) |
+| `veracode` | Namespace for use by Veracode. | Veracode | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 
 ## Registering New Top Level Namespaces
 
