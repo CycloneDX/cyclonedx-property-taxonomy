@@ -62,6 +62,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `aboutcode` | Namespace for use by AboutCode projects. | nexB | [AboutCode taxonomy](https://github.com/nexB/aboutcode-cyclonedx-taxonomy#readme) |
 | `appknox` | Namespace for use by Appknox Platform. | Appknox | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | Aqua Security | `RESERVED` |
+| `codenotary` | Namespace for use by Codenotary platform. | Codenotary | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy) |
 | `dependency-track` | Namespace for use by the Dependency-Track project. | Dependency-Track Maintainers | `RESERVED` |
 | `expliot` | Namespace for use by EXPLIoT. | EXPLIoT | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
 | `finitestate` | Namespace for the use by Finite State. | Finite State | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy#readme) |
