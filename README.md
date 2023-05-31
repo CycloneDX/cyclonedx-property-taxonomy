@@ -60,6 +60,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in the local namespace. | CycloneDX Core Working Group | N/A |
 | `urn` | Namespace blocked to prevent confusions with [Uniform Resource Name](https://www.rfc-editor.org/rfc/rfc2141) | N/A | N/A |
 | `aboutcode` | Namespace for use by AboutCode projects. | nexB | [AboutCode taxonomy](https://github.com/nexB/aboutcode-cyclonedx-taxonomy#readme) |
+| `amazon` | Namespace for use by Amazon. | Amazon | `RESERVED` |
 | `appknox` | Namespace for use by Appknox Platform. | Appknox | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | Aqua Security | `RESERVED` |
 | `codenotary` | Namespace for use by Codenotary platform. | Codenotary | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy) |
