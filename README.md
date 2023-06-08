@@ -68,7 +68,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `expliot` | Namespace for use by EXPLIoT. | EXPLIoT | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
 | `finitestate` | Namespace for the use by Finite State. | Finite State | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy#readme) |
 | `fortify` | Namespace for use by Fortify. | Micro Focus | `RESERVED` |
-| `gitlab` | Namespace for use by GitLab. | GitLab | [GitLab taxonomy](https://gitlab.com/gitlab-org/security-products/gitlab-cyclonedx-property-taxonomy) |
+| `gitlab` | Namespace for use by GitLab. | GitLab | [GitLab taxonomy](https://docs.gitlab.com/ee/development/sec/cyclonedx_property_taxonomy.html) |
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
 | `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/docs/architecture/cdx-taxonomy/) |
 | `ibm` | Namespace for use by IBM. | IBM | `RESERVED` |
