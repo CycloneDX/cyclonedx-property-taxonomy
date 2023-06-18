@@ -8,4 +8,4 @@
 
 | Property                 | Description                                                                                       |
 | ------------------------ | ------------------------------------------------------------------------------------------------- |
-| `cdx:k8s:component:role` | Role of the Kubernetes component (api-server,kubelet,etc.)                                        |
+| `cdx:k8s:component:role` | Role of the [Kubernetes component](https://kubernetes.io/docs/concepts/overview/components/).     |
