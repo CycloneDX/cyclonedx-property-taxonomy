@@ -63,6 +63,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `amazon` | Namespace for use by Amazon. | Amazon | `RESERVED` |
 | `appknox` | Namespace for use by Appknox Platform. | Appknox | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | Aqua Security | `RESERVED` |
+| `bytetrail` | Namespace for use by ByteTrail. | ByteTrail | `RESERVED` | 
 | `codenotary` | Namespace for use by Codenotary platform. | Codenotary | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy) |
 | `dependency-track` | Namespace for use by the Dependency-Track project. | Dependency-Track Maintainers | `RESERVED` |
 | `expliot` | Namespace for use by EXPLIoT. | EXPLIoT | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
