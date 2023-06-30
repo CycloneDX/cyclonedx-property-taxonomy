@@ -73,6 +73,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `grype` | Namespace for use by the Grype project. | Grype Maintainers | [Grype Project](https://github.com/anchore/grype) |
 | `hoppr` | Namespace for the use by the Hoppr project. | Lockheed Martin | [Hoppr Project](https://hoppr.dev/docs/architecture/cdx-taxonomy/) |
 | `ibm` | Namespace for use by IBM. | IBM | `RESERVED` |
+| `ksoc` | Namespace for use by KSOC. | KSOC | [KSOC taxonomy](https://github.com/ksoclabs/kbom/blob/main/docs/taxonomy.md) |
 | `medical-aegis` | Namespace for use by Medical Aegis. | Medical Aegis | `RESERVED` |
 | `recon` | Namespace for use by the Recon Project. | Recon Project | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | ServiceNow | `RESERVED` |
