@@ -1,7 +1,13 @@
-## `cdx` Namespace Taxonomy
+# `cdx` Namespace Taxonomy
+
+_Boolean value_ are `true` or `false`. Case sensitive.
+
+| Property | Description |
+| -------- | ----------- |
+| `cdx:reproducible` | Whether the CycloneDX document has been generated in a reproducible manner: if so, then time- or random-based values MUST be omitted, and elements order SHOULD be reproducible. _Boolean value_. May appear once. |
 
 | Namespace | Description | Administered By | Taxonomy |
-| --- | --- | --- | --- |
+| --------- | ----------- | --------------- | -------- |
 | `cdx:composer` | Namespace for properties specific to the PHP Composer ecosystem. | CycloneDX PHP Maintainers | [cdx:composer taxonomy](cdx/composer.md) |
 | `cdx:device` | Namespace for properties specific to hardware devices. | CycloneDX Core Working Group | [cdx:device taxonomy](cdx/device.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | CycloneDX Go Maintainers | [cdx:gomod taxonomy](cdx/gomod.md) |
