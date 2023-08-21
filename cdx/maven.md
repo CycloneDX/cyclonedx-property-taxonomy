@@ -10,6 +10,9 @@ _Boolean value_ are `true` or `false`. Case insensitive.
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:maven:package:goal` | The goal used to generate the SBOM: `makeBom`, `makeAggregateBom` or `makePackageBom`. May appear once. |
-| `cdx:maven:package:scope` | An activated Maven dependency scope: `compile`, `provided`, `runtime`, `system` or `test`. |
+| `cdx:maven:package:goal` | The [goal] used to generate the SBOM: `makeBom`, `makeAggregateBom` or `makePackageBom`. May appear once. |
+| `cdx:maven:package:scope` | An activated Maven [dependency scope]: `compile`, `provided`, `runtime`, `system` or `test`. |
 | `cdx:maven:package:optional-unused` | Use bytecode analysis instead of Maven dependency declaration of optional to define SBOM OPTIONAL or REQUIRED scope. _Boolean value_. If the property is missing, then assume the value to be `false`. May appear once. |
+
+[goal]: https://github.com/CycloneDX/cyclonedx-maven-plugin#goals
+[dependency scope]: https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Scope
