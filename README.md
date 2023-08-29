@@ -34,8 +34,8 @@ Namespaces SHOULD be lower case. Base property names MAY use upper case.
 ### Examples
 
 ```
-local:information_security_classification
-local:team_responsible
+internal:information_security_classification
+internal:team_responsible
 ```
 
 ### ABNF for Official CycloneDX Property Names
@@ -81,6 +81,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `snyk` | Namespace for use by Snyk. | Snyk | [Snyk Taxonomy Documentation](https://docs.snyk.io/snyk-api-info/get-a-projects-sbom-document-endpoint#custom-cyclonedx-properties) |
 | `sonatype` | Namespace for use by Sonatype | Sonatype | [Sonatype Taxonomy Documentation](https://help.sonatype.com/lift/open-source-vulnerability-analysis/dependency-view/cyclonedx-sonatype-namespace-taxonomy) |
 | `spack` | Namespace for use by the Spack package manager. | Spack Maintainers | [Spack SBOM Project](https://github.com/spack/spack-sbom#readme) |
+| `spdx` | Namespace for interop with the SPDX format. | CycloneDX Core Working Group | [spdx taxonomy](spdx/spdx.md) |
 | `syft` | Namespace for use by the Syft project. | Syft Maintainers | [Syft Project](https://github.com/anchore/syft) |
 | `tern` | Namespace for use by the Tern project. | Tern Maintainers | [Tern Project](https://github.com/tern-tools/tern) |
 | `veracode` | Namespace for use by Veracode. | Veracode | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
