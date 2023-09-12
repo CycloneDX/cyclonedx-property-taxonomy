@@ -33,14 +33,14 @@ Namespaces SHOULD be lower case. Base property names MAY use upper case.
 
 ### Examples
 
-```
+```text
 local:information_security_classification
 local:team_responsible
 ```
 
 ### ABNF for Official CycloneDX Property Names
 
-```
+```ABNF
 property-name = 1*(namespace ":") name
 
 namespace     = 1*namechar
