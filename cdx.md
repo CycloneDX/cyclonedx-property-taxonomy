@@ -8,13 +8,14 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 
 | Namespace | Description | Administered By | Taxonomy |
 | --------- | ----------- | --------------- | -------- |
+| `cdx:cargo` | Namespace for properties specific to the Rust package manager Cargo. | [CycloneDX Rust Maintainers] | `RESERVED` |
 | `cdx:composer` | Namespace for properties specific to the PHP Composer ecosystem. | [CycloneDX PHP Maintainers] | [cdx:composer taxonomy](cdx/composer.md) |
 | `cdx:device` | Namespace for properties specific to hardware devices. | [CycloneDX Core Working Group] | [cdx:device taxonomy](cdx/device.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | [CycloneDX Go Maintainers] | [cdx:gomod taxonomy](cdx/gomod.md) |
 | `cdx:npm` | Namespace for properties specific to the Node NPM ecosystem. | [CycloneDX JavaScript Maintainers] | [cdx:npm taxonomy](cdx/npm.md) |
 | `cdx:pipenv` | Namespace for properties specific to the Python Pipenv ecosystem. | [CycloneDX Python Maintainers] | [cdx:pipenv taxonomy](cdx/pipenv.md) |
 | `cdx:poetry` | Namespace for properties specific to the Python Poetry ecosystem. | [CycloneDX Python Maintainers] | [cdx:poetry taxonomy](cdx/poetry.md) |
-| `cdx:rustcmespace for properties specific to the Python Poetry ecosystem. | [CycloneDX Python Maintainers] | [cdx:poetry taxonomy](cdx/poetry.md) |
+| `cdx:rustc` | Namespace for properties specific to the Rust compiler rustc. | [CycloneDX Rust Maintainers] | [cdx:rustc taxonomy](cdx/rustc.md) |
 
 ## Registering `cdx` Namespaces and Properties
 
@@ -33,3 +34,4 @@ table above.
 [CycloneDX Go Maintainers]: https://github.com/orgs/CycloneDX/teams/go-maintainers
 [CycloneDX Python Maintainers]: https://github.com/orgs/CycloneDX/teams/python-maintainers
 [CycloneDX JavaScript Maintainers]: https://github.com/orgs/CycloneDX/teams/javascript-maintainers
+[CycloneDX Rust Maintainers]: https://github.com/orgs/CycloneDX/teams/rust-maintainers
