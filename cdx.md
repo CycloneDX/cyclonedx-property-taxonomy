@@ -4,7 +4,7 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:reproducible` | Whether the CycloneDX document has been generated in a reproducible manner: if so, then time- or random-based values MUST be omitted, and elements order SHOULD be reproducible. _Boolean value_. May appear once. |
+| `cdx:reproducible` | Whether the CycloneDX document has been generated in a reproducible manner: if so, then time- or random-based values MUST be omitted, and elements order SHOULD be reproducible. _Boolean value_. May appear only once. Should go to either `$.properties` or `$.metadata.properties`. |
 
 | Namespace | Description | Administered By | Taxonomy |
 | --------- | ----------- | --------------- | -------- |
