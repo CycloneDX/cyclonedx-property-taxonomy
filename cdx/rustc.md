@@ -12,6 +12,8 @@ This namespace is used for recording information that is used by the Rust compil
 | --------- | ----------- |
 | `cdx:rustc:meta:target` | Records the information about the build target for the entire build. |
 
+## `cdx:rustc:meta:target` Namespace Taxonomy
+
 | Property  | Description                                                       |
 | --------------------- | ----------------------------------------------------------------- |
 | `cdx:rustc:meta:target:triple` | The target triple used for the build (e.g. `x86_64-unknown-linux-gnu`). Its presence indicates that the list of dependency packages in the [`components`] field will only include dependencies used for this one target, matching the dependencies of the compiled binary for this target. All known targets are documented [here](https://doc.rust-lang.org/nightly/rustc/platform-support.html) and the list evolves over time. Details about a specific target triple can be obtained by running `rustc --print=cfg --target=$TRIPLE` |
