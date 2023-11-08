@@ -1,5 +1,20 @@
 ## `cdx:rustc` Namespace Taxonomy
 
-| Namespace             | Description                                                       |
+This namespace is used for recording information that is used by the Rust compiler, `rustc`, irrespective of the build system. For properties specific to the Rust build system, Cargo, please refer to the `cargo` namespace.
+
+| Namespace | Description |
+| --------- | ----------- |
+| `cdx:rustc:meta` | Namespace for information about the SBOM and properties that apply to the entire build. May only appear only in the [`metadata`](https://cyclonedx.org/docs/1.5/json/#metadata_properties) field, and not in any other fields. |
+
+## `cdx:rustc:meta` Namespace Taxonomy
+
+| Namespace | Description |
+| --------- | ----------- |
+| `cdx:rustc:meta:target` | Records the information about the build target for the entire build. |
+
+| Property  | Description                                                       |
 | --------------------- | ----------------------------------------------------------------- |
-| `cdx:rustc:target`    | Property for the target triple (e.g. `x86_64-unknown-linux-gnu`). |
+| `cdx:rustc:meta:target:triple` | The target triple used for the build (e.g. `x86_64-unknown-linux-gnu`). Its presence indicates that the list of dependency packages in the [`components`] field will only include dependencies used for this one target, matching the dependencies of the compiled binary for this target. All known targets are documented [here](https://doc.rust-lang.org/nightly/rustc/platform-support.html) and the list evolves over time. Details about a specific target triple can be obtained by running `rustc --print=cfg --target=$TRIPLE` |
+| `cdx:rustc:meta:target:all_targets` | Indicates that the SBOM includes dependency packages from all possible targets in the [`components`] field, rather than for a single specific target. |
+
+[components]: https://cyclonedx.org/docs/1.5/json/#components
