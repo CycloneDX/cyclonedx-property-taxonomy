@@ -1,10 +1,13 @@
 # `cdx` Namespace Taxonomy
 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL"
+in this document are to be interpreted as described in [RFC2119](http://www.ietf.org/rfc/rfc2119.txt).
+
 _Boolean value_ are `true` or `false`. Case sensitive.
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:reproducible` | Whether the CycloneDX document has been generated in a reproducible manner: if so, then time- or random-based values MUST be omitted, and elements order SHOULD be reproducible. _Boolean value_. May appear once. |
+| `cdx:reproducible` | Whether the CycloneDX document has been generated in a reproducible manner: if so, then time- or random-based values MUST be omitted, and elements order SHOULD be reproducible. _Boolean value_. MAY appear only once. SHOULD go to either `$.properties` or `$.metadata.properties`. |
 
 | Namespace | Description | Administered By | Taxonomy |
 | --------- | ----------- | --------------- | -------- |
