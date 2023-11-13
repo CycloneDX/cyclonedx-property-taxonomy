@@ -1,11 +1,11 @@
 # `cdx:pipenv` Namespace Taxonomy
 
+| Property | Description |
+| -------- | ----------- |
+| `cdx:pipenv:category` | Name of a [category](https://pipenv.pypa.io/en/latest/pipfile.html#package-category-groups) the component belongs to. Well-known categories are: "default", "develop". May appear multiple times with different values. |
+
 | Namespace | Description |
 | --------- | ----------- |
 | `cdx:pipenv:package` | Namespace for package specific properties. |
 
-## `cdx:pipenv:package` Namespace Taxonomy
 
-| Property | Description |
-| -------- | ----------- |
-| `cdx:pipenv:category` | Name of a [package category](https://pipenv.pypa.io/en/latest/basics/#specifying-package-categories) the component belongs to. Well-known categories are: "default", "develop". May appear multiple times with different values. |
