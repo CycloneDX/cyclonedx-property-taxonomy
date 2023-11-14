@@ -11,6 +11,12 @@
 
 ## `cdx:poetry:package` Namespace Taxonomy
 
+| Namespace | Description |
+| --------- | ----------- |
+| `cdx:poetry:package:source` | Namespace for package-source specific properties. |
+
+## `cdx:poetry:package:source` Namespace Taxonomy
+
 | Property | Description |
 | -------- | ----------- |
 | `cdx:poetry:package:source:reference` | The repository reference of this package, e.g. master, 1.0.0 or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
