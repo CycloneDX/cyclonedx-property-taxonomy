@@ -15,3 +15,5 @@
 | -------- | ----------- |
 | `cdx:poetry:package:reference` | The repository reference of this package, e.g. master, 1.0.0 or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 | `cdx:poetry:package:resolved_reference` | The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+
+[CDX-useCases-externalReferences]: https://cyclonedx.org/use-cases/#external-references
