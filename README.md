@@ -77,7 +77,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `ksoc` | Namespace for use by KSOC. | [KSOC](https://github.com/ksoclabs) | [KSOC taxonomy](https://github.com/ksoclabs/kbom/blob/main/docs/taxonomy.md) |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
 | `recon` | Namespace for use by the Recon Project. | [Recon Project](https://github.com/rusty-ferris-club/recon) | `RESERVED` |
-| `scribe` | Namespace for use by Scribe Security | [Stackable](https://scribesecurity.com) | `RESERVED` |
+| `scribe` | Namespace for use by Scribe Security | [Scribe Security](https://scribesecurity.com) | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | [ServiceNow](https://github.com/ServiceNow) | `RESERVED` |
 | `siemens` | Namespace for use by Siemens. | [Siemens](https://github.com/siemens) | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy#readme) |
 | `snyk` | Namespace for use by Snyk. | [Snyk](https://github.com/snyk) | [Snyk Taxonomy Documentation](https://docs.snyk.io/snyk-api-info/get-a-projects-sbom-document-endpoint#custom-cyclonedx-properties) |
