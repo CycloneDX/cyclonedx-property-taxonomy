@@ -103,4 +103,4 @@ Before using your `RESERVED` namespace, documentation for the taxonomy of the
 namespace SHOULD be publicly available. Failure to do so MAY result in the
 namespace reservation being revoked.
 
-An example is the [cdx taxonomy](cdx.md).
+An example is the [`cdx` taxonomy](cdx.md).
