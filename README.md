@@ -19,7 +19,7 @@ The authoritative source of official namespaces and property names is this repos
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
-interpreted as described in [RFC2119](http://www.ietf.org/rfc/rfc2119.txt).
+interpreted as described in [RFC2119]https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Namespace Syntax
 
