@@ -77,6 +77,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `interlynk` | Namespace for use by Interlynk. | [Interlynk](https://github.com/interlynk-io) | `RESERVED` |
 | `ksoc` | Namespace for use by KSOC. | [KSOC](https://github.com/ksoclabs) | [KSOC taxonomy](https://github.com/ksoclabs/kbom/blob/main/docs/taxonomy.md) |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
+| `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
 | `recon` | Namespace for use by the Recon Project. | [Recon Project](https://github.com/rusty-ferris-club/recon) | `RESERVED` |
 | `scribe` | Namespace for use by Scribe Security | [Scribe Security](https://github.com/scribe-security) | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | [ServiceNow](https://github.com/ServiceNow) | `RESERVED` |
