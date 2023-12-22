@@ -7,5 +7,3 @@
 | Namespace | Description |
 | --------- | ----------- |
 | `cdx:pipenv:package` | Namespace for package specific properties. |
-
-
