@@ -72,7 +72,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `fortify` | Namespace for use by Fortify. | [Micro Focus](https://github.com/MicroFocus) | `RESERVED` |
 | `gitlab` | Namespace for use by GitLab. | [GitLab](https://gitlab.com) | [GitLab taxonomy](https://docs.gitlab.com/ee/development/sec/cyclonedx_property_taxonomy.html) |
 | `grype` | Namespace for use by the Grype project. | [Grype Maintainers](https://github.com/anchore/grype) | `RESERVED` |
-| `hoppr` | Namespace for the use by the Hoppr project. | [Lockheed Martin](https://hoppr.dev) | `RESERVED` |
+| `hoppr` | Namespace for the use by the Hoppr project. | [Lockheed Martin](https://hoppr.dev) | [Hoppr Taxonomy Documentation](https://hoppr.dev/docs/architecture/cdx-taxonomy) |
 | `ibm` | Namespace for use by IBM. | [IBM](https://github.com/IBM) | `RESERVED` |
 | `interlynk` | Namespace for use by Interlynk. | [Interlynk](https://github.com/interlynk-io) | [Interlynk taxonomy](https://github.com/interlynk-io/cyclonedx-property-taxonomy) |
 | `ksoc` | Namespace for use by KSOC. | [KSOC](https://github.com/ksoclabs) | [KSOC taxonomy](https://github.com/ksoclabs/kbom/blob/main/docs/taxonomy.md) |
