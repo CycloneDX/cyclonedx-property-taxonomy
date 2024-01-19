@@ -60,6 +60,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in this namespace. | N/A | N/A |
 | `urn` | Namespace blocked to prevent confusions with [Uniform Resource Name](https://datatracker.ietf.org/doc/html/rfc2141) | N/A | N/A |
 | `aboutcode` | Namespace for use by AboutCode projects. | [nexB](https://github.com/nexB) | [AboutCode taxonomy](https://github.com/nexB/aboutcode-cyclonedx-taxonomy#readme) |
+| `accellence` | Namespace for use by Accellence Technologies. | [AccellenceTechnologies](https://github.com/AccellenceTechnologies) | [Accellence taxonomy](https://github.com/AccellenceTechnologies/cyclonedx-property-taxonomy#readme) |
 | `amazon` | Namespace for use by Amazon. | [Amazon](https://github.com/amzn) | `RESERVED` |
 | `appknox` | Namespace for use by Appknox Platform. | [Appknox](https://github.com/appknox) | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | [Aqua Security](https://github.com/aquasecurity) | `RESERVED` |
