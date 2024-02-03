@@ -10,7 +10,7 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:python:package:required-extra` | The package's extra that was required. _Non-empty string value_. May appear multiple times with different values. |
+| `cdx:python:package:required-extra` | The package's extra that was required. Value MAY be [normalized](https://packaging.python.org/en/latest/specifications/name-normalization/). _Non-empty string value_. May appear multiple times with different values. |
 
 | Namespace | Description |
 | --------- | ----------- |
