@@ -1,21 +1,33 @@
 # CycloneDX Property Taxonomy
 
-[![License](https://img.shields.io/badge/license-apache%20v2-brightgreen.svg)](https://github.com/CycloneDX/cyclonedx-property-taxonomy/blob/master/LICENSE)
-[![Website](https://img.shields.io/badge/https://-cyclonedx.org-blue.svg)](https://cyclonedx.org/)
-[![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack&labelColor=393939)](https://cyclonedx.org/slack/invite)
-[![Group Discussion](https://img.shields.io/badge/discussion-groups.io-blue.svg)](https://groups.io/g/CycloneDX)
-[![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/CycloneDX_Spec)
+[![shield_license]][license_file]
+[![shield_website]][link_website]
+[![shield_slack]][link_slack]
+[![shield_groups]][link_discussion]
+[![shield_twitter-follow]][link_twitter]
 
-This is the official CycloneDX property namespace and name taxonomy.
+This is the official [CycloneDX][link_website] property namespace and name taxonomy.
+
+[shield_license]: https://img.shields.io/github/license/CycloneDX/cyclonedx-property-taxonomy?logo=open%20source%20initiative&logoColor=white "license"
+[shield_website]: https://img.shields.io/badge/https://-cyclonedx.org-blue.svg "homepage"
+[shield_slack]: https://img.shields.io/badge/slack-join-blue?logo=Slack&logoColor=white "slack join"
+[shield_groups]: https://img.shields.io/badge/discussion-groups.io-blue.svg "groups discussion"
+[shield_twitter-follow]: https://img.shields.io/badge/Twitter-follow-blue?logo=Twitter&logoColor=white "twitter follow"
+[license_file]: https://github.com/CycloneDX/cyclonedx-property-taxonomy/blob/main/LICENSE
+[link_website]: https://cyclonedx.org/
+[link_slack]: https://cyclonedx.org/slack/invite
+[link_discussion]: https://groups.io/g/CycloneDX
+[link_twitter]: https://twitter.com/CycloneDX_Spec
 
 ## Introduction
 
-With the v1.3 release of the specification, custom properties have been added.
+With the v1.3 release of the [CycloneDX specification](https://github.com/CycloneDX/specification), custom properties have been added.
 
 Although the specification doesn't impose restrictions on the property names used,
 standardization can assist tool implementers and BOM consumers.
 
-The authoritative source of official namespaces and property names is this repository.
+The authoritative source of official namespaces and property names is
+[this repository](https://github.com/CycloneDX/cyclonedx-property-taxonomy).
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
