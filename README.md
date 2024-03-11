@@ -66,6 +66,13 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 
 ## Registered Top Level Namespaces
 
+Regardless of other licensing attributes in this repository or document,  
+the following table (called "registry") is marked with
+<a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block">
+  CC0 1.0
+  <img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" />
+</a>
+
 | Namespace | Description | Administered By | Taxonomy |
 | --- | --- | --- | --- |
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial namespaces and properties MUST NOT be used under the `cdx` namespace. | [CycloneDX Core Working Group](https://github.com/orgs/CycloneDX) | [cdx taxonomy](cdx.md) |
