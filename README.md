@@ -74,8 +74,7 @@ the following table (called "registry") is marked with
   The attributation icons might look broken in githubs's rendered markdown view,
   but they appear correct in any other mardown viewer, and most importantly
   they appear perfectly fine in the generated web publication: https://cyclonedx.github.io/cyclonedx-property-taxonomy/
-  -->
-  <img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" />
+  --><img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" />
 </a>
 
 | Namespace | Description | Administered By | Taxonomy |
