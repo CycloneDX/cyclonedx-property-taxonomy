@@ -112,7 +112,7 @@ the following table (called "registry") is marked with
 | `stackable` | Namespace for use by Stackable | [Stackable](https://github.com/stackabletech) | `RESERVED` |
 | `syft` | Namespace for use by the Syft project. | [Syft Maintainers](https://github.com/anchore/syft) | `RESERVED` |
 | `tern` | Namespace for use by the Tern project. | [Tern Maintainers](https://github.com/tern-tools/tern) | `RESERVED` |
-| `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracod) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
+| `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 
 ## Registering New Top Level Namespaces
 
