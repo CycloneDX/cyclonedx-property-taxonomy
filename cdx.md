@@ -19,7 +19,7 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 | `cdx:pipenv`    | Namespace for properties specific to the Python Pipenv ecosystem.      | [CycloneDX Python Maintainers]     | [cdx:pipenv taxonomy](cdx/pipenv.md)       |
 | `cdx:poetry`    | Namespace for properties specific to the Python Poetry ecosystem.      | [CycloneDX Python Maintainers]     | [cdx:poetry taxonomy](cdx/poetry.md)       |
 | `cdx:python`    | Namespace for properties specific to the Python general packaging.     | [CycloneDX Python Maintainers]     | [cdx:python taxonomy](cdx/python.md)       |
-| `cdx:rustc`     | Namespace for properties specific to the Rust compiler, `rustc`.       | [CycloneDX Rust Maintainers]      | [cdx:rustc taxonomy](cdx/rustc.md) |
+| `cdx:rustc`     | Namespace for properties specific to the Rust compiler, `rustc`.       | [CycloneDX Rust Maintainers]       | [cdx:rustc taxonomy](cdx/rustc.md) |
 
 ## Registering `cdx` Namespaces and Properties
 
