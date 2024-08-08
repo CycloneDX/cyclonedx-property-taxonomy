@@ -1,25 +1,37 @@
 # CycloneDX Property Taxonomy
 
-[![License](https://img.shields.io/badge/license-apache%20v2-brightgreen.svg)](https://github.com/CycloneDX/cyclonedx-property-taxonomy/blob/master/LICENSE)
-[![Website](https://img.shields.io/badge/https://-cyclonedx.org-blue.svg)](https://cyclonedx.org/)
-[![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack&labelColor=393939)](https://cyclonedx.org/slack/invite)
-[![Group Discussion](https://img.shields.io/badge/discussion-groups.io-blue.svg)](https://groups.io/g/CycloneDX)
-[![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/CycloneDX_Spec)
+[![shield_license]][license_file]
+[![shield_website]][link_website]
+[![shield_slack]][link_slack]
+[![shield_groups]][link_discussion]
+[![shield_twitter-follow]][link_twitter]
 
-This is the official CycloneDX property namespace and name taxonomy.
+This is the official [CycloneDX][link_website] property namespace and name taxonomy.
+
+[shield_license]: https://img.shields.io/github/license/CycloneDX/cyclonedx-property-taxonomy?logo=open%20source%20initiative&logoColor=white "license"
+[shield_website]: https://img.shields.io/badge/https://-cyclonedx.org-blue.svg "homepage"
+[shield_slack]: https://img.shields.io/badge/slack-join-blue?logo=Slack&logoColor=white "slack join"
+[shield_groups]: https://img.shields.io/badge/discussion-groups.io-blue.svg "groups discussion"
+[shield_twitter-follow]: https://img.shields.io/badge/Twitter-follow-blue?logo=Twitter&logoColor=white "twitter follow"
+[license_file]: https://github.com/CycloneDX/cyclonedx-property-taxonomy/blob/main/LICENSE
+[link_website]: https://cyclonedx.org/
+[link_slack]: https://cyclonedx.org/slack/invite
+[link_discussion]: https://groups.io/g/CycloneDX
+[link_twitter]: https://twitter.com/CycloneDX_Spec
 
 ## Introduction
 
-With the v1.3 release of the specification, custom properties have been added.
+With the v1.3 release of the [CycloneDX specification](https://github.com/CycloneDX/specification), custom properties have been added.
 
 Although the specification doesn't impose restrictions on the property names used,
 standardization can assist tool implementers and BOM consumers.
 
-The authoritative source of official namespaces and property names is this repository.
+The authoritative source of official namespaces and property names is
+[this repository](https://github.com/CycloneDX/cyclonedx-property-taxonomy).
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
-interpreted as described in [RFC2119](http://www.ietf.org/rfc/rfc2119.txt).
+interpreted as described in [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Namespace Syntax
 
@@ -54,12 +66,24 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 
 ## Registered Top Level Namespaces
 
+Regardless of other licensing attributes in this repository or document,  
+the following table (called "registry") is marked with
+<a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block">
+  CC0 1.0
+  <img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" />
+  <!-- The attributation icons might look broken in githubs's rendered markdown view,
+   but they appear correct in any other mardown viewer, and most importantly
+   they appear perfectly fine in the generated web publication: https://cyclonedx.github.io/cyclonedx-property-taxonomy/
+  -->
+</a>
+
 | Namespace | Description | Administered By | Taxonomy |
 | --- | --- | --- | --- |
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial namespaces and properties MUST NOT be used under the `cdx` namespace. | [CycloneDX Core Working Group](https://github.com/orgs/CycloneDX) | [cdx taxonomy](cdx.md) |
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in this namespace. | N/A | N/A |
-| `urn` | Namespace blocked to prevent confusions with [Uniform Resource Name](https://www.rfc-editor.org/rfc/rfc2141) | N/A | N/A |
+| `urn` | Namespace blocked to prevent confusions with [Uniform Resource Name](https://datatracker.ietf.org/doc/html/rfc2141) | N/A | N/A |
 | `aboutcode` | Namespace for use by AboutCode projects. | [nexB](https://github.com/nexB) | [AboutCode taxonomy](https://github.com/nexB/aboutcode-cyclonedx-taxonomy#readme) |
+| `accellence` | Namespace for use by Accellence Technologies. | [AccellenceTechnologies](https://github.com/AccellenceTechnologies) | [Accellence taxonomy](https://github.com/AccellenceTechnologies/cyclonedx-property-taxonomy#readme) |
 | `amazon` | Namespace for use by Amazon. | [Amazon](https://github.com/amzn) | `RESERVED` |
 | `appknox` | Namespace for use by Appknox Platform. | [Appknox](https://github.com/appknox) | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | [Aqua Security](https://github.com/aquasecurity) | `RESERVED` |
@@ -72,11 +96,15 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `fortify` | Namespace for use by Fortify. | [Micro Focus](https://github.com/MicroFocus) | `RESERVED` |
 | `gitlab` | Namespace for use by GitLab. | [GitLab](https://gitlab.com) | [GitLab taxonomy](https://docs.gitlab.com/ee/development/sec/cyclonedx_property_taxonomy.html) |
 | `grype` | Namespace for use by the Grype project. | [Grype Maintainers](https://github.com/anchore/grype) | `RESERVED` |
-| `hoppr` | Namespace for the use by the Hoppr project. | [Lockheed Martin](https://hoppr.dev/) | `RESERVED` |
+| `hoppr` | Namespace for the use by the Hoppr project. | [Lockheed Martin](https://hoppr.dev) | [Hoppr Taxonomy Documentation](https://hoppr.dev/docs/architecture/cdx-taxonomy) |
 | `ibm` | Namespace for use by IBM. | [IBM](https://github.com/IBM) | `RESERVED` |
+| `interlynk` | Namespace for use by Interlynk. | [Interlynk](https://github.com/interlynk-io) | [Interlynk taxonomy](https://github.com/interlynk-io/cyclonedx-property-taxonomy) |
 | `ksoc` | Namespace for use by KSOC. | [KSOC](https://github.com/ksoclabs) | [KSOC taxonomy](https://github.com/ksoclabs/kbom/blob/main/docs/taxonomy.md) |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
+| `nix` | Namespace for Nix properties. | [Nixpkgs Maintainers](https://github.com/NixOS/nixpkgs/) | [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/#sec-interop.cylonedx-nix) |
+| `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
 | `recon` | Namespace for use by the Recon Project. | [Recon Project](https://github.com/rusty-ferris-club/recon) | `RESERVED` |
+| `scribe` | Namespace for use by Scribe Security | [Scribe Security](https://github.com/scribe-security) | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | [ServiceNow](https://github.com/ServiceNow) | `RESERVED` |
 | `siemens` | Namespace for use by Siemens. | [Siemens](https://github.com/siemens) | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy#readme) |
 | `snyk` | Namespace for use by Snyk. | [Snyk](https://github.com/snyk) | [Snyk Taxonomy Documentation](https://docs.snyk.io/snyk-api-info/get-a-projects-sbom-document-endpoint#custom-cyclonedx-properties) |
@@ -85,7 +113,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 | `stackable` | Namespace for use by Stackable | [Stackable](https://github.com/stackabletech) | `RESERVED` |
 | `syft` | Namespace for use by the Syft project. | [Syft Maintainers](https://github.com/anchore/syft) | `RESERVED` |
 | `tern` | Namespace for use by the Tern project. | [Tern Maintainers](https://github.com/tern-tools/tern) | `RESERVED` |
-| `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracod) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
+| `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 
 ## Registering New Top Level Namespaces
 
@@ -101,4 +129,4 @@ Before using your `RESERVED` namespace, documentation for the taxonomy of the
 namespace SHOULD be publicly available. Failure to do so MAY result in the
 namespace reservation being revoked.
 
-An example is the [cdx taxonomy](cdx.md).
+An example is the [`cdx` taxonomy](cdx.md).
