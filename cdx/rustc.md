@@ -14,7 +14,7 @@ _Target triple string_ is a case-sensitive string matching one of the Rust compi
 
 | Namespace | Description |
 | --------- | ----------- |
-| `cdx:rustc:sbom:target` | Records the information about the build target desribed by the SBOM. |
+| `cdx:rustc:sbom:target` | Records the information about the build target described by the SBOM. |
 
 ## `cdx:rustc:sbom:target` Namespace Taxonomy
 
