@@ -16,7 +16,5 @@ This namespace is used for recording information that is used by the Rust compil
 
 | Property  | Description                                                       |
 | --------------------- | ----------------------------------------------------------------- |
-| `cdx:rustc:meta:target:triple` | The target triple used for the build (e.g. `x86_64-unknown-linux-gnu`). Its presence indicates that the list of dependency packages in the [`components`] field will only include dependencies used for this one target, matching the dependencies of the compiled binary for this target. All known targets are documented [here](https://doc.rust-lang.org/nightly/rustc/platform-support.html) and the list evolves over time. Details about a specific target triple can be obtained by running `rustc --print=cfg --target=$TRIPLE` |
-| `cdx:rustc:meta:target:all_targets` | Boolean value. Indicates that the SBOM includes dependency packages from all possible targets in the [`components`] field, rather than for a single specific target. |
-
-[`components`]: https://cyclonedx.org/docs/1.5/json/#components
+| `cdx:rustc:meta:target:triple` | The target triple used for the build (e.g. `x86_64-unknown-linux-gnu`). Its presence indicates that the list of dependency packages in the `$.components` field will only include dependencies used for this one target, matching the dependencies of the compiled binary for this target. All known targets are documented [here](https://doc.rust-lang.org/nightly/rustc/platform-support.html) and the list evolves over time. Details about a specific target triple can be obtained by running `rustc --print=cfg --target=$TRIPLE` |
+| `cdx:rustc:meta:target:all_targets` | Boolean value. Indicates that the SBOM includes dependency packages from all possible targets in the `$.components` field, rather than for a single specific target. |
