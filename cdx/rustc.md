@@ -21,6 +21,6 @@ _Target triple string_ is a case-sensitive string matching one of the Rust compi
 | Property  | Description                                                       |
 | --------------------- | ----------------------------------------------------------------- |
 | `cdx:rustc:sbom:target:triple` | Target triple string. Its presence indicates that the list of dependency packages in the `$.components` field will only include dependencies used for this target, matching the dependencies of the compiled binary for this target. <br>This property may appear multiple times, e.g. when describing MacOS fat binaries that merge builds for several different architectures into a single file, or to record the list of specific platforms considered when producing the SBOM without actually performing a build. <br>Mutually exclusive with `cdx:rustc:sbom:target:all_targets`. |
-| `cdx:rustc:sbom:target:all_targets` | Boolean value. Indicates that the SBOM includes dependency packages from all possible targets in the `$.components` field, rather than for a single specific target. <br>Mutually exclusive with `cdx:rustc:sbom:target:triple`. |
+| `cdx:rustc:sbom:target:all_targets` | Boolean value. Indicates that the SBOM includes dependency packages from all possible targets in the `$.components` field, rather than for a single specific target. <br>Mutually exclusive with `cdx:rustc:sbom:target:triple`. May appear at most once. |
 
 If neither `:triple` nor `:all_targets` properties are present, the platform coverage of the SBOM should be assumed to be unknown.
