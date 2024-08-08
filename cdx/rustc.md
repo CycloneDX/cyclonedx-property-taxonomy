@@ -6,7 +6,7 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 
 | Namespace | Description |
 | --------- | ----------- |
-| `cdx:rustc:meta` | Namespace for information about the SBOM and properties that apply to the entire build. May only appear in the [`metadata`](https://cyclonedx.org/docs/1.5/json/#metadata_properties) field, and not in any other fields. |
+| `cdx:rustc:meta` | Namespace for information about the SBOM and properties that apply to the entire build. May only appear in the `$.metadata` field, and not in any other fields. |
 
 ## `cdx:rustc:meta` Namespace Taxonomy
 
