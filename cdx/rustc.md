@@ -2,6 +2,8 @@
 
 This namespace is used for recording information that is used by the Rust compiler, `rustc`, irrespective of the build system. For properties specific to the Rust build system, Cargo, please refer to the `cargo` namespace.
 
+_Boolean value_ are `true` or `false`. Case sensitive.
+
 | Namespace | Description |
 | --------- | ----------- |
 | `cdx:rustc:meta` | Namespace for information about the SBOM and properties that apply to the entire build. May only appear in the [`metadata`](https://cyclonedx.org/docs/1.5/json/#metadata_properties) field, and not in any other fields. |
