@@ -13,13 +13,13 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 |-----------------|------------------------------------------------------------------------|------------------------------------|--------------------------------------------|
 | `cdx:composer`  | Namespace for properties specific to the PHP Composer ecosystem.       | [CycloneDX PHP Maintainers]        | [cdx:composer taxonomy](cdx/composer.md)   |
 | `cdx:device`    | Namespace for properties specific to hardware devices.                 | [CycloneDX Core Working Group]     | [cdx:device taxonomy](cdx/device.md)       |
-| `cdx:lifecycle` | Namespace for properties specific to component and service lifecycles. | [CycloneDX Core Working Group]     | [cdx:lifecycle taxonomy](cdx/lifecycle.md) |
 | `cdx:gomod`     | Namespace for properties specific to the Go Module ecosystem.          | [CycloneDX Go Maintainers]         | [cdx:gomod taxonomy](cdx/gomod.md)         |
+| `cdx:lifecycle` | Namespace for properties specific to component and service lifecycles. | [CycloneDX Core Working Group]     | [cdx:lifecycle taxonomy](cdx/lifecycle.md) |
 | `cdx:npm`       | Namespace for properties specific to the Node NPM ecosystem.           | [CycloneDX JavaScript Maintainers] | [cdx:npm taxonomy](cdx/npm.md)             |
 | `cdx:pipenv`    | Namespace for properties specific to the Python Pipenv ecosystem.      | [CycloneDX Python Maintainers]     | [cdx:pipenv taxonomy](cdx/pipenv.md)       |
 | `cdx:poetry`    | Namespace for properties specific to the Python Poetry ecosystem.      | [CycloneDX Python Maintainers]     | [cdx:poetry taxonomy](cdx/poetry.md)       |
 | `cdx:python`    | Namespace for properties specific to the Python general packaging.     | [CycloneDX Python Maintainers]     | [cdx:python taxonomy](cdx/python.md)       |
-| `cdx:rustc`     | Namespace for properties specific to the Rust compiler, `rustc`.       | [CycloneDX Rust Maintainers]       | [cdx:rustc taxonomy](cdx/rustc.md) |
+| `cdx:rustc`     | Namespace for properties specific to the Rust compiler, `rustc`.       | [CycloneDX Rust Maintainers]       | [cdx:rustc taxonomy](cdx/rustc.md)         |
 
 ## Registering `cdx` Namespaces and Properties
 
