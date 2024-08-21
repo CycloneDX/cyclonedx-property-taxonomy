@@ -78,7 +78,7 @@ the following table (called "registry") is marked with
 </a>
 
 | Namespace | Description | Administered By | Taxonomy |
-| --- | --- | --- | --- |
+|-----------|-------------|-----------------|----------|
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial namespaces and properties MUST NOT be used under the `cdx` namespace. | [CycloneDX Core Working Group](https://github.com/orgs/CycloneDX) | [cdx taxonomy](cdx.md) |
 | `internal` | Namespace for internal use only. BOMs shared with 3rd parties SHOULD NOT include properties in this namespace. | N/A | N/A |
 | `urn` | Namespace blocked to prevent confusions with [Uniform Resource Name](https://datatracker.ietf.org/doc/html/rfc2141) | N/A | N/A |
