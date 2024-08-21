@@ -2,9 +2,9 @@ name: markdownlint
 
 on:
   pull_request:
-    # paths: ["**.md"]
+    paths: [ "**.md", ".github/workflows/markdownlint.yml" ]
   push:
-    # paths: ["**.md"]
+    paths: [ "**.md", ".github/workflows/markdownlint.yml" ]
   workflow_dispatch:
 
 permissions: read-all
