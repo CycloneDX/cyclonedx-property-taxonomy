@@ -1,4 +1,4 @@
-## `cdx:gomod` Namespace Taxonomy
+# `cdx:gomod` Namespace Taxonomy
 
 | Namespace | Description |
 |-----------|-------------|

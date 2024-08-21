@@ -1,4 +1,4 @@
-## `cdx:rustc` Namespace Taxonomy
+# `cdx:rustc` Namespace Taxonomy
 
 This namespace is used for recording information that is used by the Rust compiler, `rustc`, irrespective of the build system. For properties specific to the Rust build system, Cargo, please refer to the `cargo` namespace.
 

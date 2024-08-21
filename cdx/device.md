@@ -1,4 +1,4 @@
-## `cdx:device` Namespace Taxonomy
+# `cdx:device` Namespace Taxonomy
 
 | Namespace | Description |
 |-----------|-------------|
