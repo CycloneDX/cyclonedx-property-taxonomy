@@ -35,9 +35,8 @@ interpreted as described in [RFC2119](https://datatracker.ietf.org/doc/html/rfc2
 
 ## Namespace Syntax
 
-Namespaces are hierarchical and delimited with a `:`.
-
-As such, `:` MUST NOT be used in property namespaces and names except as a delimiter.
+Namespaces are hierarchical and delimited with a ":".  
+As such, ":" MUST NOT be used in property namespaces and names except as a delimiter.
 
 The only characters that SHALL be used in official property namespaces and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.
 
@@ -68,7 +67,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 
 Regardless of other licensing attributes in this repository or document,  
 the following table (called "registry") is marked with
-<a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block">
+<a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block;">
   CC0 1.0
   <img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img style="height:1.3em!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" />
   <!-- The attributation icons might look broken in githubs's rendered markdown view,
