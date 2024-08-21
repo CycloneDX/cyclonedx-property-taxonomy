@@ -1,0 +1,5 @@
+# https://github.com/markdownlint/markdownlint/blob/main/docs/configuration.md
+
+verbose false
+rules "~MD013", "~MD033"
+

@@ -1,0 +1,34 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chef-utils (18.5.0)
+      concurrent-ruby
+    concurrent-ruby (1.3.4)
+    kramdown (2.4.0)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    mdl (0.13.0)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      mixlib-cli (~> 2.1, >= 2.1.1)
+      mixlib-config (>= 2.2.1, < 4)
+      mixlib-shellout
+    mixlib-cli (2.1.8)
+    mixlib-config (3.0.27)
+      tomlrb
+    mixlib-shellout (3.2.8)
+      chef-utils
+    rexml (3.3.5)
+      strscan
+    strscan (3.1.0)
+    tomlrb (2.0.3)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  mdl
+
+BUNDLED WITH
+   2.3.15
