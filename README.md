@@ -66,7 +66,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 
 ## Registered Top Level Namespaces
 
-Regardless of other licensing attributes in this repository or document,
+Regardless of other licensing attributes in this repository or document,  
 the following table (called "registry") is marked with
 <a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block">
   CC0 1.0
