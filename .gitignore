@@ -1,0 +1,6 @@
+
+/.vendor/
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
+
