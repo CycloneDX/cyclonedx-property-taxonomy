@@ -50,7 +50,7 @@ In accordance with [packaging's `direct-url` data structure for VCS](https://pac
 
 | Property | Description |
 |----------|-------------|
-| `cdx:python:package:source:vcs:requested_revision` | The repository reference of this package, e.g. master, 1.0.0 or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:python:package:source:vcs:requested_revision` | The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 | `cdx:python:package:source:vcs:commit_id` | The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 
 ## `cdx:python:package:source:local` Namespace Taxonomy
