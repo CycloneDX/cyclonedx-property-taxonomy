@@ -27,7 +27,7 @@
 
 ## `cdx:poetry:package:source:vcs` Namespace Taxonomy
 
-This namespace is **deprecated** in vavour of the more general [`cdx:python:package:source:vcs`](./python.md).
+This namespace is **deprecated** in favor of the more general [`cdx:python:package:source:vcs`](./python.md).
 
 | Property | Description |
 |----------|-------------|
