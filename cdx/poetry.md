@@ -18,7 +18,20 @@
 
 | Property | Description |
 |----------|-------------|
-| `cdx:poetry:package:source:reference` | The repository reference of this package, e.g. master, 1.0.0 or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:poetry:package:source:reference` | The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 | `cdx:poetry:package:source:resolved_reference` | The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+
+| Namespace | Description |
+|-----------|-------------|
+| `cdx:poetry:package:source:vcs` | **DEPRECATED** namespace for package-source's VCS specific properties. |
+
+## `cdx:poetry:package:source:vcs` Namespace Taxonomy
+
+This namespace is **deprecated** in favor of the more general [`cdx:python:package:source:vcs`](./python.md), or consider the properties mentioned above.
+
+| Property | Description |
+|----------|-------------|
+| `cdx:poetry:package:source:vcs:requested_revision` | The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:poetry:package:source:vcs:commit_id` | The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 
 [CDX-useCases-externalReferences]: https://cyclonedx.org/use-cases/#external-references
