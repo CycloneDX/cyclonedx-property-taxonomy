@@ -12,9 +12,11 @@
 
 | Namespace | Description |
 |-----------|-------------|
-| `cdx:poetry:package:source` | Namespace for package-source specific properties. |
+| `cdx:poetry:package:source` | **Deprecated** namespace for package-source specific properties. |
 
 ## `cdx:poetry:package:source` Namespace Taxonomy
+
+This namespace is **deprecated** in favor of the more general [`cdx:python:package:source`](./python.md).
 
 | Property | Description |
 |----------|-------------|
@@ -27,7 +29,7 @@
 
 ## `cdx:poetry:package:source:vcs` Namespace Taxonomy
 
-This namespace is **deprecated** in favor of the more general [`cdx:python:package:source:vcs`](./python.md), or consider the properties mentioned above.
+This namespace is **deprecated** in favor of the more general [`cdx:python:package:source:vcs`](./python.md).
 
 | Property | Description |
 |----------|-------------|
