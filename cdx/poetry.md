@@ -18,8 +18,8 @@
 
 | Property | Description |
 |----------|-------------|
-| `cdx:poetry:package:source:reference` | **Deprecated** in favor of [`cdx:python:package:source:vcs:requested_revision`](./python.md). <br/> The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
-| `cdx:poetry:package:source:resolved_reference` | **Deprecated** in favor of [`cdx:python:package:source:vcs:commit_id`](./python.md). <br/> The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:poetry:package:source:reference` | **Deprecated** in favor of the more general [`cdx:python:package:source:vcs:requested_revision`](./python.md). <br/> The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:poetry:package:source:resolved_reference` | **Deprecated** in favor of the more general [`cdx:python:package:source:vcs:commit_id`](./python.md). <br/> The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 
 | Namespace | Description |
 |-----------|-------------|
@@ -31,7 +31,7 @@ This namespace is **deprecated** in favor of the more general [`cdx:python:packa
 
 | Property | Description |
 |----------|-------------|
-| `cdx:poetry:package:source:vcs:requested_revision` | **Deprecated** in favor of [`cdx:python:package:source:vcs:requested_revision`](./python.md). <br/> The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
-| `cdx:poetry:package:source:vcs:commit_id` | **Deprecated** in favor of [`cdx:python:package:source:vcs:commit_id`](./python.md). <br/> The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:poetry:package:source:vcs:requested_revision` | **Deprecated** in favor of the more general [`cdx:python:package:source:vcs:requested_revision`](./python.md). <br/> The repository reference of this package, e.g. "master", "1.0.0" or a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
+| `cdx:poetry:package:source:vcs:commit_id` | **Deprecated** in favor of the more general [`cdx:python:package:source:vcs:commit_id`](./python.md). <br/> The resolved repository reference of this package, e.g. a commit hash for git. Values may be applied to [`externalReferences`][CDX-useCases-externalReferences] of type `vcs`. _Non-empty string value_. May appear once. |
 
 [CDX-useCases-externalReferences]: https://cyclonedx.org/use-cases/#external-references
