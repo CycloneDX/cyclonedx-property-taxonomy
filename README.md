@@ -108,6 +108,7 @@ the following table (called "registry") is marked with
 | `siemens` | Namespace for use by Siemens. | [Siemens](https://github.com/siemens) | [Siemens taxonomy](https://github.com/siemens/cyclonedx-property-taxonomy#readme) |
 | `snyk` | Namespace for use by Snyk. | [Snyk](https://github.com/snyk) | [Snyk Taxonomy Documentation](https://docs.snyk.io/snyk-api-info/get-a-projects-sbom-document-endpoint#custom-cyclonedx-properties) |
 | `sonatype` | Namespace for use by Sonatype | [Sonatype](https://github.com/sonatype) | [Sonatype Taxonomy Documentation](https://help.sonatype.com/lift/open-source-vulnerability-analysis/dependency-view/cyclonedx-sonatype-namespace-taxonomy) |
+| `soos` | Namespace for use by SOOS. | [SOOS](https://github.com/soos-io) | [SOOS taxonomy](https://github.com/soos-io/cyclonedx-property-taxonomy) |
 | `spack` | Namespace for use by the Spack package manager. | [Spack Maintainers](https://github.com/spack) | [Spack SBOM Project](https://github.com/spack/spack-sbom#readme) |
 | `stackable` | Namespace for use by Stackable | [Stackable](https://github.com/stackabletech) | `RESERVED` |
 | `syft` | Namespace for use by the Syft project. | [Syft Maintainers](https://github.com/anchore/syft) | `RESERVED` |
