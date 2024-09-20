@@ -123,7 +123,9 @@ namespace SHOULD register a new top level namespace.
 The process for registering a new top level namespace is to
 [create a new issue requesting it](https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/new).
 
-Namespaces are initially registered as `RESERVED`.
+Top Level Namespaces are initially registered as `RESERVED`.
+
+Registered top level namespaces SHOULD be more than two characters long.
 
 Before using your `RESERVED` namespace, documentation for the taxonomy of the
 namespace SHOULD be publicly available. Failure to do so MAY result in the
