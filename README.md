@@ -35,7 +35,7 @@ interpreted as described in [RFC2119](https://datatracker.ietf.org/doc/html/rfc2
 
 ## Namespace Syntax
 
-Namespaces are hierarchical and delimited with a ":".  
+Namespaces are hierarchical and delimited with a ":".
 As such, ":" MUST NOT be used in property namespaces and names except as a delimiter.
 
 The only characters that SHALL be used in official property namespaces and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.
@@ -65,7 +65,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 
 ## Registered Top Level Namespaces
 
-Regardless of other licensing attributes in this repository or document,  
+Regardless of other licensing attributes in this repository or document,
 the following table (called "registry") is marked with
 <a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block;">
   CC0 1.0
@@ -89,6 +89,7 @@ the following table (called "registry") is marked with
 | `boschrexroth` | Namespace for use by Bosch Rexroth. | [Bosch Rexroth AG](https://github.com/boschrexroth) | [Bosch Rexroth taxonomy](https://github.com/boschrexroth/cyclonedx-property-taxonomy#readme) |
 | `bytetrail` | Namespace for use by ByteTrail. | [ByteTrail](https://github.com/bytetrail) | `RESERVED` |
 | `codenotary` | Namespace for use by Codenotary platform. | [Codenotary](https://github.com/codenotary) | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy#readme) |
+| `contact-software` | Namespace for use by Contact Software. | [Contact Software](https://github.com/cslab) | `RESERVED` |
 | `dependency-track` | Namespace for use by the Dependency-Track project. | [Dependency-Track Maintainers](https://github.com/DependencyTrack) | `RESERVED` |
 | `expliot` | Namespace for use by EXPLIoT. | [EXPLIoT](https://gitlab.com/expliot_framework) | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
 | `finitestate` | Namespace for the use by Finite State. | [Finite State](https://github.com/FiniteStateInc) | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy#readme) |
