@@ -87,6 +87,7 @@ the following table (called "registry") is marked with
 | `appknox` | Namespace for use by Appknox Platform. | [Appknox](https://github.com/appknox) | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | [Aqua Security](https://github.com/aquasecurity) | `RESERVED` |
 | `boschrexroth` | Namespace for use by Bosch Rexroth. | [Bosch Rexroth AG](https://github.com/boschrexroth) | [Bosch Rexroth taxonomy](https://github.com/boschrexroth/cyclonedx-property-taxonomy#readme) |
+| `bsi` | Namespace for use by BSI. | [BSI](https://github.com/BSI-Bund) | `RESERVED` |
 | `bytetrail` | Namespace for use by ByteTrail. | [ByteTrail](https://github.com/bytetrail) | `RESERVED` |
 | `codenotary` | Namespace for use by Codenotary platform. | [Codenotary](https://github.com/codenotary) | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy#readme) |
 | `contact-software` | Namespace for use by Contact Software. | [Contact Software](https://github.com/cslab) | `RESERVED` |
