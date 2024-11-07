@@ -15,6 +15,7 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 | `cdx:device` | Namespace for properties specific to hardware devices. | [CycloneDX Core Working Group] | [cdx:device taxonomy](cdx/device.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | [CycloneDX Go Maintainers] | [cdx:gomod taxonomy](cdx/gomod.md) |
 | `cdx:lifecycle` | Namespace for properties specific to component and service lifecycles. | [CycloneDX Core Working Group] | [cdx:lifecycle taxonomy](cdx/lifecycle.md) |
+| `cdx:maven` | Namespace for properties specific to the Maven ecosystem. | [CycloneDX Maven Maintainers] [CycloneDX Gradle Maintainers] | [cdx:maven taxonomy](cdx/maven.md) |
 | `cdx:npm` | Namespace for properties specific to the Node NPM ecosystem. | [CycloneDX JavaScript Maintainers] | [cdx:npm taxonomy](cdx/npm.md) |
 | `cdx:pipenv` | Namespace for properties specific to the Python Pipenv ecosystem. | [CycloneDX Python Maintainers] | [cdx:pipenv taxonomy](cdx/pipenv.md) |
 | `cdx:poetry` | Namespace for properties specific to the Python Poetry ecosystem. | [CycloneDX Python Maintainers] | [cdx:poetry taxonomy](cdx/poetry.md) |
@@ -39,3 +40,5 @@ table above.
 [CycloneDX Python Maintainers]: https://github.com/orgs/CycloneDX/teams/python-maintainers
 [CycloneDX JavaScript Maintainers]: https://github.com/orgs/CycloneDX/teams/javascript-maintainers
 [CycloneDX Rust Maintainers]: https://github.com/orgs/CycloneDX/teams/rust-maintainers
+[CycloneDX Maven Maintainers]: https://github.com/orgs/CycloneDX/teams/maven-maintainers
+[CycloneDX Gradle Maintainers]: https://github.com/orgs/CycloneDX/teams/gradle-maintainers
