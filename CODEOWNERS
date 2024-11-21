@@ -17,3 +17,5 @@
 /cdx/pipenv.md  @CycloneDX/python-maintainers @CycloneDX/core-team
 /cdx/poetry.md  @CycloneDX/python-maintainers @CycloneDX/core-team
 /cdx/python.md  @CycloneDX/python-maintainers @CycloneDX/core-team
+### Maven
+/cdx/maven.md @CycloneDX/maven-maintainers @CycloneDX/gradle-maintainers @CycloneDX/core-team
