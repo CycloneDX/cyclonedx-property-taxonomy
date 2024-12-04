@@ -19,3 +19,5 @@
 /cdx/pipenv.md  @CycloneDX/python-maintainers @CycloneDX/core-team
 /cdx/poetry.md  @CycloneDX/python-maintainers @CycloneDX/core-team
 /cdx/python.md  @CycloneDX/python-maintainers @CycloneDX/core-team
+### Rust
+/cdx/rustc.md  @CycloneDX/rust-maintainers @CycloneDX/core-team
