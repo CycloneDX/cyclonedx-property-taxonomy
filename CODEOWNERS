@@ -11,11 +11,11 @@
 /cdx/gomod.md  @CycloneDX/go-maintainers @CycloneDX/core-team
 ### JS & Node
 /cdx/npm.md  @CycloneDX/javascript-maintainers @CycloneDX/core-team
+### Maven
+/cdx/maven.md  @CycloneDX/java-maven-maintainers @CycloneDX/gradle-maintainers @CycloneDX/core-team
 ### PHP
 /cdx/composer.md  @CycloneDX/php-maintainers @CycloneDX/core-team
 ### Pythpn
 /cdx/pipenv.md  @CycloneDX/python-maintainers @CycloneDX/core-team
 /cdx/poetry.md  @CycloneDX/python-maintainers @CycloneDX/core-team
 /cdx/python.md  @CycloneDX/python-maintainers @CycloneDX/core-team
-### Maven
-/cdx/maven.md @CycloneDX/java-maven-maintainers @CycloneDX/gradle-maintainers @CycloneDX/core-team
