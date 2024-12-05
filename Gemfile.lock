@@ -19,9 +19,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.8)
       chef-utils
-    rexml (3.3.6)
-      strscan
-    strscan (3.1.0)
+    rexml (3.3.9)
     tomlrb (2.0.3)
 
 PLATFORMS
