@@ -100,10 +100,10 @@ the following table (called "registry") is marked with
 | `hoppr` | Namespace for the use by the Hoppr project. | [Lockheed Martin](https://hoppr.dev) | [Hoppr Taxonomy Documentation](https://hoppr.dev/docs/architecture/cdx-taxonomy) |
 | `ibm` | Namespace for use by IBM. | [IBM](https://github.com/IBM) | `RESERVED` |
 | `interlynk` | Namespace for use by Interlynk. | [Interlynk](https://github.com/interlynk-io) | [Interlynk taxonomy](https://github.com/interlynk-io/cyclonedx-property-taxonomy) |
-| `ksoc` | Namespace for use by KSOC. | [KSOC](https://github.com/ksoclabs) | `RESERVED` |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
 | `nix` | Namespace for Nix properties. | [Nixpkgs Maintainers](https://github.com/NixOS/nixpkgs/) | [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/#sec-interop.cylonedx-nix) |
 | `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
+| `rad` | Namespace for use by RAD Security. | [RAD Security](https://github.com/rad-security) | [RAD KBOM Taxonomy](https://github.com/rad-security/kbom/blob/main/docs/taxonomy.md) |
 | `recon` | Namespace for use by the Recon Project. | [Recon Project](https://github.com/rusty-ferris-club/recon) | `RESERVED` |
 | `scribe` | Namespace for use by Scribe Security | [Scribe Security](https://github.com/scribe-security) | `RESERVED` |
 | `servicenow` | Namespace for use by ServiceNow. | [ServiceNow](https://github.com/ServiceNow) | `RESERVED` |
