@@ -100,6 +100,7 @@ the following table (called "registry") is marked with
 | `hoppr` | Namespace for the use by the Hoppr project. | [Lockheed Martin](https://hoppr.dev) | [Hoppr Taxonomy Documentation](https://hoppr.dev/docs/architecture/cdx-taxonomy) |
 | `ibm` | Namespace for use by IBM. | [IBM](https://github.com/IBM) | `RESERVED` |
 | `interlynk` | Namespace for use by Interlynk. | [Interlynk](https://github.com/interlynk-io) | [Interlynk taxonomy](https://github.com/interlynk-io/cyclonedx-property-taxonomy) |
+| `jfrog` | Namespace for use by JFrog. | [JFrog](https://jfrog.com) | `RESERVED` |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
 | `nix` | Namespace for Nix properties. | [Nixpkgs Maintainers](https://github.com/NixOS/nixpkgs/) | [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/#sec-interop.cylonedx-nix) |
 | `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
