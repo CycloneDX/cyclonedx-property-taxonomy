@@ -35,7 +35,7 @@ interpreted as described in [RFC2119](https://datatracker.ietf.org/doc/html/rfc2
 
 ## Namespace Syntax
 
-Namespaces are hierarchical and delimited with a ":".  
+Namespaces are hierarchical and delimited with a ":".
 As such, ":" MUST NOT be used in property namespaces and names except as a delimiter.
 
 The only characters that SHALL be used in official property namespaces and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.
@@ -65,7 +65,7 @@ ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](http
 
 ## Registered Top Level Namespaces
 
-Regardless of other licensing attributes in this repository or document,  
+Regardless of other licensing attributes in this repository or document,
 the following table (called "registry") is marked with
 <a href="http://creativecommons.org/publicdomain/zero/1.0" style="display:inline-block;">
   CC0 1.0
@@ -103,6 +103,7 @@ the following table (called "registry") is marked with
 | `jfrog` | Namespace for use by JFrog. | [JFrog](https://jfrog.com) | `RESERVED` |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
 | `nix` | Namespace for Nix properties. | [Nixpkgs Maintainers](https://github.com/NixOS/nixpkgs/) | [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/#sec-interop.cylonedx-nix) |
+| `nvidia` | Namespace for NVIDIA properties. | [NVIDIA](https://github.com/nvidia) | `RESERVED` |
 | `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
 | `ort` | Namespace for use by the OSS Review Toolkit. | [OSS Review Toolkit](https://github.com/oss-review-toolkit) | [ORT taxonomy](https://github.com/oss-review-toolkit/ort/tree/main/plugins/reporters/cyclonedx#property-taxonomy) |
 | `rad` | Namespace for use by RAD Security. | [RAD Security](https://github.com/rad-security) | [RAD KBOM Taxonomy](https://github.com/rad-security/kbom/blob/main/docs/taxonomy.md) |
