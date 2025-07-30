@@ -21,7 +21,9 @@ This is the official [CycloneDX][link_website] property namespace and name taxon
 
 ## Introduction
 
-With the v1.3 release of the [CycloneDX specification](https://github.com/CycloneDX/specification), custom properties have been added.
+With the [v1.3 release](https://github.com/CycloneDX/specification/releases/tag/1.3) of the
+[CycloneDX specification](https://github.com/CycloneDX/specification),
+[custom properties](https://github.com/CycloneDX/specification/issues/42) have been added.
 
 Although the specification doesn't impose restrictions on the property names used,
 standardization can assist tool implementers and BOM consumers.
