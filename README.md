@@ -88,6 +88,7 @@ the following table (called "registry") is marked with
 | `amazon` | Namespace for use by Amazon. | [Amazon](https://github.com/amzn) | [Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/cyclonedx-namespace.html) |
 | `appknox` | Namespace for use by Appknox Platform. | [Appknox](https://github.com/appknox) | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | [Aqua Security](https://github.com/aquasecurity) | `RESERVED` |
+| `atis` | Namespace for use by Alliance for Telecommunications Industry Solutions (ATIS) | [ATIS](https://atis.org/) | [ATIS taxonomy](https://github.com/atisorg/cyclonedx-property-taxonomy/) |
 | `boschrexroth` | Namespace for use by Bosch Rexroth. | [Bosch Rexroth AG](https://github.com/boschrexroth) | [Bosch Rexroth taxonomy](https://github.com/boschrexroth/cyclonedx-property-taxonomy#readme) |
 | `bsi` | Namespace for use by BSI. | [BSI](https://github.com/BSI-Bund) | [BSI taxonomy](https://github.com/BSI-Bund/tr-03183-cyclonedx-property-taxonomy) |
 | `bytetrail` | Namespace for use by ByteTrail. | [ByteTrail](https://github.com/bytetrail) | `RESERVED` |
