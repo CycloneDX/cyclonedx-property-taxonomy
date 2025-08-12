@@ -54,7 +54,7 @@ internal:team_responsible
 ### ABNF for Official CycloneDX Property Names
 
 ```abnf
-property-name = 1*(namespace ":") name
+property-name = 1*( namespace ":" ) name
 
 namespace     = 1*namechar
 
