@@ -106,7 +106,7 @@ the following table (called "registry") is marked with
 | `jfrog` | Namespace for use by JFrog. | [JFrog](https://jfrog.com) | `RESERVED` |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
 | `nix` | Namespace for Nix properties. | [Nixpkgs Maintainers](https://github.com/NixOS/nixpkgs/) | [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/#sec-interop.cylonedx-nix) |
-| `nvidia` | Namespace for NVIDIA properties. | [NVIDIA](https://github.com/NVIDIA) | `RESERVED` |
+| `nvidia` | Namespace for NVIDIA properties. | [NVIDIA](https://github.com/NVIDIA) | [NVIDIA Taxonomy Documentation](https://github.com/NVIDIA/Trustworthy-AI/blob/main/CycloneDX-Property-Taxonomy/cyclonedx-property-taxonomy.md) |
 | `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
 | `ort` | Namespace for use by the OSS Review Toolkit. | [OSS Review Toolkit](https://github.com/oss-review-toolkit) | [ORT taxonomy](https://github.com/oss-review-toolkit/ort/tree/main/plugins/reporters/cyclonedx#property-taxonomy) |
 | `rad` | Namespace for use by RAD Security. | [RAD Security](https://github.com/rad-security) | [RAD KBOM Taxonomy](https://github.com/rad-security/kbom/blob/main/docs/taxonomy.md) |
