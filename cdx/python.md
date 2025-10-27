@@ -10,6 +10,7 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 
 | Property | Description |
 |----------|-------------|
+| `cdx:python:package:marker` | Environment markers, following the specification [here](https://packaging.python.org/en/latest/specifications/dependency-specifiers/#environment-markers), that specify conditions for when a package should be used. This represents the resolved marker expression that determines when this package is included in the environment, derived from all dependency specifications that reference this package. _Non-empty string value_. May appear once. |
 | `cdx:python:package:required-extra` | The package's extra that was required. Value MAY be [normalized](https://packaging.python.org/en/latest/specifications/name-normalization/). _Non-empty string value_. May appear multiple times with different values. |
 
 | Namespace | Description |
