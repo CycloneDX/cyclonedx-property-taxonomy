@@ -42,11 +42,11 @@ A CycloneDX property name has two components:
 - **Namespace** (_optional_): an identifier that scopes or categorizes the property.
 - **Name** (_required_): the actual key or label for the property.
 
-When a namespace is present it is separated from the name by a single colon (":").  
-A namespace is a hierarchical collection of segments separated by colons (":"). The first segment is the Top Level Namespace and subsequent segments refine the hierarchy.
+When a namespace is present it is separated from the name by a single colon.  
+A namespace is a hierarchical sequence of segments separated by colons. The first segment is the top-level namespace; subsequent segments are sub-namespaces.
 
-The only characters that SHALL be used in official property namespace segments and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.  
-Names and namespace segments MUST NOT contain a colon (":").  
+Names and namespace segments MUST NOT contain ":".
+The only characters that SHALL be used in official property namespace segments and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.    
 
 Namespaces SHOULD be lower case.  
 Names MAY use upper case.
@@ -64,8 +64,8 @@ internal:project:guid
 ```abnf
 property-name     = [ namespace dimeter ] name
 
-namespace         = namespace-tl *( dimeter namespace-segment )
-namespace-tl      = namespace-segment     ; Top Level Namespace
+namespace         = namespace-segment         ; top-level namespace
+                    *( dimeter namespace-segment ) ; sub-namespaces
 namespace-segment = 1*namechar
 
 name              = 1*namechar
@@ -76,7 +76,7 @@ dimeter           = ":"
 
 ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](https://datatracker.ietf.org/doc/html/rfc5234).
 
-## Registered Top Level Namespaces
+## Registered Top-Level Namespaces
 
 Regardless of other licensing attributes in this repository or document,  
 the following table (called "registry") is marked with
@@ -135,17 +135,17 @@ the following table (called "registry") is marked with
 | `tern` | Namespace for use by the Tern project. | [Tern Maintainers](https://github.com/tern-tools/tern) | `RESERVED` |
 | `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 
-## Registering New Top Level Namespaces
+## Registering new Top-Level Namespaces
 
 It is RECOMMENDED that anyone creating custom properties outside of the `internal`
-namespace SHOULD register a new top level namespace.
+namespace SHOULD register a new top-level namespace.
 
-The process for registering a new top level namespace is to
+The process for registering a new top-level namespace is to
 [create a new issue requesting it](https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/new).
 
-Top Level Namespaces are initially registered as `RESERVED`.
+Top-level namespaces are initially registered as `RESERVED`.
 
-Registered top level namespaces SHOULD be more than two characters long.
+Registered top-level namespaces SHOULD be more than two characters long.
 
 Before using your `RESERVED` namespace, documentation for the taxonomy of the
 namespace SHOULD be publicly available. Failure to do so MAY result in the
