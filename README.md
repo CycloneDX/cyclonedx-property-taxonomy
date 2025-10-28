@@ -62,16 +62,16 @@ internal:project:guid
 ### ABNF for Official CycloneDX Property Names
 
 ```abnf
-property-name     = [ namespace dimeter ] name
+property-name     = [ namespace delimiter ] name
 
-namespace         = namespace-segment         ; top-level namespace
-                    *( dimeter namespace-segment ) ; sub-namespaces
+namespace         = namespace-segment           ; top-level namespace
+                    *( delimiter namespace-segment ) ; sub-namespaces
 namespace-segment = 1*namechar
 
 name              = 1*namechar
 
 namechar          = ALPHA / DIGIT / "-" / "_" / " "
-dimeter           = ":"
+delimiter         = ":"
 ```
 
 ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](https://datatracker.ietf.org/doc/html/rfc5234).
