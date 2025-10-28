@@ -1,11 +1,17 @@
 # `cdx:npm` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to the [Node NPM ecosystem](https://docs.npmjs.com/packages-and-modules).
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:npm:package` | Namespace for package specific properties. |
 | `cdx:npm:package:constraint` | Namespace for package constraints. |
 
-_Boolean value_ are `true` or `false`. Case sensitive.
+_Boolean value_ are `true` or `false`; case sensitive.
 
 ## `cdx:npm:package` Namespace Taxonomy
 

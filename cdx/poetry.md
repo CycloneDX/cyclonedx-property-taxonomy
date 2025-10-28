@@ -1,5 +1,11 @@
 # `cdx:poetry` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to the [Python Poetry ecosystem](https://python-poetry.org/).
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Property | Description |
 |----------|-------------|
 | `cdx:poetry:group` | Name of a [dependency group](https://python-poetry.org/docs/managing-dependencies/#dependency-groups) the component belongs to. Well-known groups are: "main", "dev". _Non-empty string value_. May appear multiple times with different values. |

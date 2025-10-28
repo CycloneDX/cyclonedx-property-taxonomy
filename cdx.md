@@ -1,9 +1,13 @@
 # `cdx` Namespace Taxonomy
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL"
-in this document are to be interpreted as described in [RFC2119](http://www.ietf.org/rfc/rfc2119.txt).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC2119](http://www.ietf.org/rfc/rfc2119.txt).
 
-_Boolean value_ are `true` or `false`. Case sensitive.
+This is the namespace for official CycloneDX sub-namespaces and properties.
+Unofficial sub-namespaces and names MUST NOT be used under the `cdx` top-level namespace.
+
+----
+
+_Boolean value_ are `true` or `false`; case sensitive.
 
 | Property | Description |
 |----------|-------------|
@@ -24,15 +28,14 @@ _Boolean value_ are `true` or `false`. Case sensitive.
 
 ## Registering `cdx` Namespaces and Properties
 
-The process for registering new `cdx` namespaces and properties is to
+The process for registering new `cdx` sub-namespaces and names is to
 [create a new issue requesting it](https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/new).
 
-If you are requesting a new namespace directly under the `cdx` namespace,
+If you are requesting a new sub-namespace or name directly under the `cdx` top-level namespace,
 the request will be reviewed by the Core Working Group.
 
-If you are requesting a new namespace or property under one of the
-namespaces within `cdx`, it will be reviewed by the team identified in the
-table above.
+If you are requesting a new sub-namespace or name under an existing sub-namespaces within `cdx`,
+it will be reviewed by the team identified in the table above.
 
 [CycloneDX Core Working Group]: https://github.com/orgs/CycloneDX/teams/core-team
 [CycloneDX PHP Maintainers]: https://github.com/orgs/CycloneDX/teams/php-maintainers

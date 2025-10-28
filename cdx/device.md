@@ -1,5 +1,11 @@
 # `cdx:device` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to hardware devices.
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:device:quantity` | The total number of the specified component. |
