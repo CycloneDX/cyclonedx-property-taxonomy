@@ -35,32 +35,43 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
-## Namespace Syntax
+## Property Name Structure
 
-Namespaces are hierarchical and delimited with a ":".  
-As such, ":" MUST NOT be used in property namespaces and names except as a delimiter.
+A CycloneDX property name has two components:
 
-The only characters that SHALL be used in official property namespaces and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.
+- **Namespace** (_optional_): an identifier that scopes or categorizes the property.
+- **Name** (_required_): the actual key or label for the property.
 
-Namespaces SHOULD be lower case. Base property names MAY use upper case.
+When a namespace is present it is separated from the name by a single colon (":").  
+A namespace is a hierarchical collection of segments separated by colons (":"). The first segment is the Top Level Namespace and subsequent segments refine the hierarchy.
+
+The only characters that SHALL be used in official property namespace segments and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.  
+Names and namespace segments MUST NOT contain a colon (":").  
+
+Namespaces SHOULD be lower case.  
+Names MAY use upper case.
 
 ### Examples
 
 ```text
 internal:information_security_classification
 internal:team_responsible
+internal:project:guid
 ```
 
 ### ABNF for Official CycloneDX Property Names
 
 ```abnf
-property-name = 1*( namespace ":" ) name
+property-name     = [ namespace dimeter ] name
 
-namespace     = 1*namechar
+namespace         = namespace-tl *( dimeter namespace-segment )
+namespace-tl      = namespace-segment     ; Top Level Namespace
+namespace-segment = 1*namechar
 
-name          = 1*namechar
+name              = 1*namechar
 
-namechar      = ALPHA / DIGIT / "-" / "_" / " "
+namechar          = ALPHA / DIGIT / "-" / "_" / " "
+dimeter           = ":"
 ```
 
 ABNF syntax as per [RFC5234: Augmented BNF for Syntax Specifications: ABNF](https://datatracker.ietf.org/doc/html/rfc5234).
