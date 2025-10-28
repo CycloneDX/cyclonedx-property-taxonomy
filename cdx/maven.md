@@ -1,10 +1,16 @@
 # `cdx:maven` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to the [Maven ecosystem](https://maven.apache.org/).
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:maven:package` | Namespace for package specific properties. |
 
-_Boolean value_ are `true` or `false`. Case sensitive.
+_Boolean value_ are `true` or `false`; case sensitive.
 
 ## `cdx:maven:package` Namespace Taxonomy
 

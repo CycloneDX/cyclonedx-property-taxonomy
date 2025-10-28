@@ -1,5 +1,11 @@
 # `cdx:gomod` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to the Go Module ecosystem.
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:gomod:binary` | Namespace for metadata of analyzed binaries. |

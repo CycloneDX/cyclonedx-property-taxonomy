@@ -1,5 +1,11 @@
 # `cdx:lifecycle` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to component and service lifecycles.
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:lifecycle:milestone` | Namespace for milestone-specific information. |

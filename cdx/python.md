@@ -1,6 +1,12 @@
 # `cdx:python` Namespace Taxonomy
 
-_Boolean value_ are `true` or `false`. Case sensitive.
+This is the namespace for official CycloneDX properties related to the [Python general packaging](https://packaging.python.org).
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
+_Boolean value_ are `true` or `false`; case sensitive.
 
 | Namespace | Description |
 |-----------|-------------|

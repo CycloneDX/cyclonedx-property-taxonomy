@@ -1,10 +1,16 @@
 # `cdx:composer` Namespace Taxonomy
 
+This is the namespace for official CycloneDX properties related to the [PHP Composer ecosystem](https://getcomposer.org/).
+
+The official rules and processes apply - see [parent document](../cdx.md).
+
+----
+
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:composer:package` | Namespace for package specific properties. |
 
-_Boolean value_ are `true` or `false`. Case sensitive.
+_Boolean value_ are `true` or `false`; case sensitive.
 
 ## `cdx:composer:package` Namespace Taxonomy
 
