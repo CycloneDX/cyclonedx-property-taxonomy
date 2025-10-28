@@ -92,8 +92,8 @@ the following table (called "registry") is marked with
 | TL Namespace | Description | Administered By | Taxonomy |
 |--------------|-------------|-----------------|----------|
 | `cdx` | Namespace for official CycloneDX namespaces and properties. Unofficial sub-namespaces and properties MUST NOT be used under the `cdx` namespace. | [CycloneDX Core Working Group](https://github.com/orgs/CycloneDX) | [cdx taxonomy](cdx.md) |
-| `internal` | Namespace for **internal use only**. BOMs shared with 3rd parties SHOULD NOT include properties in this namespace. | **N/A** | **N/A** |
-| `urn` | Namespace **blocked** to prevent confusions with [Uniform Resource Name](https://datatracker.ietf.org/doc/html/rfc2141) | **N/A** | **N/A** |
+| `internal` | Namespace for **internal use only**. BOMs shared with 3rd parties SHOULD NOT include properties in this namespace. | N/A| N/A|
+| `urn` | Namespace **blocked** to prevent confusions with [Uniform Resource Name](https://datatracker.ietf.org/doc/html/rfc2141) | N/A| N/A|
 | `aboutcode` | Namespace for use by AboutCode projects. | [AboutCode.org](https://github.com/aboutcode-org) | [AboutCode taxonomy](https://github.com/aboutcode-org/aboutcode-cyclonedx-taxonomy#readme) |
 | `accellence` | Namespace for use by Accellence Technologies. | [AccellenceTechnologies](https://github.com/AccellenceTechnologies) | [Accellence taxonomy](https://github.com/AccellenceTechnologies/cyclonedx-property-taxonomy#readme) |
 | `amazon` | Namespace for use by Amazon. | [Amazon](https://github.com/amzn) | [Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/cyclonedx-namespace.html) |
