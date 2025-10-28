@@ -45,7 +45,7 @@ A CycloneDX property name has two components:
 When a namespace is present it is separated from the name by a single colon.  
 A namespace is a hierarchical sequence of segments separated by colons. The first segment is the top-level namespace; subsequent segments are sub-namespaces.
 
-Names and namespace segments MUST NOT contain ":".
+Names and namespace segments MUST NOT contain ":".  
 The only characters that SHALL be used in official property namespace segments and names are alphanumerical characters, "-", "_" and " " from the US ASCII character set.
 
 Namespaces SHOULD be lower case.  
