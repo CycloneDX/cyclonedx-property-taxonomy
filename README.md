@@ -105,7 +105,7 @@ the following table (called "registry") is marked with
 | `bytetrail` | Namespace for use by ByteTrail. | [ByteTrail](https://github.com/bytetrail) | `RESERVED` |
 | `codenotary` | Namespace for use by Codenotary platform. | [Codenotary](https://github.com/codenotary) | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy#readme) |
 | `contact-software` | Namespace for use by Contact Software. | [Contact Software](https://github.com/cslab) | `RESERVED` |
-| `cybeats` | Namespace for use by CyBeats SBOM Studio. | [CyBeats](https://github.com/cybeats) | [CyBeats Taxonomy](https://github.com/cybeats/cyclonedx-property-taxonomy)] |
+| `cybeats` | Namespace for use by CyBeats SBOM Studio. | [CyBeats](https://github.com/cybeats) | [CyBeats Taxonomy](https://github.com/cybeats/cyclonedx-property-taxonomy) |
 | `dependency-track` | Namespace for use by the OWASP Dependency-Track project. | [Dependency-Track Maintainers](https://github.com/DependencyTrack) | [Dependency-Track taxonomy](https://github.com/DependencyTrack/cyclonedx-property-taxonomy) |
 | `expliot` | Namespace for use by EXPLIoT. | [EXPLIoT](https://gitlab.com/expliot_framework) | [EXPLIoT taxonomy](https://gitlab.com/expliot_framework/expliot/-/blob/master/docs/compliance/cyclonedx.rst) |
 | `finitestate` | Namespace for the use by Finite State. | [Finite State](https://github.com/FiniteStateInc) | [finitestate taxonomy](https://github.com/FiniteStateInc/cyclonedx-property-taxonomy#readme) |
