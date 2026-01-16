@@ -15,6 +15,7 @@ _Boolean value_ are `true` or `false`; case sensitive.
 
 | Namespace | Description | Administered By | Taxonomy |
 |-----------|-------------|-----------------|----------|
+| `cdx:ai-ml` | Namespace for properties specific to the Artificial Intelligence (AI)/machine Learning (ML) technology domain | [CycloneDX PHP Maintainers] | [cdx:ai-ml taxonomy](cdx/ai-ml.md) |
 | `cdx:composer` | Namespace for properties specific to the PHP Composer ecosystem. | [CycloneDX PHP Maintainers] | [cdx:composer taxonomy](cdx/composer.md) |
 | `cdx:device` | Namespace for properties specific to hardware devices. | [CycloneDX Core Working Group] | [cdx:device taxonomy](cdx/device.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | [CycloneDX Go Maintainers] | [cdx:gomod taxonomy](cdx/gomod.md) |
