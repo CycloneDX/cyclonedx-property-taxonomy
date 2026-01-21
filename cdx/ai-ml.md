@@ -8,7 +8,6 @@ The official rules and processes apply - see [parent document](../cdx.md).
 
 The following list contains the reserved paths used as category groups for AI/ML properties under the `cdx:ai-ml` namespace.
 
-
 | Path | Description |
 |-----------|-------------|
 | `cdx:ai-ml:model` |  Path segment used to group model-related properties. |
