@@ -24,3 +24,5 @@ The following table lists the current set of fully-qualified property names for 
 |-----------|-------------|
 | `cdx:ai-ml:model:parameter` | Used to describe a parameter used as input to a model for configuration or initialization purposes. |
 | `cdx:ai-ml:model:hyperparameter` | Used to describe a hyperparameter provided as input to a model and used during generation. |
+| `cdx:ai-ml:model:tokenizer` | Used to annotate a component as a model tokenizer. |
+| `cdx:ai-ml:model:prompt-template` | Used to annotate a component as a model prompt-template. |
