@@ -27,3 +27,4 @@ The following table lists the current set of fully-qualified property names for 
 | `cdx:ai-ml:model:tokenizer` | Used to annotate a component as a model tokenizer. |
 | `cdx:ai-ml:model:template:prompt` | Used to annotate a component as a model prompt template. |
 | `cdx:ai-ml:model:template:chat` | Used to annotate a component as a model chat template. |
+| `cdx:ai-ml:model:languages` | Used to indicate what languages a model was trained for. The value for this property should be in the form of a comma-separated list of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (e.g., `"en,fr,de,it,ja,zh"`, etc.). |
