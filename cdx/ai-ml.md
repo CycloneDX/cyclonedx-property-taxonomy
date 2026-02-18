@@ -37,8 +37,23 @@ These properties reflect on the methods used to control the model's parameter co
 
 | Property | Description |
 |-----------|-------------|
-| `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity). |
-| `tune_method` | Describes how a pre-trained model was adapted to new data. This includes values such as: `full` (updates all model parameters), `lora` (parameter-efficient finetuning (PEFT) using the Low-Rank Adaptation), `adapter` ( inserts small layers within the architecture), `prompt` (appends trainable parameters to the input embeddings), etc. |
+| `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`).|
+| `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`).
+
+##### Names of industry-standard fine-tuning methods
+
+These following and similar values should be used on the `tune_methods` parameter:
+
+| value | Description |
+| --- | --- |
+| `full` | Updates all model parameters during tuning. |
+| `sft` | Supervised Fine-Tuning. Uses labelled, human-curated data to train the model.|
+| `rlhf` | Reinforcement Learning from Human Feedback. |
+| `adapter` | Inserts small layers within the architecture which are tuned. |
+| `prompt` | appends trainable parameters to the input embeddings |
+| `lora` | Low-Rank Adaptation (LoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
+| `alora` | Allocating Low-Rank Adaptation (ALoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
+| `qlora` | Quantized low-rank adaptation (QLoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
 
 <!-- TODO: investigate describing (flash) attention methods; for example, MHA, GQA, MQA, etc. -->
 
@@ -54,10 +69,12 @@ Given that there are some commonly agreed-upon model configuration property name
 
 | Property | Description |
 |-----------|-------------|
+| `context_length` | The maximum number of tokens that the model can process at any one time. |
 | `hidden_size` \| `d_model` | The dimension of the input and output representations (i.e., of the token embeddings) used by the internal (hidden) layers of a model's neural network (e.g., 768, 1024, 4096). |
 | `num_hidden_layers` \| `num_layers` | The total number of intermediate (hidden) processing layers situated between the input layer and the output layer. The key `num_layers` is often used instead for non-transformer architectures (e.g., Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), etc.). |
-| `num_attention_heads` | The number of self-attention heads. |
-| `num_key_value_heads` | The number of attention heads used for the Key (K) and Value (V) projections in the attention mechanism of a transformer-based AI model. |
 | `intermediate_size` | The number of "neurons" of the intermediate, hidden feed-forward layer within each Transformer block. This effectively describes the size of the "bottleneck" where the representation of the input data is expanded (typically 4 times the  `hidden_size`) into a higher-dimensional space for processing before being projected back down to the main model hidden size. |
 | `max_position_embeddings` | The maximum sequence/context length the model supports. |
+| `num_attention_heads` | The number of self-attention heads. |
+| `num_key_value_heads` | The number of attention heads used for the Key (K) and Value (V) projections in the attention mechanism of a transformer-based AI model. |
+| `quantization` | Defines the numerical precision (number of bits) used to store a model's weights (as tensors). |
 | `vocab_size` | The size of the token vocabulary. |
