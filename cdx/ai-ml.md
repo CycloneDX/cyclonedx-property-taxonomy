@@ -99,7 +99,7 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 | `bos_token` |  The Beginning-of-Sentence (BOS) token is a special token configured in a tokenizer that signifies the start of an input sequence. (e.g., `"<\|end_of_text\|>"`)|
 | `chat_template` | A string representation of the chat template that defines how to format conversational data using the configured tokenizer.|
 | `errors` | Configures how the tokenizer handles invalid UTF-8 byte sequences or character encoding issues when converting raw text into tokens. Known values include: `strict` (i.e., raise an error), `ignore` and `replace` (invalid token).|
-| `eos_token` |  The End-of-Sentence (BOS) token is a special token configured in a tokenizer to act as a stop signal for text generation. (e.g., `"<\|end_of_text\|>"`)|
+| `eos_token` |  The End-of-Sentence (BOS) token is a special token configured in a tokenizer to act as a stop signal for text generation. (e.g., `"<[end_of_text]>"`)|
 | `pad_token` |  The pad token is a special token configured in a tokenizer to fill in empty spaces in shorter sequences within a batch, ensuring all input sequences have the exact same length. (e.g., `"<\|end_of_text\|>"`)|
 | `padding_side` | Defines whether the tokenizer adds padding tokens (i.e., the `pad_token`) to the left or right side of a sequence to ensure all sequences in a batch are the same length. Known values are either `left` or `right`. |
 | `tokenizer_class` | The named tokenizer (class) implementation configured for the model when the tokenizer support multiple possible implementations. |
