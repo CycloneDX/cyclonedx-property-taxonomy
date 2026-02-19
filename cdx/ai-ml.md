@@ -88,7 +88,7 @@ Given that there are some commonly agreed-upon model configuration property name
 
 ### `tokenizer:hyperparameter` properties
 
-Model tokenizers, although generally conforming to small set of industry-acknowledged implementations, often have distinct variants developed to work with a specific model it was used to train.  These tokenizers have their own hyperparameters that can be declared as properties on a CycloneDX component's model card as described for `model:hyperparameters` (above).
+Model tokenizers, although generally conforming to small set of industry-acknowledged implementations, often have distinct variants developed to work with a specific model it was used to train.  These tokenizers have their own hyperparameters that can be declared as properties on a CycloneDX component's model card as described for `model:hyperparameter` (above).
 
 Given that there are some commonly agreed-upon tokenizer configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `tokenizer:hyperparameter` path segment:
 
@@ -106,6 +106,6 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 
 #### Tokenizer hyperparameter notes
 
-* If the `model:hyperparameters:tokenizer_class` hyperparameter value is declared, the `tokenizer:hyperparameters:tokenizer_class` value should match.
+* If the `model:hyperparameter:tokenizer_class` hyperparameter value is declared, the `tokenizer:hyperparameter:tokenizer_class` value should match.
 * Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
 * Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
