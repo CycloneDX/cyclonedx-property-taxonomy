@@ -68,13 +68,13 @@ Hyperparameters can vary widely depending on model architecture and specific mod
 Given that there are some commonly agreed-upon model configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `model:hyperparameter` path segment:
 
 | Property | Description |
-|-----------|-------------|
+| --- | --- |
 | `activation_dropout` | The regularization technique used during training that randomly masks (sets to zero) a percentage of the intermediate hidden state activations. |
 | `context_length` | The maximum number of tokens that the model can process at any one time. |
 | `hidden_act` | The activation function used on output values of the intermediate (hidden) layers of a neural network. The function transforms the raw, linear output into an activated output value that is passed to the next layer introducing non-linearity. It is industry-standard to reference these functions by short names such as ReLU (Rectified Linear Unit) or SiLU (Sigmoid Linear Unit) which should be encoded with the values `relu` and `silu` respectively.  |
-| `hidden_size` \| `d_model` | The dimension of the input and output representations (i.e., of the token embeddings) used by the internal (hidden) layers of a model's neural network (e.g., `768`, `1024`, `4096`). |
+| `hidden_size`, `d_model` | The dimension of the input and output representations (i.e., of the token embeddings) used by the internal (hidden) layers of a model's neural network (e.g., `768`, `1024`, `4096`). |
 | `layer_norm_type` | The specific normalization technique used to stabilize training in a transformer model. It determines how the model rescales activation values to prevent gradients from exploding or vanishing (e.g., `RMSNorm`, `LayerNorm`, `Pre-LN`, `GroupNorm`, etc.). |
-| `num_hidden_layers` \| `num_layers` | The total number of intermediate (hidden) processing layers situated between the input layer and the output layer. The key `num_layers` is often used instead for non-transformer architectures (e.g., Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), etc.). |
+| `num_hidden_layers`, `num_layers` | The total number of intermediate (hidden) processing layers situated between the input layer and the output layer. The key `num_layers` is often used instead for non-transformer architectures (e.g., Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), etc.). |
 | `intermediate_size` | The number of "neurons" of the intermediate, hidden feed-forward layer within each Transformer block. This effectively describes the size of the "bottleneck" where the representation of the input data is expanded (typically 4 times the `hidden_size`) into a higher-dimensional space for processing before being projected back down to the main model hidden size. |
 | `layer_norm_epsilon` | The (very small) float value used in Transformer models which is added to the variance in the denominator of the layer normalization formula to prevent division by zero (e.g., `1e-06`, `1e-05`). |
 | `max_position_embeddings` | The maximum sequence/context length the model supports. |
