@@ -106,6 +106,6 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 
 #### Tokenizer hyperparameter notes
 
-* if the `model:hyperparameters:tokenizer_class` hyperparameter value is declared,  the `tokenizer:hyperparameters:tokenizer_class` value should match.
+* If the `model:hyperparameters:tokenizer_class` hyperparameter value is declared, the `tokenizer:hyperparameters:tokenizer_class` value should match.
 * Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
 * Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
