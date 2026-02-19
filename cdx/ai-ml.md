@@ -10,9 +10,9 @@ The following list contains the reserved paths used as category groups for AI/ML
 
 | Path | Description |
 | --- | --- |
-| `cdx:ai-ml:model` |  Path segment used to group model-related properties. |
-| `cdx:ai-ml:tokenizer` |  Path segment used to group tokenizer-related properties. |
-| `cdx:ai-ml:prompt` | Path segment used to group prompt-related properties. |
+| `cdx:ai-ml:model` |  Reserved path segment used to group model-related properties. |
+| `cdx:ai-ml:tokenizer` |  Reserved path segment used to group tokenizer-related properties. |
+| `cdx:ai-ml:prompt` | Reserved path segment used to group prompt-related properties. |
 
 ---
 
@@ -24,9 +24,9 @@ The following table lists the current set of fully-qualified property names for 
 | --- | --- |
 | `cdx:ai-ml:model:parameter` | Used to describe the learned parameters of a model which  dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Used to describe a parameter used as input to a model and used during generation. |
-| `cdx:ai-ml:model:tokenizer` | Used to annotate a component as a (model) tokenizer. |
-| `cdx:ai-ml:model:template:prompt` | Used to annotate a component as a model prompt template. |
-| `cdx:ai-ml:model:template:chat` | Used to annotate a component as a model chat template. |
+| `cdx:ai-ml:model:tokenizer` | Used to tag a component as a (model) tokenizer (no property value needed). |
+| `cdx:ai-ml:model:template:prompt` | Used to tag a component as a model prompt template (no property value needed). |
+| `cdx:ai-ml:model:template:chat` | Used to tag a component as a model chat template (no property value needed). |
 | `cdx:ai-ml:model:languages` | Used to indicate what languages a model was trained for. The value for this property should be in the form of a comma-separated list of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (e.g., `"en,fr,de,it,ja,zh"`, etc.). |
 
 ---
