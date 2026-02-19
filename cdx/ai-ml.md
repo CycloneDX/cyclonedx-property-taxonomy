@@ -23,7 +23,7 @@ The following table lists the current set of fully-qualified property names for 
 | Property | Description |
 | --- | --- |
 | `cdx:ai-ml:model:parameter` | Used to describe the learned parameters of a model which  dictated by the model's architecture and design before training. |
-| `cdx:ai-ml:model:hyperparameter` | Used to describe a parameter used as input to a model and used during generation. |
+| `cdx:ai-ml:model:hyperparameter` | Used to describe a parameter used to configure a model. |
 | `cdx:ai-ml:model:tokenizer` | Used to tag a component as a (model) tokenizer (no property value needed). |
 | `cdx:ai-ml:model:template:prompt` | Used to tag a component as a model prompt template (no property value needed). |
 | `cdx:ai-ml:model:template:chat` | Used to tag a component as a model chat template (no property value needed). |
