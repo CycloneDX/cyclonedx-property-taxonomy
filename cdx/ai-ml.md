@@ -90,8 +90,6 @@ Given that there are some commonly agreed-upon model configuration property name
 
 Model tokenizers, although generally conforming to small set of industry-acknowledged implementations, often have distinct variants developed to work with a specific model it was used to train.  These tokenizers have their own hyperparameters that can be declared as properties on a CycloneDX component's model card as described for `model:hyperparameters` (above).
 
-Please note that these hyperparameters should be compatible with the tokenizer class implementation provided on the `tokenizer_class` hyperparameter, if it is listed as a CycloneDX property in a model component's model card.
-
 Given that there are some commonly agreed-upon tokenizer configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `tokenizer:hyperparameter` path segment:
 
 | Property | Description |
@@ -106,4 +104,8 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 | `unk_token` | The special token configured in a tokenizer to replace any input character or word that is not found in the model's vocabulary. |
 | `vocab_size` | The configured size of the token vocabulary.  Please note this value should match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
 
-* Please note that tokenizers that can be configured with hyperparameters that provide a special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
+#### Tokenizer hyperparameter notes
+
+* if the `model:hyperparameters:tokenizer_class` hyperparameter value is declared,  the `tokenizer:hyperparameters:tokenizer_class` value should match.
+* Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
+* Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
