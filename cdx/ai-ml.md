@@ -9,7 +9,7 @@ The official rules and processes apply - see [parent document](../cdx.md).
 The following list contains the reserved paths used as category groups for AI/ML properties under the `cdx:ai-ml` namespace.
 
 | Path | Description |
-|-----------|-------------|
+| --- | --- |
 | `cdx:ai-ml:model` |  Path segment used to group model-related properties. |
 | `cdx:ai-ml:tokenizer` |  Path segment used to group tokenizer-related properties. |
 | `cdx:ai-ml:prompt` | Path segment used to group prompt-related properties. |
@@ -21,8 +21,8 @@ The following list contains the reserved paths used as category groups for AI/ML
 The following table lists the current set of fully-qualified property names for the `model` category:
 
 | Property | Description |
-|-----------|-------------|
-| `cdx:ai-ml:model:parameter` | Used to describe the learned parameters of a model which  dictated by the model's architecture and design before training.  |
+| --- | --- |
+| `cdx:ai-ml:model:parameter` | Used to describe the learned parameters of a model which  dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Used to describe a parameter used as input to a model and used during generation. |
 | `cdx:ai-ml:model:tokenizer` | Used to annotate a component as a (model) tokenizer. |
 | `cdx:ai-ml:model:template:prompt` | Used to annotate a component as a model prompt template. |
@@ -36,9 +36,9 @@ The following table lists the current set of fully-qualified property names for 
 These properties reflect on the methods used to control the model's parameter count, training or finetuning.
 
 | Property | Description |
-|-----------|-------------|
-| `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`).|
-| `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`).
+| --- |--- |
+| `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`). |
+| `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`). |
 
 #### Names of industry-standard fine-tuning methods
 
