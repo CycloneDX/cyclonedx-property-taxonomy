@@ -14,7 +14,7 @@ The following list contains the reserved paths used as category groups for AI/ML
 | `cdx:ai-ml:tokenizer` |  Path segment used to group tokenizer-related properties. |
 | `cdx:ai-ml:prompt` | Path segment used to group prompt-related properties. |
 
-----
+---
 
 ### `model` properties
 
@@ -40,7 +40,7 @@ These properties reflect on the methods used to control the model's parameter co
 | `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`).|
 | `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`).
 
-##### Names of industry-standard fine-tuning methods
+#### Names of industry-standard fine-tuning methods
 
 These following and similar values should be used on the `tune_methods` parameter:
 
@@ -84,7 +84,6 @@ Given that there are some commonly agreed-upon model configuration property name
 | `tokenizer_class` | The specific software class (i.e., implementation) used to convert raw text into token IDs and back (e.g., `GPT2Tokenizer`, `LlamaTokenizer`, etc. ). |
 | `vocab_size` | The size of the token vocabulary. |
 
-
 ---
 
 ### `tokenizer:hyperparameter` properties
@@ -97,4 +96,12 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 
 | Property | Description |
 |-----------|-------------|
-| | |
+| `bos_token` |  The Beginning-of-Sentence (BOS) token is a special token configured in a tokenizer that signifies the start of an input sequence. (e.g., `"<\|end_of_text\|>"`)|
+| `chat_template` | A string representation of the chat template that defines how to format conversational data using the configured tokenizer.|
+| `errors` | Configures how the tokenizer handles invalid UTF-8 byte sequences or character encoding issues when converting raw text into tokens. Known values include: `strict` (i.e., raise an error), `ignore` and `replace` (invalid token).|
+| `eos_token` |  The End-of-Sentence (BOS) token is a special token configured in a tokenizer to act as a stop signal for text generation. (e.g., `"<\|end_of_text\|>"`)|
+| `pad_token` |  The pad token is a special token configured in a tokenizer to fill in empty spaces in shorter sequences within a batch, ensuring all input sequences have the exact same length. (e.g., `"<\|end_of_text\|>"`)|
+| `padding_side` | Defines whether the tokenizer adds padding tokens (i.e., the `pad_token`) to the left or right side of a sequence to ensure all sequences in a batch are the same length. Known values are either `left` or `right`. |
+| `tokenizer_class` | The named tokenizer (class) implementation configured for the model when the tokenizer support multiple possible implementations. |
+| `unk_token` | The special token configured in a tokenizer to replace any input character or word that is not found in the model's vocabulary. |
+| `vocab_size` | The configured size of the token vocabulary.  Please note this value should match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
