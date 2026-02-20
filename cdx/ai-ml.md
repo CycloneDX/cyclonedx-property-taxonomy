@@ -31,7 +31,7 @@ The following table lists the current set of fully-qualified property names for 
 
 ---
 
-### `model:parameter` properties
+#### `model:parameter` properties
 
 Model properties reflect on the methods used to control the model's parameter count, training or finetuning. They would be used to replace the last path segment placeholder (i.e., as represented by `<NAME>`) in the full `cdx:ai-ml:model:parameter:<NAME>` path.
 
@@ -40,9 +40,27 @@ Model properties reflect on the methods used to control the model's parameter co
 | `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`). |
 | `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`). |
 
-###### Example: Using a property name listed in the AI/ML taxonomy
+#### Names of industry-standard fine-tuning methods
 
-This example shows how you would include the defined (reserved) `count` model parameter on an ML model's model card:
+These following and similar values should be used on the `tune_methods` parameter:
+
+| value | Description |
+| --- | --- |
+| `full` | Updates all model parameters during tuning. |
+| `sft` | Supervised Fine-Tuning. Uses labelled, human-curated data to train the model.|
+| `rlhf` | Reinforcement Learning from Human Feedback. |
+| `adapter` | Inserts small layers within the architecture which are tuned. |
+| `prompt` | appends trainable parameters to the input embeddings |
+| `lora` | Low-Rank Adaptation (LoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
+| `alora` | Allocating Low-Rank Adaptation (ALoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
+| `qlora` | Quantized low-rank adaptation (QLoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
+
+<!-- TODO: investigate describing (flash) attention methods; for example, MHA, GQA, MQA, etc. -->
+
+
+##### Example: Using a property name listed in the AI/ML taxonomy
+
+This example shows how you would include the defined (reserved) `count` and `tuning_methods` model parameters on an ML model's model card:
 
 ```json
 "component": {
@@ -56,13 +74,17 @@ This example shows how you would include the defined (reserved) `count` model pa
           "name": "cdx:ai-ml:model:parameter:count",
           "value": "7B"
         },
+        {
+          "name": "cdx:ai-ml:model:parameter:tuning_methods",
+          "value": "sft,rlhf"
+        }
       ]
     }
   }
 }
 ```
 
-###### Example: Providing an unlisted model parameter
+##### Example: Providing an unlisted model parameter
 
 This example shows how you would include a model parameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `foo` with a value `bar`.
 
@@ -83,23 +105,6 @@ This example shows how you would include a model parameter that is not currently
   }
 }
 ```
-
-#### Names of industry-standard fine-tuning methods
-
-These following and similar values should be used on the `tune_methods` parameter:
-
-| value | Description |
-| --- | --- |
-| `full` | Updates all model parameters during tuning. |
-| `sft` | Supervised Fine-Tuning. Uses labelled, human-curated data to train the model.|
-| `rlhf` | Reinforcement Learning from Human Feedback. |
-| `adapter` | Inserts small layers within the architecture which are tuned. |
-| `prompt` | appends trainable parameters to the input embeddings |
-| `lora` | Low-Rank Adaptation (LoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
-| `alora` | Allocating Low-Rank Adaptation (ALoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
-| `qlora` | Quantized low-rank adaptation (QLoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
-
-<!-- TODO: investigate describing (flash) attention methods; for example, MHA, GQA, MQA, etc. -->
 
 ---
 
@@ -128,9 +133,32 @@ Given that there are some commonly agreed-upon model configuration property name
 | `tokenizer_class` | The specific software class (i.e., implementation) used to convert raw text into token IDs and back (e.g., `GPT2Tokenizer`, `LlamaTokenizer`, etc. ). |
 | `vocab_size` | The size of the token vocabulary. |
 
+
+##### Example: Providing an unlisted model hyperparameter
+
+This example shows how you would include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `hamm` with a value `eggz`.
+
+```json
+"component": {
+  "type": "machine-learning-model",
+  ...,
+  "modelCard": {
+    "modelParameters": {
+      ...,
+      "properties": [
+        {
+          "name": "cdx:ai-ml:model:hyperparameter:hamm",
+          "value": "eggz"
+        },
+      ]
+    }
+  }
+}
+```
+
 ---
 
-## `tokenizer` properties
+### `tokenizer` properties
 
 The following table lists the current set of fully-qualified property names for the `tokenizer` category:
 
@@ -138,7 +166,7 @@ The following table lists the current set of fully-qualified property names for 
 | --- | --- |
 | `cdx:ai-ml:tokenizer:hyperparameter:<NAME>` | Used to describe a parameter used to configure a tokenizer.</br></br>**Extensibility**: The final path segment, represented by the `<NAME>` placeholder, can either be a hyperparameter name defined as part of AI/ML namespace taxonomy here or used to provide hyperparameter names not listed.|
 
-### `tokenizer:hyperparameter` properties
+#### `tokenizer:hyperparameter` properties
 
 Model tokenizers, although generally conforming to small set of industry-acknowledged implementations, often have distinct variants developed to work with a specific model it was used to train.  These tokenizers have their own hyperparameters that can be declared as properties on a CycloneDX component's model card as described for `model:hyperparameter` (above).
 
@@ -156,15 +184,15 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 | `unk_token` | The special token configured in a tokenizer to replace any input character or word that is not found in the model's vocabulary. |
 | `vocab_size` | The configured size of the token vocabulary.  Please note this value should match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
 
-#### Tokenizer hyperparameter notes
+##### Tokenizer hyperparameter notes
 
 * If the `model:hyperparameter:tokenizer_class` hyperparameter value is declared, the `tokenizer:hyperparameter:tokenizer_class` value should match.
 * Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
 * Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
 
-###### Example: Providing an unlisted model hyperparameter
+###### Example: Providing an unlisted tokenizer hyperparameter
 
-In the same way as shown for the `hyperparameter` example, this example shows how you would include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `baz` with a value `qux`.
+In the same way as shown in the model's `hyperparameter` example, this example shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `baz` with a value `qux`.
 
 ```json
 "component": {
