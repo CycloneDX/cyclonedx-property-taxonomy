@@ -40,7 +40,7 @@ Model properties reflect on the methods used to control the model's parameter co
 | `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`). |
 | `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`). |
 
-#### Names of industry-standard fine-tuning methods
+##### Names of industry-standard fine-tuning methods
 
 These following and similar values should be used on the `tune_methods` parameter:
 
@@ -56,7 +56,6 @@ These following and similar values should be used on the `tune_methods` paramete
 | `qlora` | Quantized low-rank adaptation (QLoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
 
 <!-- TODO: investigate describing (flash) attention methods; for example, MHA, GQA, MQA, etc. -->
-
 
 ##### Example: Using model parameter names listed in the AI/ML taxonomy
 
@@ -108,7 +107,7 @@ This example shows how you would include a model parameter that is not currently
 
 ---
 
-### `model:hyperparameter` properties
+#### `model:hyperparameter` properties
 
 Model hyperparameters are the settings used when configuring a model (and its algorithms) that determine how the model is structured and loaded into memory before any training or inference takes place.
 
@@ -129,7 +128,7 @@ Given that there are some commonly agreed-upon model configuration property name
 | `max_position_embeddings` | The maximum sequence/context length the model supports. |
 | `num_attention_heads` | The number of self-attention heads (e.g., `32`). |
 | `num_key_value_heads` | The number of attention heads used for the Key (K) and Value (V) projections in the attention mechanism of a transformer-based AI model. |
-| `quantization` | Defines the numerical precision (number of bits) used to store a model's weights (as tensors) (e.g., `bf16`, `Q4_K_M`, `Q8_0`, etc.). |
+| `quantization` | Defines the numerical precision (number of bits) used to store a model's weights (as tensors) (e.g., `bf16`, `q4_k_m`, `q8_0`, etc.). |
 | `tokenizer_class` | The specific software class (i.e., implementation) used to convert raw text into token IDs and back (e.g., `GPT2Tokenizer`, `LlamaTokenizer`, etc. ). |
 | `vocab_size` | The size of the token vocabulary. |
 
@@ -249,7 +248,7 @@ This example shows how you would include the defined (reserved) `eos_token` and 
 > **Note**: The `cdx:ai-ml:model:tokenizer` asserts (or tags) the associated component as a tokenizer with the
 implementation `LLMTokenizer` as the value before providing its hyperparameters.
 
-###### Example: Using an unlisted tokenizer hyperparameter name
+##### Example: Using an unlisted tokenizer hyperparameter name
 
 In the same way as shown in the model's `hyperparameter` example, this example shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `baz` with a value `qux`.
 
