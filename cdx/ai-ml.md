@@ -58,7 +58,7 @@ These following and similar values should be used on the `tune_methods` paramete
 <!-- TODO: investigate describing (flash) attention methods; for example, MHA, GQA, MQA, etc. -->
 
 
-##### Example: Using a property name listed in the AI/ML taxonomy
+##### Example: Using model parameter names listed in the AI/ML taxonomy
 
 This example shows how you would include the defined (reserved) `count` and `tuning_methods` model parameters on an ML model's model card:
 
@@ -84,7 +84,7 @@ This example shows how you would include the defined (reserved) `count` and `tun
 }
 ```
 
-##### Example: Providing an unlisted model parameter
+##### Example: Using an unlisted model parameter name
 
 This example shows how you would include a model parameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `foo` with a value `bar`.
 
@@ -114,7 +114,7 @@ Model hyperparameters are the settings used when configuring a model (and its al
 
 Hyperparameters can vary widely depending on model architecture and specific model variants that reflect on the model's  capabilities and specific code implementation.  This means that we cannot exhaustively list all possible parameters as properties in a taxonomy; however, we intend the `model:hyperparameter` path to be extended with names that actually match the specific implementation.
 
-Given that there are some commonly agreed-upon model configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `model:hyperparameter` path segment:
+Given that there are some commonly agreed-upon model configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `model:hyperparameter` path segment:
 
 | Property | Description |
 | --- | --- |
@@ -133,10 +133,39 @@ Given that there are some commonly agreed-upon model configuration property name
 | `tokenizer_class` | The specific software class (i.e., implementation) used to convert raw text into token IDs and back (e.g., `GPT2Tokenizer`, `LlamaTokenizer`, etc. ). |
 | `vocab_size` | The size of the token vocabulary. |
 
+##### Example: Using model hyperparameter names listed in the AI/ML taxonomy
 
-##### Example: Providing an unlisted model hyperparameter
+This example shows how you would include the defined (reserved) `hidden_act`, `hidden_size` and `num_hidden_layers` model hyperparameters on an ML model's model card:
 
-This example shows how you would include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `hamm` with a value `eggz`.
+```json
+"component": {
+  "type": "machine-learning-model",
+  ...,
+  "modelCard": {
+    "modelParameters": {
+      ...,
+      "properties": [
+        {
+          "name": "cdx:ai-ml:model:hyperparameter:hidden_act",
+          "value": "relu"
+        },
+        {
+          "name": "cdx:ai-ml:model:parameter:hidden_size",
+          "value": "4096"
+        },
+        {
+          "name": "cdx:ai-ml:model:parameter:num_hidden_layers",
+          "value": "32"
+        }
+      ]
+    }
+  }
+}
+```
+
+##### Example: Using an unlisted model hyperparameter name
+
+This example shows how you would include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `hamm` with a value `eggz`.
 
 ```json
 "component": {
@@ -170,7 +199,7 @@ The following table lists the current set of fully-qualified property names for 
 
 Model tokenizers, although generally conforming to small set of industry-acknowledged implementations, often have distinct variants developed to work with a specific model it was used to train.  These tokenizers have their own hyperparameters that can be declared as properties on a CycloneDX component's model card as described for `model:hyperparameter` (above).
 
-Given that there are some commonly agreed-upon tokenizer configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `tokenizer:hyperparameter` path segment:
+Given that there are some commonly agreed-upon tokenizer configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `tokenizer:hyperparameter` path segment:
 
 | Property | Description |
 | --- | --- |
@@ -190,24 +219,57 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 * Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
 * Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
 
-###### Example: Providing an unlisted tokenizer hyperparameter
+##### Example: Using tokenizer hyperparameter names listed in the AI/ML taxonomy
 
-In the same way as shown in the model's `hyperparameter` example, this example shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `baz` with a value `qux`.
+This example shows how you would include the defined (reserved) `eos_token` and `vocab_size` tokenizer hyperparameters on an ML model's model card:
 
 ```json
-"component": {
-  "type": "machine-learning-model",
-  ...,
-  "modelCard": {
-    "modelParameters": {
-      ...,
-      "properties": [
-        {
-          "name": "cdx:ai-ml:tokenizer:hyperparameter:baz",
-          "value": "qux"
-        },
-      ]
+"components": [
+  {
+    "type": "library",
+    "name": "tokenization.py",
+    ...,
+    "properties": [
+    {
+        "name": "cdx:ai-ml:model:tokenizer",
+        "value": "LLMTokenizer"
+    },
+    {
+        "name": "cdx:ai-ml:tokenizer:hyperparameter:eos_token",
+        "value": "<|end_of_text|>"
+    },
+    {
+        "name": "cdx:ai-ml:tokenizer:parameter:vocab_size",
+        "value": "152064"
     }
   }
-}
+]
+```
+
+> **Note**: The `cdx:ai-ml:model:tokenizer` asserts (or tags) the associated component as a tokenizer with the
+implementation `LLMTokenizer` as the value before providing its hyperparameters.
+
+###### Example: Using an unlisted tokenizer hyperparameter name
+
+In the same way as shown in the model's `hyperparameter` example, this example shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `baz` with a value `qux`.
+
+```json
+"components": [
+  {
+    "type": "library",
+    "name": "tokenization.py",
+    ...,
+    "properties": [
+      {
+        "name": "cdx:ai-ml:model:tokenizer",
+        "value": "LLMTokenizer"
+      },
+      ...,
+      {
+        "name": "cdx:ai-ml:tokenizer:hyperparameter:baz",
+        "value": "qux"
+      },
+    ]
+  }
+]
 ```
