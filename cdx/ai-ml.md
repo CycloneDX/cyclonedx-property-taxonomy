@@ -22,8 +22,8 @@ The following table lists the current set of fully-qualified property names for 
 
 | Property | Description |
 | --- | --- |
-| `cdx:ai-ml:model:parameter` | Used to describe the learned parameters of a model which  dictated by the model's architecture and design before training. |
-| `cdx:ai-ml:model:hyperparameter` | Used to describe a parameter used to configure a model. |
+| `cdx:ai-ml:model:parameter:<NAME>` | Used to describe the learned parameters of a model which  dictated by the model's architecture and design before training.</br></br>**Extensibility**: The final path segment, represented by the `<NAME>` placeholder, can either be a parameter name defined as part of AI/ML namespace taxonomy here or used to provide parameter names not listed. |
+| `cdx:ai-ml:model:hyperparameter:<NAME>` | Used to describe a parameter used to configure a model.</br></br>**Extensibility**: The final path segment, represented by the `<NAME>` placeholder, can either be a hyperparameter name defined as part of AI/ML namespace taxonomy here or used to provide hyperparameter names not listed.|
 | `cdx:ai-ml:model:tokenizer` | Used to tag a component as a (model) tokenizer (no property value needed). |
 | `cdx:ai-ml:model:template:prompt` | Used to tag a component as a model prompt template (no property value needed). |
 | `cdx:ai-ml:model:template:chat` | Used to tag a component as a model chat template (no property value needed). |
@@ -33,12 +33,57 @@ The following table lists the current set of fully-qualified property names for 
 
 ### `model:parameter` properties
 
-These properties reflect on the methods used to control the model's parameter count, training or finetuning.
+Model properties reflect on the methods used to control the model's parameter count, training or finetuning. They would be used to replace the last path segment placeholder (i.e., as represented by `<NAME>`) in the full `cdx:ai-ml:model:parameter:<NAME>` path.
 
 | Property | Description |
 | --- |--- |
 | `count` | total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity).  The value should use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion) (e.g., `1.7M`, `8B`, `70B` or `1T`). |
 | `tune_methods` | Describes how the model was fine-tuned on or adapted to new data. The value for this property should be in the form of a comma-separated list of industry-standard values such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods) (e.g., `"sft, rlhf"`). |
+
+###### Example: Using a property name listed in the AI/ML taxonomy
+
+This example shows how you would include the defined (reserved) `count` model parameter on an ML model's model card:
+
+```json
+"component": {
+  "type": "machine-learning-model",
+  ...,
+  "modelCard": {
+    "modelParameters": {
+      ...,
+      "properties": [
+        {
+          "name": "cdx:ai-ml:model:parameter:count",
+          "value": "7B"
+        },
+      ]
+    }
+  }
+}
+```
+
+###### Example: Providing an unlisted model parameter
+
+This example shows how you would include a model parameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `foo` with a value `bar`.
+
+```json
+"component": {
+  "type": "machine-learning-model",
+  ...,
+  "modelCard": {
+    "modelParameters": {
+      ...,
+      "properties": [
+        {
+          "name": "cdx:ai-ml:model:parameter:foo",
+          "value": "bar"
+        },
+      ]
+    }
+  }
+}
+```
+
 
 #### Names of industry-standard fine-tuning methods
 
@@ -83,6 +128,16 @@ Given that there are some commonly agreed-upon model configuration property name
 | `quantization` | Defines the numerical precision (number of bits) used to store a model's weights (as tensors) (e.g., `bf16`, `Q4_K_M`, `Q8_0`, etc.). |
 | `tokenizer_class` | The specific software class (i.e., implementation) used to convert raw text into token IDs and back (e.g., `GPT2Tokenizer`, `LlamaTokenizer`, etc. ). |
 | `vocab_size` | The size of the token vocabulary. |
+
+---
+
+## `tokenizer` properties
+
+The following table lists the current set of fully-qualified property names for the `tokenizer` category:
+
+| Property | Description |
+| --- | --- |
+| `cdx:ai-ml:tokenizer:hyperparameter:<NAME>` | Used to describe a parameter used to configure a tokenizer.</br></br>**Extensibility**: The final path segment, represented by the `<NAME>` placeholder, can either be a hyperparameter name defined as part of AI/ML namespace taxonomy here or used to provide hyperparameter names not listed.|
 
 ---
 
