@@ -10,7 +10,7 @@ The following are the reserved namespaces for AI/ML under the `cdx:ai-ml` namesp
 
 | Namespace | Description |
 | --------- | ----------- |
-| `cdx:ai-ml:model` |  Model-related properties. |
+| `cdx:ai-ml:model` | Model-related properties. |
 | `cdx:ai-ml:tokenizer` | Tokenizer-related properties. |
 | `cdx:ai-ml:prompt` | Prompt-related properties. |
 
@@ -43,10 +43,8 @@ Model properties reflect on the methods used to control the model's parameter co
 | Property | Description |
 | -------- | ----------- |
 | `cdx:ai-ml:model:parameter:count` | Total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity). The value SHOULD use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion). May appear once. |
-| `cdx:ai-ml:model:parameter:tune_methods` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MAY be a single keyword or a comma separated list, like `"sft, rlhf"`. |
-| `cdx:ai-ml:model:parameter:_obscure:<NAME>` |  `<NAME>` placeholder, used to provide an arbitrary model parameter name. Arbitrarty value and meaning. |
-
-Each well-known property MAY be used once, if not stated otherwise.
+| `cdx:ai-ml:model:parameter:tune_methods` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MAY be a single keyword or a comma separated list, like `"sft, rlhf"`. THis property MAY occur multiple times. |
+| `cdx:ai-ml:model:parameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model parameter name. Arbitrarty value and meaning. |
 
 ### Names of industry-standard fine-tuning methods
 
@@ -125,7 +123,7 @@ The following pseudocode shows how you would include a model parameter that is n
 
 Model hyperparameters are the settings used when configuring a model (and its algorithms) that determine how the model is structured and loaded into memory before any training or inference takes place.
 
-Hyperparameters can vary widely depending on model architecture and specific model variants that reflect on the model's  capabilities and specific code implementation.  This means that we cannot exhaustively list all possible parameters as properties in a taxonomy; however, we intend the `cdx:ai-ml:model:hyperparameter` namespace to be extended with names that actually match the specific implementation, for which the property name placeholder `<NAME>` may be utilized.
+Hyperparameters can vary widely depending on model architecture and specific model variants that reflect on the model's capabilities and specific code implementation. This means that we cannot exhaustively list all possible parameters as properties in a taxonomy; however, we intend the `cdx:ai-ml:model:hyperparameter` namespace to be extended with names that actually match the specific implementation, for which the property name placeholder `<NAME>` may be utilized.
 
 Given that there are some commonly agreed-upon model configuration property names that are found in [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) that are implemented on a [Transformer](https://en.wikipedia.org/wiki/Transformer_(deep_learning)) architecture the following properties are defined for the `cdx:ai-ml:model:hyperparameter` namespace:
 
@@ -133,7 +131,7 @@ Given that there are some commonly agreed-upon model configuration property name
 | -------- | ----------- |
 | `cdx:ai-ml:model:hyperparameter:activation_dropout` | The regularization technique used during training that randomly masks (sets to zero) a percentage of the intermediate hidden state activations. |
 | `cdx:ai-ml:model:hyperparameter:context_length` | The maximum number of tokens that the model can process at any one time. |
-| `cdx:ai-ml:model:hyperparameter:hidden_act` | The activation function used on output values of the intermediate (hidden) layers of a neural network. The function transforms the raw, linear output into an activated output value that is passed to the next layer introducing non-linearity. It is industry-standard to reference these functions by short names such as ReLU (Rectified Linear Unit) or SiLU (Sigmoid Linear Unit) which SHOULD be encoded with the values `relu` and `silu` respectively.  |
+| `cdx:ai-ml:model:hyperparameter:hidden_act` | The activation function used on output values of the intermediate (hidden) layers of a neural network. The function transforms the raw, linear output into an activated output value that is passed to the next layer introducing non-linearity. It is industry-standard to reference these functions by short names such as ReLU (Rectified Linear Unit) or SiLU (Sigmoid Linear Unit) which SHOULD be encoded with the values `relu` and `silu` respectively. |
 | `cdx:ai-ml:model:hyperparameter:hidden_size`, `:d_model` | The dimension of the input and output representations (i.e., of the token embeddings) used by the internal (hidden) layers of a model's neural network (e.g., `768`, `1024`, `4096`). |
 | `cdx:ai-ml:model:hyperparameter:layer_norm_type` | The specific normalization technique used to stabilize training in a transformer model. It determines how the model rescales activation values to prevent gradients from exploding or vanishing (e.g., `RMSNorm`, `LayerNorm`, `Pre-LN`, `GroupNorm`, etc.). |
 | `cdx:ai-ml:model:hyperparameter:num_hidden_layers`, `:num_layers` | The total number of intermediate (hidden) processing layers situated between the input layer and the output layer. The key `num_layers` is often used instead for non-transformer architectures (e.g., Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), etc.). |
@@ -223,16 +221,16 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:ai-ml:tokenizer:hyperparameter:bos_token` |  The Beginning-of-Sentence (BOS) token is a special token configured in a tokenizer that signifies the start of an input sequence. (e.g., `"<[end_of_text]>"`)|
+| `cdx:ai-ml:tokenizer:hyperparameter:bos_token` | The Beginning-of-Sentence (BOS) token is a special token configured in a tokenizer that signifies the start of an input sequence. (e.g., `"<[end_of_text]>"`)|
 | `cdx:ai-ml:tokenizer:hyperparameter:chat_template` | A string representation of the chat template that defines how to format conversational data using the configured tokenizer.|
 | `cdx:ai-ml:tokenizer:hyperparameter:errors` | Configures how the tokenizer handles invalid UTF-8 byte sequences or character encoding issues when converting raw text into tokens. Known values include: `strict` (i.e., raise an error), `ignore` and `replace` (invalid token).|
-| `cdx:ai-ml:tokenizer:hyperparameter:eos_token` |  The End-of-Sentence (BOS) token is a special token configured in a tokenizer to act as a stop signal for text generation. |
-| `cdx:ai-ml:tokenizer:hyperparameter:pad_token` |  The pad token is a special token configured in a tokenizer to fill in empty spaces in shorter sequences within a batch, ensuring all input sequences have the exact same length. |
+| `cdx:ai-ml:tokenizer:hyperparameter:eos_token` | The End-of-Sentence (BOS) token is a special token configured in a tokenizer to act as a stop signal for text generation. |
+| `cdx:ai-ml:tokenizer:hyperparameter:pad_token` | The pad token is a special token configured in a tokenizer to fill in empty spaces in shorter sequences within a batch, ensuring all input sequences have the exact same length. |
 | `cdx:ai-ml:tokenizer:hyperparameter:padding_side` | Defines whether the tokenizer adds padding tokens (i.e., the `pad_token`) to the left or right side of a sequence to ensure all sequences in a batch are the same length. Known values are either `left` or `right`. |
 | `cdx:ai-ml:tokenizer:hyperparameter:tokenizer_class` | The named tokenizer (class) implementation configured for the model when the tokenizer support multiple possible implementations. |
 | `cdx:ai-ml:tokenizer:hyperparameter:unk_token` | The special token configured in a tokenizer to replace any input character or word that is not found in the model's vocabulary. |
-| `cdx:ai-ml:tokenizer:hyperparameter:vocab_size` | The configured size of the token vocabulary.  Please note this value SHOULD match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
-| `cdx:ai-ml:tokenizer:hyperparameter:_obscure:<NAME>` |  `<NAME>` placeholder, used to provide an arbitrary tokenizer hyperparameter name. Arbitrarty value and meaning. |
+| `cdx:ai-ml:tokenizer:hyperparameter:vocab_size` | The configured size of the token vocabulary. Please note this value SHOULD match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
+| `cdx:ai-ml:tokenizer:hyperparameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary tokenizer hyperparameter name. Arbitrarty value and meaning. |
 
 Each well-known property MAY be used once, if not stated otherwise.
 
