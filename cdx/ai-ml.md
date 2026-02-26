@@ -254,17 +254,18 @@ The following pseudocode shows how you would include the defined (reserved) `eos
     "name": "tokenization.py",
     // ...
     "properties": [
-    {
-        "name": "cdx:ai-ml:model:tokenizer",
-        "value": "LLMTokenizer"
-    },
-    {
-        "name": "cdx:ai-ml:tokenizer:hyperparameter:eos_token",
-        "value": "<|end_of_text|>"
-    },
-    {
-        "name": "cdx:ai-ml:tokenizer:parameter:vocab_size",
-        "value": "152064"
+      {
+          "name": "cdx:ai-ml:model:tokenizer",
+          "value": "LLMTokenizer"
+      },
+      {
+          "name": "cdx:ai-ml:tokenizer:hyperparameter:eos_token",
+          "value": "<|end_of_text|>"
+      },
+      {
+          "name": "cdx:ai-ml:tokenizer:parameter:vocab_size",
+          "value": "152064"
+      }
     }
   }]
 }
