@@ -27,7 +27,7 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | Property | Description |
 | -------- | ----------- |
 | `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. May appear once. |
-| `cdx:ai-ml:model:languages` | Describe what languages a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). This property MAY appear multiple times. Value MAY be a single language code or a comma separated list, like `en,fr,de,it,ja,zh`. |
+| `cdx:ai-ml:model:languages` | Describe what languages a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). This property MAY appear multiple times. Value MAY be a single language code or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`. </br> This property MAY occur multiple times. |
 
 ## `cdx:ai-ml:model:template` Namespace Taxonomy
 
@@ -42,15 +42,15 @@ Model properties reflect on the methods used to control the model's parameter co
 
 | Property | Description |
 | -------- | ----------- |
-| `cdx:ai-ml:model:parameter:count` | Total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity). The value SHOULD use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion). May appear once. |
-| `cdx:ai-ml:model:parameter:tune_methods` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MAY be a single keyword or a comma separated list, like `"sft, rlhf"`. THis property MAY occur multiple times. |
+| `cdx:ai-ml:model:parameter:count` | Total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity). </br> The value SHOULD use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion). May appear once. |
+| `cdx:ai-ml:model:parameter:tune_methods` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MAY be a single keyword or a comma separated list of keywords (e.g., `"sft,rlhf"`). </br> This property MAY occur multiple times. |
 | `cdx:ai-ml:model:parameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model parameter name. Arbitrarty value and meaning. |
 
 ### Names of industry-standard fine-tuning methods
 
 These following and similar values SHOULD be used on the `cdx:ai-ml:model:parameter:tune_methods` parameter:
 
-| value | Description |
+| Value | Description |
 | ----- | ----------- |
 | `full` | Updates all model parameters during tuning. |
 | `sft` | Supervised Fine-Tuning. Uses labelled, human-curated data to train the model.|
