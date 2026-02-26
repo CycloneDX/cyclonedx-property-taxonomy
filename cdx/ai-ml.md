@@ -46,7 +46,7 @@ Model properties reflect on the methods used to control the model's parameter co
 | `cdx:ai-ml:model:parameter:tune_methods` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MAY be a single keyword or a comma separated list, like `"sft, rlhf"`. |
 | `cdx:ai-ml:model:parameter:_obscure:<NAME>` |  `<NAME>` placeholder, used to provide an arbitrary model parameter name not listed above. Arbitrarty value and meaning. |
 
-The properties MAY be used once each.
+Each property may be used once.
 
 ### Names of industry-standard fine-tuning methods
 
@@ -67,12 +67,14 @@ These following and similar values SHOULD be used on the `cdx:ai-ml:model:parame
 
 The following pseudocode shows how you would include the defined (reserved) `count` and `tuning_methods` model parameters on an ML model's model card:
 
-```json
+```jsonc
 {
+  // ... 
   "components": [{
     "type": "machine-learning-model",
     "name": "my model",
     "modelCard": {
+      // ...
       "modelParameters": {
         "properties": [
           {
@@ -98,12 +100,14 @@ The following pseudocode shows how you would include the defined (reserved) `cou
 
 The following pseudocode shows how you would include a model parameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `foo` with a value `bar`.
 
-```json
-{ 
+```jsonc
+{
+  // ...
   "components": [{
     "type": "machine-learning-model",
     "name": "my model with own parameter",
     "modelCard": {
+      // ...
       "modelParameters": {
         "properties": [
           {
@@ -143,17 +147,19 @@ Given that there are some commonly agreed-upon model configuration property name
 | `cdx:ai-ml:model:hyperparameter:vocab_size` | The size of the token vocabulary. |
 | `cdx:ai-ml:model:hyperparameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model hyperparameter name not listed above. Arbitrarty value and meaning. |
 
-The following properties MAY be used once each.
+Each property may be used once.
 
 ### Example: Using model hyperparameter names listed in the AI/ML taxonomy
 
 The following pseudocode shows how you would include the defined (reserved) `hidden_act`, `hidden_size` and `num_hidden_layers` model hyperparameters on an ML model's model card:
 
-```json
+```jsonc
 {
+  // ...
   "components": [{
     "type": "machine-learning-model",
     "name": "my model",
+    // ...
     "modelCard": {
       "modelParameters": {
         "properties": [
@@ -180,11 +186,13 @@ The following pseudocode shows how you would include the defined (reserved) `hid
 
 The following pseudocode shows how to include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `hamm` with a value `eggz`.
 
-```json
+```jsonc
 {
+  // ...
   "components": [{
     "type": "machine-learning-model",
     "name": "my model with own hyperparameter",
+    // ...
     "modelCard": {
       "modelParameters": {
         "properties": [
@@ -202,7 +210,6 @@ The following pseudocode shows how to include a model hyperparameter that is not
 ## `cdx:ai-ml:tokenizer` Namespace Taxonomy
 
 The following table lists the current set of namespaces in the `cdx:ai-ml:tokenizer` namespace:
-
 
 | Namespace | Description |
 | --------- | ----------- |
@@ -227,7 +234,7 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 | `cdx:ai-ml:tokenizer:hyperparameter:vocab_size` | The configured size of the token vocabulary.  Please note this value should match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
 | `cdx:ai-ml:tokenizer:hyperparameter:_obscure:<NAME>` |  `<NAME>` placeholder, used to provide an arbitrary tokenizer hyperparameter name not listed above. Arbitrarty value and meaning. |
 
-The following properties MAY be used once each.
+Each property may be used once.
 
 ### Tokenizer hyperparameter notes
 
@@ -239,11 +246,13 @@ The following properties MAY be used once each.
 
 The following pseudocode shows how you would include the defined (reserved) `eos_token` and `vocab_size` tokenizer hyperparameters on an ML model's model card:
 
-```json
+```jsonc
 {
+  // ...
   "components": [{
     "type": "library",
     "name": "tokenization.py",
+    // ...
     "properties": [
     {
         "name": "cdx:ai-ml:model:tokenizer",
@@ -268,10 +277,12 @@ The following pseudocode shows how you would include the defined (reserved) `eos
 In the same way as shown in the model's `hyperparameter` example, the following pseudocode shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `baz` with a value `qux`.
 
 ```json
-{ 
+{
+  // ...
   "components": [{
     "type": "library",
     "name": "tokenization.py",
+    // ...
     "properties": [
       {
         "name": "cdx:ai-ml:model:tokenizer",
