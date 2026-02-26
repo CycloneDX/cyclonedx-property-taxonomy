@@ -266,7 +266,7 @@ The following pseudocode shows how you would include the defined (reserved) `eos
           "name": "cdx:ai-ml:tokenizer:parameter:vocab_size",
           "value": "152064"
       }
-    }
+    ]
   }]
 }
 ```
@@ -292,7 +292,7 @@ In the same way as shown in the model's `hyperparameter` example, the following 
       {
         "name": "cdx:ai-ml:tokenizer:hyperparameter:_obscure:baz",
         "value": "qux"
-      },
+      }
     ]
   }]
 }
