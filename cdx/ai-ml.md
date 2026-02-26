@@ -276,7 +276,7 @@ The following pseudocode shows how you would include the defined (reserved) `eos
 
 In the same way as shown in the model's `hyperparameter` example, the following pseudocode shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `baz` with a value `qux`.
 
-```json
+```jsonc
 {
   // ...
   "components": [{
