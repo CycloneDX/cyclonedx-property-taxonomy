@@ -16,7 +16,7 @@ The following are the reserved namespaces for AI/ML under the `cdx:ai-ml` namesp
 
 _Boolean value_ are `true` or `false`; case sensitive.
 
-##  `cdx:ai-ml:model` Namespace Taxonomy
+## `cdx:ai-ml:model` Namespace Taxonomy
 
 | Namespace | Description |
 | --------- | ----------- |
@@ -69,7 +69,7 @@ The following pseudocode shows how you would include the defined (reserved) `cou
 
 ```jsonc
 {
-  // ... 
+  // ...
   "components": [{
     "type": "machine-learning-model",
     "name": "my model",
