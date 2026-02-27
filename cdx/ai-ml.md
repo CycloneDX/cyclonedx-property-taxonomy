@@ -75,7 +75,7 @@ Model properties reflect on the methods used to control the model's parameter co
 | -------- | ----------- |
 | `cdx:ai-ml:model:parameter:count` | Total number of learned parameters for the model. This reflects the model's design and structure (e.g., number of layers in a neural network, nodes, and connectivity). </br> The value SHOULD use the industry-standard naming convention of number followed by one of the letters: `M` (Million), `B` (Billion) or `T` (Trillion). May appear once. |
 | `cdx:ai-ml:model:parameter:tune_method` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MUST be a single keyword (e.g., `lora`) or a comma separated list of keywords (e.g., `sft,rlhf`). </br> This property MAY occur multiple times. |
-| `cdx:ai-ml:model:parameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model parameter name. Arbitrarty value and meaning. |
+| `cdx:ai-ml:model:parameter:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model parameter name. Arbitrarty value and meaning. |
 
 ### Names of industry-standard fine-tuning methods
 
@@ -144,7 +144,7 @@ The following pseudocode shows how you would include a model parameter that is n
       "modelParameters": {
         "properties": [
           {
-            "name": "cdx:ai-ml:model:parameter:_obscure:foo",
+            "name": "cdx:ai-ml:model:parameter:_undefined:foo",
             "value": "bar"
           }
         ]
@@ -178,7 +178,7 @@ Given that there are some commonly agreed-upon model configuration property name
 | `cdx:ai-ml:model:hyperparameter:quantization` | Defines the numerical precision (number of bits) used to store a model's weights (as tensors) (e.g., `bf16`, `q4_k_m`, `q8_0`, etc.). |
 | `cdx:ai-ml:model:hyperparameter:tokenizer_class` | The specific software class (i.e., implementation) used to convert raw text into token IDs and back (e.g., `GPT2Tokenizer`, `LlamaTokenizer`, etc. ). |
 | `cdx:ai-ml:model:hyperparameter:vocab_size` | The size of the token vocabulary. |
-| `cdx:ai-ml:model:hyperparameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model hyperparameter name. Arbitrarty value and meaning. |
+| `cdx:ai-ml:model:hyperparameter:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model hyperparameter name. Arbitrarty value and meaning. |
 
 Each well-known property MAY be used once.
 
@@ -230,7 +230,7 @@ The following pseudocode shows how to include a model hyperparameter that is not
       "modelParameters": {
         "properties": [
           {
-            "name": "cdx:ai-ml:model:hyperparameter:_obscure:hamm",
+            "name": "cdx:ai-ml:model:hyperparameter:_undefined:hamm",
             "value": "eggz"
           },
         ]
@@ -265,7 +265,7 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 | `cdx:ai-ml:tokenizer:hyperparameter:tokenizer_class` | The named tokenizer (class) implementation configured for the model when the tokenizer support multiple possible implementations. |
 | `cdx:ai-ml:tokenizer:hyperparameter:unk_token` | The special token configured in a tokenizer to replace any input character or word that is not found in the model's vocabulary. |
 | `cdx:ai-ml:tokenizer:hyperparameter:vocab_size` | The configured size of the token vocabulary. Please note this value SHOULD match the `vocab_size` model hyperparameter value if both are declared on the same model card. |
-| `cdx:ai-ml:tokenizer:hyperparameter:_obscure:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary tokenizer hyperparameter name. Arbitrarty value and meaning. |
+| `cdx:ai-ml:tokenizer:hyperparameter:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary tokenizer hyperparameter name. Arbitrarty value and meaning. |
 
 Each well-known property MAY be used once, if not stated otherwise.
 
@@ -323,7 +323,7 @@ In the same way as shown in the model's `hyperparameter` example, the following 
         "value": "LLMTokenizer"
       },
       {
-        "name": "cdx:ai-ml:tokenizer:hyperparameter:_obscure:baz",
+        "name": "cdx:ai-ml:tokenizer:hyperparameter:_undefined:baz",
         "value": "qux"
       }
     ]
