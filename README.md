@@ -1,7 +1,5 @@
 # CycloneDX Property Taxonomy
 
-foo
-
 [![shield_license]][license_file]
 [![shield_website]][link_website]
 [![shield_slack]][link_slack]
