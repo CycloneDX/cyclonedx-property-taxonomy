@@ -1,7 +1,2 @@
-markdown: kramdown
+# we do the hilighting outselves via `prism`
 highlighter: none
-
-kramdown:
-  input: GFM
-
-theme: minima
