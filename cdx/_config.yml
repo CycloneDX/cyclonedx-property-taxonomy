@@ -1,0 +1,11 @@
+title: My Site Title
+description: My short description
+
+theme: minima
+
+markdown: kramdown
+highlighter: none
+
+# Optional but recommended
+kramdown:
+  input: GFM
