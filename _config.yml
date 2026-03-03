@@ -1,0 +1,7 @@
+markdown: kramdown
+highlighter: none
+
+kramdown:
+  input: GFM
+
+theme: minima
