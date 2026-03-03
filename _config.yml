@@ -9,3 +9,6 @@ highlighter: none
 # Optional but recommended
 kramdown:
   input: GFM
+
+minima:
+  skin: auto
