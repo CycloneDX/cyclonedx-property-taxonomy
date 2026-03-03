@@ -1,2 +1,6 @@
+baseurl: "/fork_cyclonedx-property-taxonomy/"
+
+theme: minima
+
 # we do the hilighting outselves via `prism`
 highlighter: none
