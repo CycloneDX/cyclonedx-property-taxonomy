@@ -71,7 +71,7 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | `cdx:ai-ml:model:modality:video` | Video processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
 | `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
 | `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
-| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
+| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
 | `cdx:ai-ml:model:modality:genomic` (telemetry) |  Processes high-dimensional data used in drug discovery and medical research. |
 | `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
 
