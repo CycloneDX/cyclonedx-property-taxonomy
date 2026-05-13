@@ -44,6 +44,25 @@ Model modality values MUST be one of the following:
 | `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
 | `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
 
+###### Example: Using a model modalities on model components
+
+```json
+"component":
+{
+  "type": "machine-learning-model",
+  "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
+  // ...,
+  "properties": [
+    {
+      "name": "cdx:ai-ml:model:modality:code",
+    },
+    {
+      "name": "cdx:ai-ml:model:modality:instruct",
+    }
+  ]
+}
+```
+
 ### `cdx:ai-ml:model:language` Namespace Taxonomy
 
 Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
