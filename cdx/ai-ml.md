@@ -20,16 +20,35 @@ _Boolean value_ are `true` or `false`; case sensitive.
 
 | Namespace | Description |
 | --------- | ----------- |
+| `cdx:ai-ml:model:modality` | Provide the modality/modalities the model supports. This describes the specific type(s) or format(s) of data the model is designed to process such as text, images, audio, video, or sensor data. |
 | `cdx:ai-ml:model:template` | Mark a model as a template and describe its details. |
 | `cdx:ai-ml:model:parameter` | Describe learned parameters of a model which dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Describe parameters used to configure a model. |
-
-| Property | Description |
-| -------- | ----------- |
 | `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
 | `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
 
-### Example: Using multiple languages
+### `cdx:ai-ml:model:modality` Namespace Taxonomy
+
+Model modality values MUST be one of the following:
+
+| Property | Description |
+| -------- | ----------- |
+| `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
+| `cdx:ai-ml:model:modality:code` | Specialized text-based modality used for software engineering and logic. |
+| `cdx:ai-ml:model:modality:instruct` | Specialized text-based fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
+| `cdx:ai-ml:model:modality:image` (vision) | Computer vision for object detection, generation, and classification as well as document processing. |
+| `cdx:ai-ml:model:modality:video` | Video processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
+| `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
+| `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
+| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
+| `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
+| `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
+
+### `cdx:ai-ml:model:language` Namespace Taxonomy
+
+Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
+
+#### Example: Using multiple languages
 
 ```jsonc
 {
@@ -60,29 +79,14 @@ _Boolean value_ are `true` or `false`; case sensitive.
 }
 ```
 
-## `cdx:ai-ml:model:modality` Namespace Taxonomy
-
-| Property | Description |
-| -------- | ----------- |
-| `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
-| `cdx:ai-ml:model:modality:code` | Specialized text-based modality used for software engineering and logic. |
-| `cdx:ai-ml:model:modality:instruct` | Specialized text-based fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
-| `cdx:ai-ml:model:modality:image` (vision) | Computer vision for object detection, generation, and classification as well as document processing. |
-| `cdx:ai-ml:model:modality:video` | Video processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
-| `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
-| `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
-| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
-| `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
-| `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
-
-## `cdx:ai-ml:model:template` Namespace Taxonomy
+### `cdx:ai-ml:model:template` Namespace Taxonomy
 
 | Property | Description |
 | -------- | ----------- |
 | `cdx:ai-ml:model:template:prompt` | Mark a component as a model prompt template. _Boolean value_. </br> This property MAY appear once. |
 | `cdx:ai-ml:model:template:chat` | Mark a component as a model chat template. _Boolean value_. </br> This property MAY appear once. |
 
-## `cdx:ai-ml:model:parameter` Namespace Taxonomy
+### `cdx:ai-ml:model:parameter` Namespace Taxonomy
 
 Model properties reflect on the methods used to control the model's parameter count, training or fine-tuning.
 
@@ -92,7 +96,7 @@ Model properties reflect on the methods used to control the model's parameter co
 | `cdx:ai-ml:model:parameter:tune_method` | Describes how the model was fine-tuned on or adapted to new data. This property MAY appear multiple times. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-fine-tuning-methods). Value MUST be a single keyword (e.g., `lora`) or a comma separated list of keywords (e.g., `sft,rlhf`). </br> This property MAY occur multiple times. |
 | `cdx:ai-ml:model:parameter:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model parameter name. Arbitrarty value and meaning. |
 
-### Names of industry-standard fine-tuning methods
+#### Names of industry-standard fine-tuning methods
 
 These following and similar values SHOULD be used on the `cdx:ai-ml:model:parameter:tune_method` parameter:
 
@@ -107,7 +111,7 @@ These following and similar values SHOULD be used on the `cdx:ai-ml:model:parame
 | `alora` | Allocating Low-Rank Adaptation (ALoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
 | `qlora` | Quantized low-rank adaptation (QLoRA). A standard Parameter-Efficient Fine-Tuning (PEFT) method. |
 
-### Example: Using model parameter names listed in the AI/ML taxonomy
+#### Example: Using model parameter names listed in the AI/ML taxonomy
 
 The following pseudocode shows how you would include the defined (reserved) `count` and `tuning_method` model parameters on an ML model's model card:
 
@@ -144,7 +148,7 @@ The following pseudocode shows how you would include the defined (reserved) `cou
 }
 ```
 
-### Example: Using an unlisted model parameter name
+#### Example: Using an unlisted model parameter name
 
 The following pseudocode shows how you would include a model parameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `foo` with a value `bar`.
 
@@ -169,7 +173,7 @@ The following pseudocode shows how you would include a model parameter that is n
 }
 ```
 
-## `cdx:ai-ml:model:hyperparameter` Namespace Taxonomy
+### `cdx:ai-ml:model:hyperparameter` Namespace Taxonomy
 
 Model hyperparameters are the settings used when configuring a model (and its algorithms) that determine how the model is structured and loaded into memory before any training or inference takes place.
 
@@ -197,7 +201,7 @@ Given that there are some commonly agreed-upon model configuration property name
 
 Each well-known property MAY be used once.
 
-### Example: Using model hyperparameter names listed in the AI/ML taxonomy
+#### Example: Using model hyperparameter names listed in the AI/ML taxonomy
 
 The following pseudocode shows how you would include the defined (reserved) `hidden_act`, `hidden_size` and `num_hidden_layers` model hyperparameters on an ML model's model card:
 
@@ -230,7 +234,7 @@ The following pseudocode shows how you would include the defined (reserved) `hid
 }
 ```
 
-### Example: Using an unlisted model hyperparameter name
+#### Example: Using an unlisted model hyperparameter name
 
 The following pseudocode shows how to include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `hamm` with a value `eggz`.
 
@@ -263,7 +267,7 @@ The following table lists the current set of namespaces in the `cdx:ai-ml:tokeni
 | --------- | ----------- |
 | `cdx:ai-ml:tokenizer:hyperparameter` | Describe a parameter used to configure a tokenizer. |
 
-## `cdx:ai-ml:tokenizer:hyperparameter` Namespace Taxonomy
+### `cdx:ai-ml:tokenizer:hyperparameter` Namespace Taxonomy
 
 Model tokenizers, although generally conforming to small set of industry-acknowledged implementations, often have distinct variants developed to work with a specific model it was used to train.  These tokenizers have their own hyperparameters that can be declared as properties on a CycloneDX component's model card as described for `model:hyperparameter` (above).
 
@@ -284,13 +288,13 @@ Given that there are some commonly agreed-upon tokenizer configuration property 
 
 Each well-known property MAY be used once, if not stated otherwise.
 
-### Tokenizer hyperparameter notes
+#### Tokenizer hyperparameter notes
 
 * If the `cdx:ai-ml:model:hyperparameter:tokenizer_class` hyperparameter value is declared, the `cdx:ai-ml:tokenizer:hyperparameter:tokenizer_class` value SHOULD match.
 * Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
 * Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
 
-### Example: Using tokenizer hyperparameter names listed in the AI/ML taxonomy
+#### Example: Using tokenizer hyperparameter names listed in the AI/ML taxonomy
 
 The following pseudocode shows how you would include the defined (reserved) `eos_token` and `vocab_size` tokenizer hyperparameters on an ML model's model card:
 
@@ -321,7 +325,7 @@ The following pseudocode shows how you would include the defined (reserved) `eos
 
 > **Note**: The `cdx:ai-ml:model:tokenizer` asserts (or tags) the associated component as a tokenizer with the implementation `LLMTokenizer` as the value before providing its hyperparameters.
 
-### Example: Using an unlisted tokenizer hyperparameter name
+#### Example: Using an unlisted tokenizer hyperparameter name
 
 In the same way as shown in the model's `hyperparameter` example, the following pseudocode shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `baz` with a value `qux`.
 
