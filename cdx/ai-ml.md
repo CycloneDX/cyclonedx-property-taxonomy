@@ -34,8 +34,8 @@ Model modality values MUST be one of the following:
 | Property | Description |
 | -------- | ----------- |
 | `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
-| `cdx:ai-ml:model:modality:code` | Specialized text-based modality used for software engineering and logic. |
-| `cdx:ai-ml:model:modality:instruct` | Specialized text-based fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
+| `cdx:ai-ml:model:modality:code` | Specialized, text-based modality used for software engineering and logic. |
+| `cdx:ai-ml:model:modality:instruct` | Specialized, text-based modality fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
 | `cdx:ai-ml:model:modality:image` (vision) | Computer vision for object detection, generation, and classification as well as document processing. |
 | `cdx:ai-ml:model:modality:video` | Video processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
 | `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
