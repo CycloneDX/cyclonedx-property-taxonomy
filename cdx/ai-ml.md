@@ -44,7 +44,7 @@ Model modality values MUST be one of the following:
 | `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
 | `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
 
-#### Example: Using a model modalities on model components
+#### Example: Using model modalities on the model's component
 
 ```json
 "component":
