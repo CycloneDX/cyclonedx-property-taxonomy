@@ -46,7 +46,7 @@ Model modality values MUST be one of the following:
 
 #### Example: Using model modalities on the model's component
 
-```json
+```jsonc
 "component":
 {
   "type": "machine-learning-model",
