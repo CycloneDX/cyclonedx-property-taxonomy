@@ -286,7 +286,6 @@ The following pseudocode shows how to include a model hyperparameter that is not
 
 | Property | Description |
 | -------- | ----------- |
-
 | `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
 
 ---
