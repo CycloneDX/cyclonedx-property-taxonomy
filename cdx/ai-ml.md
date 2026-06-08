@@ -10,11 +10,13 @@ The following are the reserved namespaces for AI/ML under the `cdx:ai-ml` namesp
 
 | Namespace | Description |
 | --------- | ----------- |
-| `cdx:ai-ml:model` | Model-related properties. |
-| `cdx:ai-ml:tokenizer` | Tokenizer-related properties. |
+| [`cdx:ai-ml:model`](#cdxai-mlmodel-namespace-taxonomy) | Model-related properties. |
+| [`cdx:ai-ml:tokenizer`](#cdxai-mltokenizer-namespace-taxonomy) | Tokenizer-related properties. |
 | `cdx:ai-ml:prompt` | Prompt-related properties. |
 
 _Boolean value_ are `true` or `false`; case sensitive.
+
+---
 
 ## `cdx:ai-ml:model` Namespace Taxonomy
 
@@ -24,8 +26,6 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | `cdx:ai-ml:model:template` | Mark a model as a template and describe its details. |
 | `cdx:ai-ml:model:parameter` | Describe learned parameters of a model which dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Describe parameters used to configure a model. |
-| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
-| `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
 
 ### `cdx:ai-ml:model:modality` Namespace Taxonomy
 
@@ -66,6 +66,10 @@ Model modality values MUST be one of the following:
 ### `cdx:ai-ml:model:language` Namespace Taxonomy
 
 Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
+
+| Property | Description |
+| -------- | ----------- |
+| `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
 
 #### Example: Using multiple languages
 
@@ -277,6 +281,15 @@ The following pseudocode shows how to include a model hyperparameter that is not
   }]
 }
 ```
+
+## `cdx:ai-ml:model:tokenizer` Namespace Taxonomy
+
+| Property | Description |
+| -------- | ----------- |
+
+| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
+
+---
 
 ## `cdx:ai-ml:tokenizer` Namespace Taxonomy
 

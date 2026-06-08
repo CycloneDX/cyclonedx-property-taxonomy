@@ -1,6 +1,8 @@
+# Filesystem
+.DS_Store
 
+/.vscode/
 /.vendor/
 /.bundle/
 /vendor/bundle
 /lib/bundler/man/
-
