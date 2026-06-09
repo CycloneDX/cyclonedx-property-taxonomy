@@ -10,13 +10,11 @@ The following are the reserved namespaces for AI/ML under the `cdx:ai-ml` namesp
 
 | Namespace | Description |
 | --------- | ----------- |
-| [`cdx:ai-ml:model`](#cdxai-mlmodel-namespace-taxonomy) | Model-related properties. |
-| [`cdx:ai-ml:tokenizer`](#cdxai-mltokenizer-namespace-taxonomy) | Tokenizer-related properties. |
+| `cdx:ai-ml:model` | Model-related properties. |
+| `cdx:ai-ml:tokenizer` | Tokenizer-related properties. |
 | `cdx:ai-ml:prompt` | Prompt-related properties. |
 
 _Boolean value_ are `true` or `false`; case sensitive.
-
----
 
 ## `cdx:ai-ml:model` Namespace Taxonomy
 
@@ -27,52 +25,12 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | `cdx:ai-ml:model:parameter` | Describe learned parameters of a model which dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Describe parameters used to configure a model. |
 
-### `cdx:ai-ml:model:modality` Namespace Taxonomy
-
-Model modality values MUST be one of the following:
-
 | Property | Description |
 | -------- | ----------- |
-| `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) tasks and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
-| `cdx:ai-ml:model:modality:code` | Specialized, text-based modality used for software engineering and logic. |
-| `cdx:ai-ml:model:modality:instruct` | Specialized, text-based modality fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
-| `cdx:ai-ml:model:modality:image` (vision) | Image-based (i.e., computer vision) processing tasks used for object detection, generation, and classification as well as document processing. |
-| `cdx:ai-ml:model:modality:video` | Video  processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
-| `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
-| `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
-| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
-| `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
-| `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
-
-#### Example: Using model modalities on the model's component
-
-```jsonc
-{
-  "component":{
-    "type": "machine-learning-model",
-    "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
-    // ...,
-    "properties": [
-      {
-        "name": "cdx:ai-ml:model:modality:code",
-      },
-      {
-        "name": "cdx:ai-ml:model:modality:instruct",
-      }
-    ]
-  }
-}
-```
-
-### `cdx:ai-ml:model:language` Namespace Taxonomy
-
-Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
-
-| Property | Description |
-| -------- | ----------- |
+| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
 | `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
 
-#### Example: Using multiple languages
+### Example: Using multiple languages
 
 ```jsonc
 {
@@ -100,6 +58,44 @@ Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipe
       }
     }
   }]
+}
+```
+
+### `cdx:ai-ml:model:modality` Namespace Taxonomy
+
+Model modality values MUST be one of the following:
+
+| Property | Description |
+| -------- | ----------- |
+| `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) tasks and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
+| `cdx:ai-ml:model:modality:code` | Specialized, text-based modality used for software engineering and logic. |
+| `cdx:ai-ml:model:modality:instruct` | Specialized, text-based modality fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
+| `cdx:ai-ml:model:modality:image` (vision) | Image-based (i.e., computer vision) processing tasks used for object detection, generation, and classification as well as document processing. |
+| `cdx:ai-ml:model:modality:video` | Video  processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
+| `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
+| `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
+| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
+| `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
+| `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
+
+#### Example: Using model modalities on the model's component
+
+```jsonc
+{
+  // ...
+  "component": {
+    "type": "machine-learning-model",
+    "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
+    // ...,
+    "properties": [
+      {
+        "name": "cdx:ai-ml:model:modality:code",
+      },
+      {
+        "name": "cdx:ai-ml:model:modality:instruct",
+      }
+    ]
+  }
 }
 ```
 
@@ -282,14 +278,6 @@ The following pseudocode shows how to include a model hyperparameter that is not
   }]
 }
 ```
-
-## `cdx:ai-ml:model:tokenizer` Namespace Taxonomy
-
-| Property | Description |
-| -------- | ----------- |
-| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
-
----
 
 ## `cdx:ai-ml:tokenizer` Namespace Taxonomy
 
