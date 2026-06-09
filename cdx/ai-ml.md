@@ -53,10 +53,10 @@ The modality properties listed below SHOULD be used, when possible. For unlisted
     // ...,
     "properties": [
       {
-        "name": "cdx:ai-ml:model:modality:code",
+        "name": "cdx:ai-ml:model:modality:code"
       },
       {
-        "name": "cdx:ai-ml:model:modality:instruct",
+        "name": "cdx:ai-ml:model:modality:instruct"
       }
     ]
   }
