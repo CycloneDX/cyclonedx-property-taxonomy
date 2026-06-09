@@ -25,6 +25,48 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | `cdx:ai-ml:model:parameter` | Describe learned parameters of a model which dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Describe parameters used to configure a model. |
 
+### `cdx:ai-ml:model:modality` Namespace Taxonomy
+
+The modality properties listed below SHOULD be used, when possible. For unlisted modalities, extend the `cdx:ai-ml:model:modality` namespace via the `_undefined:` path, utilizing the property name placeholder <NAME>."
+
+| Property | Description |
+| -------- | ----------- |
+| `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) tasks and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
+| `cdx:ai-ml:model:modality:code` | Specialized, text-based modality used for software engineering and logic. |
+| `cdx:ai-ml:model:modality:instruct` | Specialized, text-based modality fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
+| `cdx:ai-ml:model:modality:image` (vision) | Image-based (i.e., computer vision) processing tasks used for object detection, generation, and classification as well as document processing. |
+| `cdx:ai-ml:model:modality:video` | Video  processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
+| `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
+| `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
+| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
+| `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
+| `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
+
+#### Example: Using model modalities on the model's component
+
+```jsonc
+{
+  // ...
+  "component": {
+    "type": "machine-learning-model",
+    "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
+    // ...,
+    "properties": [
+      {
+        "name": "cdx:ai-ml:model:modality:code",
+      },
+      {
+        "name": "cdx:ai-ml:model:modality:instruct",
+      }
+    ]
+  }
+}
+```
+
+### `cdx:ai-ml:model:language` Namespace Taxonomy
+
+Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
+
 | Property | Description |
 | -------- | ----------- |
 | `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
@@ -58,44 +100,6 @@ _Boolean value_ are `true` or `false`; case sensitive.
       }
     }
   }]
-}
-```
-
-### `cdx:ai-ml:model:modality` Namespace Taxonomy
-
-Model modality values MUST be one of the following:
-
-| Property | Description |
-| -------- | ----------- |
-| `cdx:ai-ml:model:modality:text` | Natural Language Processing (NLP) tasks and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
-| `cdx:ai-ml:model:modality:code` | Specialized, text-based modality used for software engineering and logic. |
-| `cdx:ai-ml:model:modality:instruct` | Specialized, text-based modality fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
-| `cdx:ai-ml:model:modality:image` (vision) | Image-based (i.e., computer vision) processing tasks used for object detection, generation, and classification as well as document processing. |
-| `cdx:ai-ml:model:modality:video` | Video  processing tasks to extract structured information, including object detection, action recognition, scene detection, and temporal understanding. |
-| `cdx:ai-ml:model:modality:audio` | Audio processing tasks such as Automatic Speech Recognition (ASR), Speech-to-Text, music generation, and sound pattern recognition. |
-| `cdx:ai-ml:model:modality:sensor` (telemetry) |  Processes data from specialized sensors or hardware, such as LiDAR for autonomous vehicles or IoT sensor feeds. |
-| `cdx:ai-ml:model:modality:biometric` | Specialized sensor-based modality used for analyzing biological traits for tasks such as facial recognition, fingerprint scanning, or voice authentication. |
-| `cdx:ai-ml:model:modality:genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
-| `cdx:ai-ml:model:modality:_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
-
-#### Example: Using model modalities on the model's component
-
-```jsonc
-{
-  // ...
-  "component": {
-    "type": "machine-learning-model",
-    "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
-    // ...,
-    "properties": [
-      {
-        "name": "cdx:ai-ml:model:modality:code",
-      },
-      {
-        "name": "cdx:ai-ml:model:modality:instruct",
-      }
-    ]
-  }
 }
 ```
 
