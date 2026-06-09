@@ -47,19 +47,20 @@ Model modality values MUST be one of the following:
 #### Example: Using model modalities on the model's component
 
 ```jsonc
-"component":
 {
-  "type": "machine-learning-model",
-  "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
-  // ...,
-  "properties": [
-    {
-      "name": "cdx:ai-ml:model:modality:code",
-    },
-    {
-      "name": "cdx:ai-ml:model:modality:instruct",
-    }
-  ]
+  "component":{
+    "type": "machine-learning-model",
+    "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
+    // ...,
+    "properties": [
+      {
+        "name": "cdx:ai-ml:model:modality:code",
+      },
+      {
+        "name": "cdx:ai-ml:model:modality:instruct",
+      }
+    ]
+  }
 }
 ```
 
