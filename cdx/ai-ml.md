@@ -47,7 +47,6 @@ These following values SHOULD be used with the `cdx:ai-ml:model:modality` proper
 | `genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
 | `_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
 
-
 ### Example: Using `machine-learning-model`
 
 ```jsonc
