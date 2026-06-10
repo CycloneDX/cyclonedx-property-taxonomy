@@ -27,7 +27,7 @@ _Boolean value_ are `true` or `false`; case sensitive.
 
 ### `cdx:ai-ml:model:modality` Namespace Taxonomy
 
-These following and similar values SHOULD be used with the `cdx:ai-ml:model:modality` property:
+These following values SHOULD be used with the `cdx:ai-ml:model:modality` property:
 
 | Value | Description |
 | -------- | ----------- |
