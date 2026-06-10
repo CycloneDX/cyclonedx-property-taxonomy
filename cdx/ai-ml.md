@@ -28,7 +28,7 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | -------- | ----------- |
 | `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
 | `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
-| `cdx:ai-ml:model:modality` | Provide the modality/modalities the model supports. This describes the specific type(s) or format(s) of data the model is designed to process. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-model-modalities). Value MUST be a single keyword. </br> This property MAY occur multiple times. |
+| `cdx:ai-ml:model:modality` | Provide the modality/modalities the model supports. This describes the specific type(s) or format(s) of data the model is designed to process. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-model-modalities). Value MUST be a single keyword. </br> This property MAY appear multiple times. |
 
 ### Names of industry-standard model modalities
 
