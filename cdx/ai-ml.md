@@ -20,17 +20,22 @@ _Boolean value_ are `true` or `false`; case sensitive.
 
 | Namespace | Description |
 | --------- | ----------- |
-| `cdx:ai-ml:model:modality` | Provide the modality/modalities the model supports. This describes the specific type(s) or format(s) of data the model is designed to process such as text, images, audio, video, or sensor data. |
 | `cdx:ai-ml:model:template` | Mark a model as a template and describe its details. |
 | `cdx:ai-ml:model:parameter` | Describe learned parameters of a model which dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Describe parameters used to configure a model. |
 
-### `cdx:ai-ml:model:modality` Namespace Taxonomy
+| Property | Description |
+| -------- | ----------- |
+| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
+| `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
+| `cdx:ai-ml:model:modality` | Provide the modality/modalities the model supports. This describes the specific type(s) or format(s) of data the model is designed to process. Value SHOULD be of industry-standard keywords such as those [listed in the section below](#names-of-industry-standard-model-modalities). Value MUST be a single keyword. </br> This property MAY occur multiple times. |
+
+### Names of industry-standard model modalities
 
 These following values SHOULD be used with the `cdx:ai-ml:model:modality` property:
 
 | Value | Description |
-| -------- | ----------- |
+| ----- | ----------- |
 | `text` | Natural Language Processing (NLP) tasks and specializations such as Natural Language Understanding (NLU) for tasks like translation, summarization, conversation, classification and sentiment analysis. |
 | `code` | Specialized, text-based modality used for software engineering and logic. |
 | `instruct` | Specialized, text-based modality fine-tuned for understanding and executing natural language directives (i.e., instruction following). |
@@ -42,15 +47,16 @@ These following values SHOULD be used with the `cdx:ai-ml:model:modality` proper
 | `genomic` (telemetry) | Processes high-dimensional data used in drug discovery and medical research. |
 | `_undefined:<NAME>` | `<NAME>` placeholder, used to provide an arbitrary model modality name. |
 
-#### Example: Using model modalities on the model's component
+
+### Example: Using `machine-learning-model`
 
 ```jsonc
 {
   // ...
-  "component": {
+  "components": [{
     "type": "machine-learning-model",
-    "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
-    // ...,
+    "name": "my model",
+    // ...
     "properties": [
       {
         "name": "cdx:ai-ml:model:modality",
@@ -59,22 +65,17 @@ These following values SHOULD be used with the `cdx:ai-ml:model:modality` proper
       {
         "name": "cdx:ai-ml:model:modality",
         "value": "instruct"
+      },
+      {
+        "name": "cdx:ai-ml:model:modality",
+        "value": "_undefined:acme:something-custom"
       }
     ]
-  }
+  }]
 }
 ```
 
-### `cdx:ai-ml:model:language` Namespace Taxonomy
-
-Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
-
-| Property | Description |
-| -------- | ----------- |
-| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
-| `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
-
-### Example: Using multiple languages
+### Example: Using multiple `cdx:ai-ml:model:language`
 
 ```jsonc
 {
