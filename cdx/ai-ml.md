@@ -25,6 +25,11 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | `cdx:ai-ml:model:parameter` | Describe learned parameters of a model which dictated by the model's architecture and design before training. |
 | `cdx:ai-ml:model:hyperparameter` | Describe parameters used to configure a model. |
 
+| Property | Description |
+| -------- | ----------- |
+| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
+| `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
+
 ### `cdx:ai-ml:model:modality` Namespace Taxonomy
 
 The modality properties listed below SHOULD be used, when possible. For unlisted modalities, extend the `cdx:ai-ml:model:modality` namespace via the `_undefined:` path, utilizing the property name placeholder <NAME>."
@@ -62,15 +67,6 @@ The modality properties listed below SHOULD be used, when possible. For unlisted
   }
 }
 ```
-
-### `cdx:ai-ml:model:language` Namespace Taxonomy
-
-Model language values MUST be valid [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes).
-
-| Property | Description |
-| -------- | ----------- |
-| `cdx:ai-ml:model:tokenizer` | Mark a component as a (model) tokenizer. _Boolean value_. </br> This property MAY appear once. |
-| `cdx:ai-ml:model:language` | Describe what language(s) a model was trained for. Value MUST be of [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes). Value MUST be a single language code (e.g. `nl`) or a comma separated list of language codes (e.g. `en,fr,de,it,ja,zh`). </br> This property MAY occur multiple times. |
 
 ### Example: Using multiple languages
 
