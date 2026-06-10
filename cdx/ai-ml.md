@@ -52,7 +52,7 @@ The modality properties listed below SHOULD be used, when possible. For unlisted
 ```jsonc
 {
   // ...
-  "component": {
+  "components": [{
     "type": "machine-learning-model",
     "bom-ref": "pkg:huggingface/FakeAI/CoderModel",
     // ...,
@@ -64,7 +64,7 @@ The modality properties listed below SHOULD be used, when possible. For unlisted
         "name": "cdx:ai-ml:model:modality:instruct"
       }
     ]
-  }
+  }]
 }
 ```
 
