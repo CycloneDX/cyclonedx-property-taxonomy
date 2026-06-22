@@ -18,6 +18,7 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | `cdx:ai-ml` | Namespace for properties specific to the Artificial Intelligence (AI)/machine Learning (ML) technology domain | [CycloneDX Core Working Group] | [cdx:ai-ml taxonomy](cdx/ai-ml.md) |
 | `cdx:composer` | Namespace for properties specific to the PHP Composer ecosystem. | [CycloneDX PHP Maintainers] | [cdx:composer taxonomy](cdx/composer.md) |
 | `cdx:device` | Namespace for properties specific to hardware devices. | [CycloneDX Core Working Group] | [cdx:device taxonomy](cdx/device.md) |
+| `cdx:esbuild` | Namespace for properties specific to the esbuild ecosystem. | [CycloneDX JavaScript Maintainers] | [cdx:esbuild taxonomy](cdx/esbuild.md) |
 | `cdx:gomod` | Namespace for properties specific to the Go Module ecosystem. | [CycloneDX Go Maintainers] | [cdx:gomod taxonomy](cdx/gomod.md) |
 | `cdx:lifecycle` | Namespace for properties specific to component and service lifecycles. | [CycloneDX Core Working Group] | [cdx:lifecycle taxonomy](cdx/lifecycle.md) |
 | `cdx:maven` | Namespace for properties specific to the Maven ecosystem. | [CycloneDX Maven Maintainers] [CycloneDX Gradle Maintainers] | [cdx:maven taxonomy](cdx/maven.md) |
