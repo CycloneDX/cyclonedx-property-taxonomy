@@ -18,4 +18,3 @@ _Boolean value_ are `true` or `false`; case sensitive.
 | Property | Description |
 |----------|-------------|
 | `cdx:esbuild:input:isVirtual` | Whether the input is virtual. _Boolean value_.<br/> If the property is missing, then assume the value to be `false`.<br/> May appear once. |
-
