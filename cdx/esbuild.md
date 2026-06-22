@@ -6,7 +6,6 @@ The official rules and processes apply - see [parent document](../cdx.md).
 
 ----
 
-
 | Namespace | Description |
 |-----------|-------------|
 | `cdx:esbuild:input` | Namespace for input specific properties. |
