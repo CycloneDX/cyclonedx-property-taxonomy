@@ -409,7 +409,7 @@ Maps to `structural.topologyType` in the schema. Rows marked **[PROPOSED]** have
 
 ---
 
-## **[PROPOSED]** `cdx:ai-ml:model:task` Namespace Taxonomy
+### **[PROPOSED]** `cdx:ai-ml:model:task` Namespace Taxonomy
 
 The `cdx:ai-ml:model:task` namespace corresponds to the `modelTaskType` definition in the JSON schema. Each value may be expressed in **two equivalent forms**:
 
@@ -495,7 +495,7 @@ Rows marked **[PROPOSED]** have no built-in enum equivalent and MUST use the URN
 
 ---
 
-## **[PROPOSED]** `cdx:ai-ml:model:performance` Namespace Taxonomy
+### **[PROPOSED]** `cdx:ai-ml:model:performance` Namespace Taxonomy
 
 The `cdx:ai-ml:model:performance` namespace corresponds to the `performanceMetric.type` definition in the JSON schema. Each value may be expressed in **two equivalent forms**:
 
@@ -576,10 +576,7 @@ Rows marked **[PROPOSED]** have no built-in enum equivalent and MUST use the URN
 
 ---
 
-
----
-
-## `cdx:ai-ml:tokenizer` Namespace Taxonomy
+### `cdx:ai-ml:tokenizer` Namespace Taxonomy
 
 The following table lists the current set of namespaces in the `cdx:ai-ml:tokenizer` namespace:
 
