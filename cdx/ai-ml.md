@@ -4,7 +4,7 @@ This is the namespace for official CycloneDX properties specific to the Artifici
 
 The official rules and processes apply - see [parent document](../cdx.md).
 
-----
+---
 
 The following are the reserved namespaces for AI/ML under the `cdx:ai-ml` namespace.
 
@@ -607,9 +607,9 @@ Each well-known property MAY be used once, if not stated otherwise.
 
 #### Tokenizer hyperparameter notes
 
-* If the `cdx:ai-ml:model:hyperparameter:tokenizer_class` hyperparameter value is declared, the `cdx:ai-ml:tokenizer:hyperparameter:tokenizer_class` value SHOULD match.
-* Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
-* Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
+- If the `cdx:ai-ml:model:hyperparameter:tokenizer_class` hyperparameter value is declared, the `cdx:ai-ml:tokenizer:hyperparameter:tokenizer_class` value SHOULD match.
+- Tokenizer hyperparameter values should be compatible with the tokenizer class implementation (value) provided on the `tokenizer_class` hyperparameter.
+- Tokenizer hyperparameters that configure special token such as `bos_token`, `eos_token`, `pad_token`, etc. often utilize a distinct syntax such as the `<|` and `|>` that delineates them from other tokens (e.g., `<|im_start|>`, `<|pad_id|>`, `<|end_of_text|>`).
 
 #### Example: Using tokenizer hyperparameter names listed in the AI/ML taxonomy
 
