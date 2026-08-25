@@ -134,7 +134,7 @@ the following table (called "registry") is marked with
 | `soos` | Namespace for use by SOOS. | [SOOS](https://github.com/soos-io) | [SOOS taxonomy](https://github.com/soos-io/cyclonedx-property-taxonomy) |
 | `spack` | Namespace for use by the Spack package manager. | [Spack Maintainers](https://github.com/spack) | [Spack SBOM Project](https://github.com/spack/spack-sbom#readme) |
 | `stackable` | Namespace for use by Stackable | [Stackable](https://github.com/stackabletech) | [Stackable taxonomy](https://github.com/stackabletech/cyclonedx-property-taxonomy) |
-| `syft` | Namespace for use by the Syft project. | [Syft Maintainers](https://github.com/anchore/syft) | `RESERVED` |
+| `syft` | Namespace for use by the Syft project. | [Syft Maintainers](https://github.com/anchore/syft) | [syft taxonomy](syft.md) |
 | `tern` | Namespace for use by the Tern project. | [Tern Maintainers](https://github.com/tern-tools/tern) | `RESERVED` |
 | `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 
