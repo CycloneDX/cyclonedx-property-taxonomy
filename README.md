@@ -137,6 +137,7 @@ the following table (called "registry") is marked with
 | `stackable` | Namespace for use by Stackable | [Stackable](https://github.com/stackabletech) | [Stackable taxonomy](https://github.com/stackabletech/cyclonedx-property-taxonomy) |
 | `syft` | Namespace for use by the Syft project. | [Syft Maintainers](https://github.com/anchore/syft) | `RESERVED` |
 | `tern` | Namespace for use by the Tern project. | [Tern Maintainers](https://github.com/tern-tools/tern) | `RESERVED` |
+| `tincture` | Namespace for use by Tincture. | [Lou Crocker](https://github.com/louiscrocker) | [Tincture taxonomy](https://github.com/louiscrocker/tincture-formats/blob/main/tincture-property-taxonomy.md) |
 | `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 
 ## Registering new Top-Level Namespaces
