@@ -117,6 +117,7 @@ the following table (called "registry") is marked with
 | `ibm` | Namespace for use by IBM. | [IBM](https://github.com/IBM) | `RESERVED` |
 | `interlynk` | Namespace for use by Interlynk. | [Interlynk](https://github.com/interlynk-io) | [Interlynk taxonomy](https://github.com/interlynk-io/cyclonedx-property-taxonomy) |
 | `jfrog` | Namespace for use by JFrog. | [JFrog](https://jfrog.com) | `RESERVED` |
+| `k8s-aibom` | Namespace for use by k8s-aibom, the runtime AI inventory controller for Kubernetes. | [k8s-aibom maintainers](https://github.com/GoogleCloudPlatform/k8s-aibom) | [k8s-aibom taxonomy](https://github.com/GoogleCloudPlatform/k8s-aibom/blob/main/docs/cyclonedx-property-taxonomy.md) |
 | `medical-aegis` | Namespace for use by Medical Aegis. | [Medical Aegis](https://github.com/Medical-Aegis) | `RESERVED` |
 | `nix` | Namespace for Nix properties. | [Nixpkgs Maintainers](https://github.com/NixOS/nixpkgs/) | [Nixpkgs Manual](https://nixos.org/manual/nixpkgs/unstable/#sec-interop.cylonedx-nix) |
 | `nvidia` | Namespace for NVIDIA properties. | [NVIDIA](https://github.com/NVIDIA) | [NVIDIA Taxonomy Documentation](https://github.com/NVIDIA/Trustworthy-AI/blob/main/CycloneDX-Property-Taxonomy/cyclonedx-property-taxonomy.md) |
