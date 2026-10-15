@@ -104,6 +104,7 @@ the following table (called "registry") is marked with
 | `boschrexroth` | Namespace for use by Bosch Rexroth. | [Bosch Rexroth AG](https://github.com/boschrexroth) | [Bosch Rexroth taxonomy](https://github.com/boschrexroth/cyclonedx-property-taxonomy#readme) |
 | `bsi` | Namespace for use by BSI. | [BSI](https://github.com/BSI-Bund) | [BSI taxonomy](https://github.com/BSI-Bund/tr-03183-cyclonedx-property-taxonomy) |
 | `bytetrail` | Namespace for use by ByteTrail. | [ByteTrail](https://github.com/bytetrail) | `RESERVED` |
+| `chainguard` | Namespace for use by Chainguard. | [Chainguard](https://chainguard.dev) | `RESERVED` |
 | `codenotary` | Namespace for use by Codenotary platform. | [Codenotary](https://github.com/codenotary) | [Codenotary taxonomy](https://github.com/codenotary/cyclonedx-property-taxonomy#readme) |
 | `contact-software` | Namespace for use by Contact Software. | [Contact Software](https://github.com/cslab) | `RESERVED` |
 | `cybeats` | Namespace for use by CyBeats SBOM Studio. | [CyBeats](https://github.com/cybeats) | [CyBeats Taxonomy](https://github.com/cybeats/cyclonedx-property-taxonomy) |
