@@ -76,7 +76,7 @@ These following values SHOULD be used with the `cdx:ai-ml:model:modality` proper
 
 ### Example: Using multiple `cdx:ai-ml:model:language`
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
@@ -141,7 +141,7 @@ These following and similar values SHOULD be used on the `cdx:ai-ml:model:parame
 
 The following pseudocode shows how you would include the defined (reserved) `count` and `tuning_method` model parameters on an ML model's model card:
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
@@ -178,7 +178,7 @@ The following pseudocode shows how you would include the defined (reserved) `cou
 
 The following pseudocode shows how you would include a model parameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic parameter name `foo` with a value `bar`.
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
@@ -231,7 +231,7 @@ Each well-known property MAY be used once.
 
 The following pseudocode shows how you would include the defined (reserved) `hidden_act`, `hidden_size` and `num_hidden_layers` model hyperparameters on an ML model's model card:
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
@@ -264,7 +264,7 @@ The following pseudocode shows how you would include the defined (reserved) `hid
 
 The following pseudocode shows how to include a model hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `hamm` with a value `eggz`.
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
@@ -324,7 +324,7 @@ Each well-known property MAY be used once, if not stated otherwise.
 
 The following pseudocode shows how you would include the defined (reserved) `eos_token` and `vocab_size` tokenizer hyperparameters on an ML model's model card:
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
@@ -355,7 +355,7 @@ The following pseudocode shows how you would include the defined (reserved) `eos
 
 In the same way as shown in the model's `hyperparameter` example, the following pseudocode shows how you would include a tokenizer hyperparameter that is not currently listed in the AI/ML namespace taxonomy.  Below, we introduce the metasyntactic hyperparameter name `baz` with a value `qux`.
 
-```jsonc
+```json5
 {
   // ...
   "components": [{
