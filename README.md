@@ -123,6 +123,7 @@ the following table (called "registry") is marked with
 | `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
 | `ort` | Namespace for use by the OSS Review Toolkit. | [OSS Review Toolkit](https://github.com/oss-review-toolkit) | [ORT taxonomy](https://github.com/oss-review-toolkit/ort/tree/main/plugins/reporters/cyclonedx#property-taxonomy) |
 | `prml` | Namespace for PRML (Pre-Registered ML Manifest) pre-registered evaluation-claim evidence. | [PRML specification maintainers](https://github.com/studio-11-co/falsify) | [PRML taxonomy](https://github.com/studio-11-co/falsify/blob/main/spec/compliance/cyclonedx-property-taxonomy.md) |
+| `qic` | Namespace for use by QiC Solutions. | [QIC Solutions](https://github.com/QIC-Solutions) | [QiC taxonomy](https://github.com/QIC-Solutions/cyclonedx-property-taxonomy#readme) |
 | `rad` | Namespace for use by RAD Security. | [RAD Security](https://github.com/rad-security) | [RAD KBOM Taxonomy](https://github.com/rad-security/kbom/blob/main/docs/taxonomy.md) |
 | `recon` | Namespace for use by the Recon Project. | [Recon Project](https://github.com/rusty-ferris-club/recon) | `RESERVED` |
 | `redhat` | Namespace for use by Red Hat. | [Red Hat](https://github.com/RedHatOfficial/) | `RESERVED` |
