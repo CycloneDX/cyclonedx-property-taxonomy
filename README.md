@@ -142,6 +142,8 @@ the following table (called "registry") is marked with
 | `tern` | Namespace for use by the Tern project. | [Tern Maintainers](https://github.com/tern-tools/tern) | `RESERVED` |
 | `tincture` | Namespace for use by Tincture. | [Lou Crocker](https://github.com/louiscrocker) | [Tincture taxonomy](https://github.com/louiscrocker/tincture-formats/blob/main/tincture-property-taxonomy.md) |
 | `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
+| `vts` | Namespace for use by ViaThinkSoft. | [ViaThinkSoft](https://viathinksoft.com/) | [ViaThinkSoft taxonomy](https://github.com/ViaThinkSoft/cyclonedx-property-taxonomy#readme) |
+
 
 ## Registering new Top-Level Namespaces
 
