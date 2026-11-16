@@ -144,7 +144,6 @@ the following table (called "registry") is marked with
 | `veracode` | Namespace for use by Veracode. | [Veracode](https://github.com/veracode) | [Veracode taxonomy](https://github.com/veracode/cyclonedx-property-taxonomy#readme) |
 | `vts` | Namespace for use by ViaThinkSoft. | [ViaThinkSoft](https://github.com/ViaThinkSoft) | [ViaThinkSoft taxonomy](https://github.com/ViaThinkSoft/cyclonedx-property-taxonomy#readme) |
 
-
 ## Registering new Top-Level Namespaces
 
 It is RECOMMENDED that anyone creating custom properties outside of the `internal`
