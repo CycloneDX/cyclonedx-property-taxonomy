@@ -124,6 +124,7 @@ the following table (called "registry") is marked with
 | `nvidia` | Namespace for NVIDIA properties. | [NVIDIA](https://github.com/NVIDIA) | [NVIDIA Taxonomy Documentation](https://github.com/NVIDIA/Trustworthy-AI/blob/main/CycloneDX-Property-Taxonomy/cyclonedx-property-taxonomy.md) |
 | `observer` | Namespace for use by SBOM Observer. | [Bitfront](https://github.com/bitfront-se) | [SBOM Observer Taxonomy](https://github.com/bitfront-se/cyclonedx-property-taxonomy) |
 | `ort` | Namespace for use by the OSS Review Toolkit. | [OSS Review Toolkit](https://github.com/oss-review-toolkit) | [ORT taxonomy](https://github.com/oss-review-toolkit/ort/tree/main/plugins/reporters/cyclonedx#property-taxonomy) |
+| `precogly` | Namespace for use by Precogly. | [Precogly](https://github.com/precogly) | [Precogly taxonomy](https://precogly.github.io/precogly/guides/importing-exporting/#precogly-properties) |
 | `prml` | Namespace for PRML (Pre-Registered ML Manifest) pre-registered evaluation-claim evidence. | [PRML specification maintainers](https://github.com/studio-11-co/falsify) | [PRML taxonomy](https://github.com/studio-11-co/falsify/blob/main/spec/compliance/cyclonedx-property-taxonomy.md) |
 | `qic` | Namespace for use by QiC Solutions. | [QIC Solutions](https://github.com/QIC-Solutions) | [QiC taxonomy](https://github.com/QIC-Solutions/cyclonedx-property-taxonomy#readme) |
 | `rad` | Namespace for use by RAD Security. | [RAD Security](https://github.com/rad-security) | [RAD KBOM Taxonomy](https://github.com/rad-security/kbom/blob/main/docs/taxonomy.md) |
