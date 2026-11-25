@@ -97,6 +97,7 @@ the following table (called "registry") is marked with
 | `urn` | Namespace **blocked** to prevent confusions with [Uniform Resource Name](https://datatracker.ietf.org/doc/html/rfc2141) | N/A | N/A |
 | `aboutcode` | Namespace for use by AboutCode projects. | [AboutCode.org](https://github.com/aboutcode-org) | [AboutCode taxonomy](https://github.com/aboutcode-org/aboutcode-cyclonedx-taxonomy#readme) |
 | `accellence` | Namespace for use by Accellence Technologies. | [AccellenceTechnologies](https://github.com/AccellenceTechnologies) | [Accellence taxonomy](https://github.com/AccellenceTechnologies/cyclonedx-property-taxonomy#readme) |
+| `affectra` | Namespace for use by Affectra. | [Affectra](https://github.com/affectra) | [Affectra taxonomy](https://docs.affectra.eu/reference/sbom-formats/#deployment-facts-for-models-on-devices) |
 | `amazon` | Namespace for use by Amazon. | [Amazon](https://github.com/amzn) | [Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/cyclonedx-namespace.html) |
 | `appknox` | Namespace for use by Appknox Platform. | [Appknox](https://github.com/appknox) | [Appknox taxonomy](https://github.com/appknox/cyclonedx-property-taxonomy#readme) |
 | `aquasecurity` | Namespace for use by Aqua Security. | [Aqua Security](https://github.com/aquasecurity) | `RESERVED` |
